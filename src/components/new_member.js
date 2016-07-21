@@ -75,6 +75,7 @@ class NewMember extends Component {
   newMember(){
 
     let preview;
+    let error;
 
     if (this.state.data_uri) {
       preview = (
@@ -83,6 +84,12 @@ class NewMember extends Component {
           <img className='image-preview' src={this.state.data_uri} />
         </div>
       );
+    }
+
+    if(this.props.errorMessage){
+      error = (
+        <p className="error">Error: {this.props.errorMessage}</p>
+      )
     }
 
     if(this.state.authenticated){
@@ -119,6 +126,7 @@ class NewMember extends Component {
             </fieldset>
             {preview}
             <button className="btn">Submit</button>
+            {error}
           </form>
         </div>
       )
@@ -157,8 +165,12 @@ function validate(formProps){
   return errors;
 }
 
+function mapStateToProps(state){
+  return {errorMessage: state.members.error}
+}
+
 export default reduxForm({
   form: 'member',
   fields: ['username', 'name', 'description', 'email'],
   validate: validate
-}, null, actions)(NewMember);
+}, mapStateToProps, actions)(NewMember);

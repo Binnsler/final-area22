@@ -17,4 +17,6 @@ module.exports = function(app){
   app.get('/api/getMember', Profile.get)
   // Get all Profiles
   app.get('/api/allMembers', Profile.getAll)
+  // Delete a Profile
+  app.delete('/api/deleteMember', Profile.delete)
 }

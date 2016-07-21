@@ -38,12 +38,25 @@ class DeleteMember extends Component {
     }
   }
 
-  renderMembers(){
+  onDeleteClick(username){
+    this.props.deleteMember(username);
+  }
+
+  renderMembers(memberData, i){
+    return(
+      <li key={i}>
+        <h4>{memberData.name}</h4>
+        <button className="btn btn-danger" onClick={() => {this.onDeleteClick(memberData.username)}}>Delete Member</button>
+      </li>
+    )
+  }
+
+  renderMembersList(){
     if(this.state.authenticated){
       return(
-        <div>
-
-        </div>
+        <ul>
+          {this.props.members.map(this.renderMembers.bind(this))}
+        </ul>
       )
     }
   }
@@ -56,9 +69,7 @@ class DeleteMember extends Component {
     return(
       <div>
         {this.authenticate()}
-        <ul>
-          {this.renderMembers()}
-        </ul>
+        {this.renderMembersList()}
       </div>
     )
   }

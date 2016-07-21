@@ -32,16 +32,12 @@ export function createProfile(profileData){
 
   axios.post(`${ROOT_URL}/api/new-member`, profileData)
     .then(response => {
-      console.log('Server response:')
-      console.log(response)
 
       const memberUsername = response.data.username;
 
       browserHistory.push(`/profile/${memberUsername}`)
     })
     .catch((error) => {
-      console.log('Error from the server:')
-      console.log(error.response)
 
       // Dispatch member error
       dispatch({
@@ -64,10 +60,8 @@ export function getProfile(username){
         })
       })
       .catch((error) => {
-        console.log('Error from the server:')
-        console.log(error.response)
+
         if(error.response.status === 404){
-          console.log('Redirecting, hold tight.')
           browserHistory.push('/oops')
         }
       })
@@ -79,8 +73,6 @@ export function getMembers(){
   return function(dispatch){
     axios.get(`${ROOT_URL}/api/allMembers`)
       .then(response => {
-        console.log('Response from server:')
-        console.log(response.data)
 
         dispatch({
           type: GET_MEMBERS,
@@ -89,6 +81,24 @@ export function getMembers(){
       })
       .catch((error) => {
         console.log('Error from the server:')
+        console.log(error.response)
+      })
+  }
+}
+
+// Delete Member
+export function deleteMember(username){
+  return function(dispatch){
+    axios.delete(`${ROOT_URL}/api/deleteMember?username=${username}`)
+      .then(response => {
+
+        dispatch({
+          type: GET_MEMBERS,
+          payload: response.data
+        })
+      })
+      .catch((error) => {
+        console.log('Error from server:')
         console.log(error.response)
       })
   }

@@ -52,7 +52,35 @@ exports.get = function(req, res){
 }
 
 exports.getAll = function(req, res){
-  console.log('Getting all members');
+  Profile.find({}, function(err, users){
+    if(err){
+      res.status(422).send(err);
+    }
 
-  res.send('Here are members from server')
+    res.send(users)
+  });
+}
+
+exports.delete = function(req, res){
+  var username = req.param('username');
+
+  Profile.findOne({username: username}, function(err, member){
+    if(err){
+      return res.status(422).send(err)
+    }
+
+    member.remove(function(err, result){
+      if(err){
+        return res.status(422).send(err)
+      }
+
+      Profile.find({}, function(err, users){
+        if(err){
+          res.status(422).send(err);
+        }
+
+        res.send(users)
+      });
+    })
+  })
 }
