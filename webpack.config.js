@@ -1,4 +1,3 @@
-var webpack = require('webpack');
 
 module.exports = {
   entry: [
@@ -18,9 +17,6 @@ module.exports = {
       }
     }]
   },
-  plugins: [
-        new webpack.EnvironmentPlugin(['NODE_ENV'])
-  ],
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
