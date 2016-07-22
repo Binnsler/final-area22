@@ -12,7 +12,7 @@ const path = require('path');
 const router = require('./router');
 
 // DB Setup
-mongoose.connect('mongodb://localhost:27017/app');
+// mongoose.connect('mongodb://localhost:27017/app');
 
 // Setup
 app.use(morgan('combined')); // Logging requests to console
