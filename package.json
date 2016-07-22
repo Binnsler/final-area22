@@ -6,7 +6,7 @@
   "repository": "git@github.com:Binnsler/final-area22.git",
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "post-install": "webpack -p",
+    "heroku-prebuild": "webpack -p",
     "start": "node server/server.js"
   },
   "author": "jameibinns",
