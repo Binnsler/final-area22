@@ -12,7 +12,14 @@ const path = require('path');
 const router = require('./router');
 
 // DB Setup
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/app', function(err, res){
+  if(err){
+    console.log('ERROR CONNECTING TO: ' + process.env.MONGODB_URI)
+  }
+  else{
+    console.log('SUCCEEDED CONNECTION TO: ' + process.env.MONGODB_URI)
+  }
+});
 
 // Setup
 app.use(morgan('combined')); // Logging requests to console
