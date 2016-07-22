@@ -12,7 +12,7 @@ const path = require('path');
 const router = require('./router');
 
 // DB Setup
-mongoose.connect(MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 // Setup
 app.use(morgan('combined')); // Logging requests to console
