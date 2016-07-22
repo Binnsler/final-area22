@@ -2,8 +2,12 @@ import axios from 'axios';
 import {browserHistory} from 'react-router';
 import {EMAIL_ERROR, MEMBER_ERROR, SET_MEMBER, GET_MEMBERS} from './types';
 
-// const ROOT_URL = 'http://localhost:3090';
-const ROOT_URL = '';
+if(process.env.NODE_ENV = 'production'){
+  let ROOT_URL = '';
+}
+else{
+  let ROOT_URL = 'http://localhost:3090';
+}
 
 // Pull in data from /contact form and send off to Sendgrid API
 export function emailForm({email, confirmEmail, message}){
