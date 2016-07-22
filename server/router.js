@@ -1,6 +1,5 @@
 const Email = require('./controllers/email');
 const Profile = require('./controllers/profile');
-const path = require('path');
 
 module.exports = function(app){
 
