@@ -9,7 +9,7 @@
     "post-install": "webpack -p",
     "start": "node server/server.js"
   },
-  "author": "",
+  "author": "jameibinns",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",
