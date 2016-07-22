@@ -18,7 +18,7 @@ module.exports = {
       }
     }]
   },
-  plugins = [
+  plugins: [
         new webpack.EnvironmentPlugin(['NODE_ENV'])
   ],
   resolve: {
