@@ -2,7 +2,7 @@ import axios from 'axios';
 import {browserHistory} from 'react-router';
 import {EMAIL_ERROR, MEMBER_ERROR, SET_MEMBER, GET_MEMBERS} from './types';
 
-if(process.env.NODE_ENV == 'production'){
+if(process.env.NODE_ENV){
   console.log('Were in production!')
   const ROOT_URL = '';
 }
