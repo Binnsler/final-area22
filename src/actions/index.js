@@ -2,13 +2,13 @@ import axios from 'axios';
 import {browserHistory} from 'react-router';
 import {EMAIL_ERROR, MEMBER_ERROR, SET_MEMBER, GET_MEMBERS} from './types';
 
-const ROOT_URL = 'http://localhost:3090';
+// const ROOT_URL = 'http://localhost:3090';
 
 // Pull in data from /contact form and send off to Sendgrid API
 export function emailForm({email, confirmEmail, message}){
   return function(dispatch){
 
-    axios.post(`${ROOT_URL}/email`, {email, confirmEmail, message})
+    axios.post(`/email`, {email, confirmEmail, message})
       .then(response => {
         console.log('Server response:')
         console.log(response)
@@ -30,7 +30,7 @@ export function emailForm({email, confirmEmail, message}){
 export function createProfile(profileData){
   return function(dispatch){
 
-  axios.post(`${ROOT_URL}/api/new-member`, profileData)
+  axios.post(`/api/new-member`, profileData)
     .then(response => {
 
       const memberUsername = response.data.username;
@@ -52,7 +52,7 @@ export function createProfile(profileData){
 export function getProfile(username){
   return function(dispatch){
 
-    axios.get(`${ROOT_URL}/api/getMember?username=${username}`)
+    axios.get(`/api/getMember?username=${username}`)
       .then(response => {
         dispatch({
           type: SET_MEMBER,
@@ -71,7 +71,7 @@ export function getProfile(username){
 // Get all profiles from the server
 export function getMembers(){
   return function(dispatch){
-    axios.get(`${ROOT_URL}/api/allMembers`)
+    axios.get(`/api/allMembers`)
       .then(response => {
 
         dispatch({
@@ -89,7 +89,7 @@ export function getMembers(){
 // Delete Member
 export function deleteMember(username){
   return function(dispatch){
-    axios.delete(`${ROOT_URL}/api/deleteMember?username=${username}`)
+    axios.delete(`/api/deleteMember?username=${username}`)
       .then(response => {
 
         dispatch({
