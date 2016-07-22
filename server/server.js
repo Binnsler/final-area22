@@ -6,20 +6,27 @@ const morgan = require('morgan');
 const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
+const path = require('path');
+
 
 const router = require('./router');
 
 // DB Setup
 mongoose.connect('mongodb://localhost:27017/app');
 
-
 // Setup
 app.use(morgan('combined')); // Logging requests to console
 app.use(cors()); // Allow cross-origin requests
 app.use(bodyParser.json({type: '*/*'})); // Parse requests to JSON
+app.use(express.static(__dirname + '/../')); // Serve from root directory
+
 
 // Routes
 router(app);
+// Always send index.html for React/Redux
+app.get('*', function(req, res){
+  res.sendFile(path.resolve('../index.html'))
+});
 
 // Server Setup
 const port = process.env.PORT || 3090;

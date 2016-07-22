@@ -1,12 +1,9 @@
 const Email = require('./controllers/email');
 const Profile = require('./controllers/profile');
+const path = require('path');
 
 module.exports = function(app){
 
-  // We've got a pulse
-  app.get('/', function(req, res){
-    res.send('HI');
-  });
 
   // Sendgrid API call for /contact
   app.post('/email', Email.sendEmail);
