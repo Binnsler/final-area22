@@ -4,6 +4,8 @@ exports.create = function(req, res){
 
   const username = req.body.username;
 
+  console.log(req.body)
+
   if(!username){
     console.log('No username');
     return res.status(422).send({error: 'You must provide a unique username'});
@@ -22,7 +24,8 @@ exports.create = function(req, res){
       username: req.body.username,
       name: req.body.name,
       description: req.body.description,
-      email: req.body.email
+      email: req.body.email,
+      profilePic: req.body.profilePic
     });
 
     profile.save(function(err, member){
