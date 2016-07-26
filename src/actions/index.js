@@ -9,11 +9,11 @@ else{
   var ROOT_URL = 'http://localhost:3090';
 }
 
+console.log(`${ROOT_URL}/email`)
 // Pull in data from /contact form and send off to Sendgrid API
 export function emailForm({email, confirmEmail, message}){
   return function(dispatch){
 
-    console.log(`${ROOT_URL}/email`)
 
     axios.post(`${ROOT_URL}/email`, {email, confirmEmail, message})
       .then(response => {
