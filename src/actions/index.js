@@ -2,11 +2,12 @@ import axios from 'axios';
 import {browserHistory} from 'react-router';
 import {EMAIL_ERROR, MEMBER_ERROR, SET_MEMBER, GET_MEMBERS} from './types';
 
-// if(process.env.NODE_ENV === 'production'){
-//   var ROOT_URL = '';
-// }
 
   var ROOT_URL = 'http://localhost:3090';
+  
+  if(process.env.NODE_ENV === 'production'){
+    var ROOT_URL = '';
+  }
 
 
 console.log(`${ROOT_URL}/email`)
