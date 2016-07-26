@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "NODE_ENV=development & node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "heroku-postbuild": "webpack -p",
-    "start": "node server/server.js"
+    "start": "NODE_ENV=production & node server/server.js"
   },
   "author": "jameibinns",
   "license": "ISC",
