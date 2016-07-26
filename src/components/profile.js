@@ -12,10 +12,10 @@ class Profile extends Component {
   render(){
     return(
       <div>
+        <img className='image-preview' src={this.props.member.profilePic} />
         <h3>{this.props.member.name}</h3>
         <p>{this.props.member.email}</p>
         <p>{this.props.member.description}</p>
-        <img className='image-preview' src={this.props.member.profilePic} />
       </div>
     );
   }

@@ -13,6 +13,8 @@ else{
 export function emailForm({email, confirmEmail, message}){
   return function(dispatch){
 
+    console.log(`${ROOT_URL}/email`)
+
     axios.post(`${ROOT_URL}/email`, {email, confirmEmail, message})
       .then(response => {
         console.log('Server response:')
@@ -78,7 +80,6 @@ export function getMembers(){
   return function(dispatch){
     axios.get(`${ROOT_URL}/api/allMembers`)
       .then(response => {
-
         dispatch({
           type: GET_MEMBERS,
           payload: response.data
