@@ -4,7 +4,9 @@ import {EMAIL_ERROR, MEMBER_ERROR, SET_MEMBER, GET_MEMBERS} from './types';
 
 
   var ROOT_URL = 'http://localhost:3090';
-  
+
+  console.log(process.env.NODE_ENV)
+
   if(process.env.NODE_ENV === 'production'){
     var ROOT_URL = '';
   }
