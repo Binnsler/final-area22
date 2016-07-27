@@ -14,9 +14,10 @@ class Home extends Component {
     const userLink = `/profile/${memberData.username}`
 
     return(
-      <li key={i} className="col-md-4">
-      <Link to={userLink}><img className='image-preview' src={memberData.profilePic}/></Link>
-      <h4>{memberData.name}</h4>
+      <li key={i} className="col-md-4 member">
+        <Link to={userLink}><img className='image-preview' src={memberData.profilePic}/></Link>
+        <h4>{memberData.name}</h4>
+        <p>{memberData.title}</p>
       </li>
     )
   }
@@ -24,7 +25,7 @@ class Home extends Component {
   renderMembersList(){
     if(this.props.members){
       return(
-        <ul>
+        <ul className="member-list row">
           {this.props.members.map(this.renderMembers.bind(this))}
         </ul>
       )

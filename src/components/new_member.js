@@ -23,11 +23,12 @@ class NewMember extends Component {
     }
   }
 
-  handleFormSubmit({username, name, description, email}){
+  handleFormSubmit({username, name, title, description, email}){
 
     const profileData = {
       username: username,
       name: name,
+      title: title,
       description: description,
       email: email,
       profilePic: this.state.data_uri
@@ -94,7 +95,7 @@ class NewMember extends Component {
 
     if(this.state.authenticated){
 
-      const {handleSubmit, fields: {username, name, description, email}} = this.props;
+      const {handleSubmit, fields: {username, name, title, description, email}} = this.props;
 
       return(
         <div>
@@ -109,6 +110,11 @@ class NewMember extends Component {
               <label>Member Name:</label>
               <input placeholder="ex. Bob Yen" {...name} className="form-control"/>
               {name.touched && name.error && <div className="error">{name.error}</div>}
+            </fieldset>
+            <fieldset className="form-group">
+              <label>Member Title:</label>
+              <input placeholder="ex. Sound Engineer" {...title} className="form-control"/>
+              {title.touched && title.error && <div className="error">{title.error}</div>}
             </fieldset>
             <fieldset className="form-group">
               <label>Member Description:</label>
@@ -154,6 +160,10 @@ function validate(formProps){
     errors.name = 'Please enter a full name';
   }
 
+  if(!formProps.title){
+    errors.title = 'Please enter a title';
+  }
+
   if(!formProps.description){
     errors.description = 'Please enter a description';
   }
@@ -171,6 +181,6 @@ function mapStateToProps(state){
 
 export default reduxForm({
   form: 'member',
-  fields: ['username', 'name', 'description', 'email'],
+  fields: ['username', 'name', 'title', 'description', 'email'],
   validate: validate
 }, mapStateToProps, actions)(NewMember);

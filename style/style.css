@@ -1,3 +1,6 @@
 .nav-link {display:inline; padding:0 10px;}
 .error {color:red;}
 .image-preview {width:100%; max-width: 500px; height: auto}
+.member-list {list-style:none;}
+.member {text-align:center;}
+.footer {width:100%;}

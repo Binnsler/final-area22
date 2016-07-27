@@ -23,6 +23,7 @@ exports.create = function(req, res){
     const profile = new Profile({
       username: req.body.username,
       name: req.body.name,
+      title: req.body.title,
       description: req.body.description,
       email: req.body.email,
       profilePic: req.body.profilePic
