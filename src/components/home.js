@@ -9,12 +9,12 @@ class Home extends Component {
     this.props.getMembers();
   }
 
-  renderMembers(memberData, i){
+  renderMembers(memberData){
 
     const userLink = `/profile/${memberData.username}`
 
     return(
-      <li key={i} className="col-md-4 member">
+      <li key={memberData.username} className="col-md-4 member">
         <Link to={userLink}><img className='image-preview' src={memberData.profilePic}/></Link>
         <h4>{memberData.name}</h4>
         <p>{memberData.title}</p>
