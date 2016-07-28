@@ -2,5 +2,24 @@
 .error {color:red;}
 .image-preview {width:100%; max-width: 500px; height: auto}
 .member-list {list-style:none;}
-.member {text-align:center;}
+.member-thumbnail {width:100%; padding:20px;}
+.member {text-align:center; display: inline-block; vertical-align: middle;}
+.member-title {word-wrap: break-word; padding: 0 41px;}
 .footer {width:100%;}
+
+/* Grid Layout */
+.col-1-3 {width: 100%;}
+
+/* Above 600px */
+@media (min-width: 796px) {
+
+  /* Helper Classes Desktop */
+  .col-1-3 {width: 33.33%;}
+  .col-1-2 {width: 50%;}
+  .member {min-height:370px;}
+}
+
+/* Widescreen */
+@media (min-width: 1300px) {
+
+}

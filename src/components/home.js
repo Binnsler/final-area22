@@ -14,10 +14,10 @@ class Home extends Component {
     const userLink = `/profile/${memberData.username}`
 
     return(
-      <li key={memberData.username} className="col-md-4 member">
-        <Link to={userLink}><img className='image-preview' src={memberData.profilePic}/></Link>
+      <li key={memberData.username} className="col-1-3 member">
+        <Link to={userLink}><img className="member-thumbnail" src={memberData.profilePic}/></Link>
         <h4>{memberData.name}</h4>
-        <p>{memberData.title}</p>
+        <p className="member-title">{memberData.title}</p>
       </li>
     )
   }
