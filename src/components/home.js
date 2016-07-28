@@ -25,7 +25,7 @@ class Home extends Component {
   renderMembersList(){
     if(this.props.members){
       return(
-        <ul className="member-list row">
+        <ul className="member-list">
           {this.props.members.map(this.renderMembers.bind(this))}
         </ul>
       )
