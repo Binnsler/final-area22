@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router';
 import * as actions from '../actions';
 
 class DeleteMember extends Component {
@@ -7,35 +8,16 @@ class DeleteMember extends Component {
     super(props);
 
     this.state = {
-      authenticated: false,
       term: ''
     }
   }
 
+  componentWillMount(){
+    this.props.getMembers();
+  }
+
   onInputChange(event){
     this.setState({term: event.target.value});
-  }
-
-  onAuthenticateSubmit(event){
-    event.preventDefault();
-
-    if(this.state.term == 'secretpassword'){
-      this.setState({term: '', authenticated: true})
-    }
-  }
-
-  authenticate(){
-    if(!this.state.authenticated){
-      return(
-        <form onSubmit={this.onAuthenticateSubmit.bind(this)}>
-        <fieldset className="form-group">
-        <label>Password:</label>
-        <input onChange={this.onInputChange.bind(this)} type="password" className="form-control"/>
-        </fieldset>
-        <button type="submit">Submit</button>
-        </form>
-      );
-    }
   }
 
   onDeleteClick(username){
@@ -43,16 +25,21 @@ class DeleteMember extends Component {
   }
 
   renderMembers(memberData, i){
+
+    let editLink = `/edit/${memberData.username}`;
+
     return(
       <li key={i}>
         <h4>{memberData.name}</h4>
         <button className="btn btn-danger" onClick={() => {this.onDeleteClick(memberData.username)}}>Delete Member</button>
+        <Link className="btn btn-success" to={editLink}>Edit Profile</Link>
       </li>
     )
   }
 
   renderMembersList(){
-    if(this.state.authenticated){
+
+    if(this.props.members){
       return(
         <ul>
           {this.props.members.map(this.renderMembers.bind(this))}
@@ -61,14 +48,10 @@ class DeleteMember extends Component {
     }
   }
 
-  componentWillMount(){
-    this.props.getMembers();
-  }
 
   render(){
     return(
       <div>
-        {this.authenticate()}
         {this.renderMembersList()}
       </div>
     )

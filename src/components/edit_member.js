@@ -2,7 +2,12 @@ import React, {Component} from 'react';
 import {reduxForm} from 'redux-form';
 import * as actions from '../actions';
 
-class NewMember extends Component {
+class EditProfile extends Component {
+
+  componentWillMount(){
+    // Action to get user data from server
+    this.props.getProfile(this.props.params.username)
+  }
 
   constructor(props){
     super(props);
@@ -14,10 +19,10 @@ class NewMember extends Component {
 
   }
 
-  handleFormSubmit({username, name, title, description, email}){
+  handleFormSubmit({name, title, description, email}){
 
     const profileData = {
-      username: username,
+      username: this.props.params.username,
       name: name,
       title: title,
       description: description,
@@ -26,7 +31,7 @@ class NewMember extends Component {
     };
 
     console.log(profileData)
-    this.props.createProfile(profileData);
+    this.props.editProfile(profileData);
 
   }
 
@@ -50,7 +55,7 @@ class NewMember extends Component {
     reader.readAsDataURL(file);
   }
 
-  newMember(){
+  editMember(){
 
     let preview;
     let error;
@@ -70,17 +75,12 @@ class NewMember extends Component {
       )
     }
 
-      const {handleSubmit, fields: {username, name, title, description, email}} = this.props;
+      const {handleSubmit, fields: {name, title, description, email}} = this.props;
 
       return(
         <div>
-          <h3>Create a New Member</h3>
+          <h3>Edit Member: {this.props.params.username}</h3>
           <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-            <fieldset className="form-group">
-              <label>Profile Username(no spaces):</label>
-              <input placeholder="ex. bobyen" {...username} className="form-control"/>
-              {username.touched && username.error && <div className="error">{username.error}</div>}
-            </fieldset>
             <fieldset className="form-group">
               <label>Member Name:</label>
               <input placeholder="ex. Bob Yen" {...name} className="form-control"/>
@@ -116,7 +116,7 @@ class NewMember extends Component {
   render(){
       return(
         <div>
-        {this.newMember()}
+        {this.editMember()}
         </div>
       );
   }
@@ -124,10 +124,6 @@ class NewMember extends Component {
 
 function validate(formProps){
   const errors = {};
-
-  if(!formProps.username){
-    errors.username = 'Please enter a username (this will be used as /profile/username)';
-  }
 
   if(!formProps.name){
     errors.name = 'Please enter a full name';
@@ -149,11 +145,12 @@ function validate(formProps){
 }
 
 function mapStateToProps(state){
-  return {errorMessage: state.members.error}
+  return {initialValues: state.members.memberData,
+          errorMessage: state.members.error}
 }
 
 export default reduxForm({
   form: 'member',
-  fields: ['username', 'name', 'title', 'description', 'email'],
+  fields: ['name', 'title', 'description', 'email'],
   validate: validate
-}, mapStateToProps, actions)(NewMember);
+}, mapStateToProps, actions)(EditProfile);

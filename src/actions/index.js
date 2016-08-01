@@ -55,6 +55,28 @@ export function createProfile(profileData){
   }
 }
 
+// Collect profileData from /edit/:username and edit member through Node
+export function editProfile(profileData){
+  return function(dispatch){
+
+  axios.post(`${ROOT_URL}/api/edit-member`, profileData)
+    .then(response => {
+
+      const memberUsername = response.data.username;
+
+      browserHistory.push(`/profile/${memberUsername}`)
+    })
+    .catch((error) => {
+
+      // Dispatch member error
+      dispatch({
+        type: MEMBER_ERROR,
+        payload: error.response.data
+      })
+    })
+  }
+}
+
 // Get profile data from the server
 export function getProfile(username){
   return function(dispatch){

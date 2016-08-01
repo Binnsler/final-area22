@@ -39,6 +39,36 @@ exports.create = function(req, res){
   });
 }
 
+// Edit a member
+exports.edit = function(req, res){
+  console.log('Trying to edit')
+  const username = req.body.username;
+
+  Profile.findOne({username: username}, function(err, existingUser){
+    if(err){
+      res.status(422).send({error: err});
+    }
+
+      existingUser.name = req.body.name
+      existingUser.title = req.body.title
+      existingUser.description = req.body.description
+      existingUser.email = req.body.email
+
+      if(req.body.profilePic !== null){
+        existingUser.profilePic - req.body.profilePic
+      }
+
+    existingUser.save(function(err, member){
+      if(err){
+        return res.status(422).send('Error saving profile');
+      }
+
+      res.send(member);
+    })
+  });
+}
+
+// Get a member
 exports.get = function(req, res){
   var username = req.param('username');
 

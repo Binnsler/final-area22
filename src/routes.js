@@ -11,6 +11,7 @@ import Contact from './components/contact';
 import Profile from './components/profile';
 import NewMember from './components/new_member';
 import DeleteMember from './components/delete_member';
+import EditMember from './components/edit_member';
 import NoMatch from './components/no_match';
 
 export default(
@@ -24,6 +25,7 @@ export default(
     <Route path="/profile/:username" component={Profile}/>
     <Route path="/new-member" component={NewMember}/>
     <Route path="/delete-member" component={DeleteMember}/>
+    <Route path="/edit/:username" component={EditMember}/>
     <Route path="*" component={NoMatch}/>
   </Route>
 );

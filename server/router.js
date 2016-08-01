@@ -9,6 +9,8 @@ module.exports = function(app){
 
   // Create a Profile
   app.post('/api/new-member', Profile.create);
+  // Edit a Profile
+  app.post('/api/edit-member', Profile.edit);
   // Get a Profile
   app.get('/api/getMember', Profile.get)
   // Get all Profiles
