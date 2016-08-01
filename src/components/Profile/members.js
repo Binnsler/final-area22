@@ -1,24 +1,17 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router';
-import * as actions from '../actions';
+import * as actions from '../../actions';
 
-class DeleteMember extends Component {
+class Members extends Component {
   constructor(props){
     super(props);
-
-    this.state = {
-      term: ''
-    }
   }
 
   componentWillMount(){
     this.props.getMembers();
   }
 
-  onInputChange(event){
-    this.setState({term: event.target.value});
-  }
 
   onDeleteClick(username){
     this.props.deleteMember(username);
@@ -62,4 +55,4 @@ function mapStateToProps(state){
   return {members: state.members.all};
 }
 
-export default connect(mapStateToProps, actions)(DeleteMember);
+export default connect(mapStateToProps, actions)(Members);

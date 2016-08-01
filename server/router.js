@@ -1,5 +1,6 @@
 const Email = require('./controllers/email');
 const Profile = require('./controllers/profile');
+const Event = require('./controllers/event');
 
 module.exports = function(app){
 
@@ -7,14 +8,17 @@ module.exports = function(app){
   // Sendgrid API call for /contact
   app.post('/email', Email.sendEmail);
 
-  // Create a Profile
+  // Profile
   app.post('/api/new-member', Profile.create);
-  // Edit a Profile
   app.post('/api/edit-member', Profile.edit);
-  // Get a Profile
-  app.get('/api/getMember', Profile.get)
-  // Get all Profiles
-  app.get('/api/allMembers', Profile.getAll)
-  // Delete a Profile
-  app.delete('/api/deleteMember', Profile.delete)
+  app.get('/api/getMember', Profile.get);
+  app.get('/api/allMembers', Profile.getAll);
+  app.delete('/api/deleteMember', Profile.delete);
+
+  // Events
+  app.post('/api/new-event', Event.create);
+  app.get('/api/allEvents', Event.getAll);
+  app.get('/api/deleteEvent', Event.delete);
+  app.get('/api/getEvent', Event.get);
+  app.post('/api/edit-event', Event.edit);
 }

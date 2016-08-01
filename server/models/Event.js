@@ -3,19 +3,18 @@ const Schema = mongoose.Schema;
 
 
 // Define our model
-const profileSchema = new Schema({
-  username: String,
+const eventSchema = new Schema({
   name: String,
-  title: String,
+  date: String,
+  time: String,
   description: String,
-  email: String,
   profilePic: String
 });
 
 
 
 // Create the model class
-const ModelClass = mongoose.model('profile', profileSchema); // corresponds to 'profile' collection
+const ModelClass = mongoose.model('event', eventSchema); // corresponds to 'event' collection
 
 // Export the model
 module.exports = ModelClass;

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {reduxForm} from 'redux-form';
-import * as actions from '../actions';
+import * as actions from '../../actions';
 
 class NewMember extends Component {
 
@@ -8,7 +8,6 @@ class NewMember extends Component {
     super(props);
 
     this.state = {
-      term: '',
       data_uri: null
     };
 
@@ -28,10 +27,6 @@ class NewMember extends Component {
     console.log(profileData)
     this.props.createProfile(profileData);
 
-  }
-
-  onInputChange(event){
-    this.setState({term: event.target.value});
   }
 
 

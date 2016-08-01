@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {reduxForm} from 'redux-form';
-import * as actions from '../actions';
+import * as actions from '../../actions';
 
 class EditProfile extends Component {
 
@@ -13,7 +13,6 @@ class EditProfile extends Component {
     super(props);
 
     this.state = {
-      term: '',
       data_uri: null
     };
 
@@ -34,11 +33,6 @@ class EditProfile extends Component {
     this.props.editProfile(profileData);
 
   }
-
-  onInputChange(event){
-    this.setState({term: event.target.value});
-  }
-
 
   handleFile(event){
 
