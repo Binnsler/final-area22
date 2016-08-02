@@ -38,7 +38,7 @@ ul {padding-left: 0;}
 
 /* Home */
 .home-splash {display:none;}
-.brain-container {text-align:center; background-color:black; vertical-align:top;}
+.brain-container {text-align:center; background-color:black; vertical-align:top; padding:20px;}
 .brain-splash {width:70%; height:auto; padding:10px 0;}
 
 .image-preview {width:100%; max-width: 500px; height: auto}
