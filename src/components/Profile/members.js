@@ -24,7 +24,7 @@ class Members extends Component {
     return(
       <li key={i}>
         <h4>{memberData.name}</h4>
-        <button className="btn btn-danger" onClick={() => {this.onDeleteClick(memberData.username)}}>Delete Member</button>
+        <button className="btn btn-danger right-20" onClick={() => {this.onDeleteClick(memberData.username)}}>Delete Member</button>
         <Link className="btn btn-success" to={editLink}>Edit Profile</Link>
       </li>
     )
@@ -34,7 +34,7 @@ class Members extends Component {
 
     if(this.props.members){
       return(
-        <ul>
+        <ul className="pad-20 center-me">
           {this.props.members.map(this.renderMembers.bind(this))}
         </ul>
       )
@@ -45,6 +45,7 @@ class Members extends Component {
   render(){
     return(
       <div>
+        <h1 className="red-header">Members</h1>
         {this.renderMembersList()}
       </div>
     )

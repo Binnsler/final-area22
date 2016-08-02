@@ -103,7 +103,7 @@ class NewEvent extends Component {
 
   render(){
     return(
-      <div>
+      <div className="pad-20">
       {this.newEvent()}
       </div>
     )

@@ -8,6 +8,7 @@ export default class App extends Component {
     return (
       <div>
       <Header/>
+      <div className="break-div"></div>
       {this.props.children}
       <Footer/>
       </div>

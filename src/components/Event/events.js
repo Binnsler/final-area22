@@ -34,7 +34,7 @@ class Events extends Component {
 
     if(this.props.events){
       return(
-        <ul>
+        <ul className="pad-20 center-me">
           {this.props.events.map(this.renderEvents.bind(this))}
         </ul>
       )
@@ -45,6 +45,7 @@ class Events extends Component {
   render(){
     return(
       <div>
+        <h1 className="red-header">Events</h1>
         {this.renderEventsList()}
       </div>
     )

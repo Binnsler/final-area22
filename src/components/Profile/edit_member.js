@@ -109,7 +109,7 @@ class EditProfile extends Component {
 
   render(){
       return(
-        <div>
+        <div className="pad-20">
         {this.editMember()}
         </div>
       );

@@ -4,7 +4,7 @@ import {Route, IndexRoute} from 'react-router';
 import App from './components/app';
 import Home from './components/home';
 import About from './components/about';
-import Learn from './components/learn';
+import Development from './components/development';
 import Humanity from './components/humanity';
 import Audio from './components/audio';
 import Contact from './components/contact';
@@ -22,7 +22,7 @@ export default(
     <IndexRoute component={Home}/>
     <Route path="/about" component={About}/>
     <Route path="/humanity" component={Humanity}/>
-    <Route path="/learn" component={Learn}/>
+    <Route path="/development" component={Development}/>
     <Route path="/audio" component={Audio}/>
     <Route path="/contact" component={Contact}/>
     <Route path="/profile/:username" component={Profile}/>

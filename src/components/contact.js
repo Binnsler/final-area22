@@ -28,24 +28,27 @@ class Contact extends Component {
     const {handleSubmit, fields: {email, confirmEmail, message}} = this.props;
 
     return(
-      <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-        <fieldset className="form-group">
-          <label>Email:</label>
-          <input type="email" {...email} className="form-control"/>
-          {email.touched && email.error && <div className="error">{email.error}</div>}
-        </fieldset>
-        <fieldset className="form-group">
-          <label>Confirm Email:</label>
-          <input type="email" {...confirmEmail} className="form-control"/>
-          {confirmEmail.touched && confirmEmail.error && <div className="error">{confirmEmail.error}</div>}
-        </fieldset>
-        <fieldset className="form-group">
-          <label>Message:</label>
-          <textarea {...message} className="form-control"/>
-          {message.touched && message.error && <div className="error">{message.error}</div>}
-        </fieldset>
-        <button action="submit" className="btn">Submit</button>
-      </form>
+      <div>
+        <h1 className="red-header">Contact</h1>
+        <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))} className="pad-20">
+          <fieldset className="form-group">
+            <label>Email:</label>
+            <input type="email" {...email} className="form-control"/>
+            {email.touched && email.error && <div className="error">{email.error}</div>}
+          </fieldset>
+          <fieldset className="form-group">
+            <label>Confirm Email:</label>
+            <input type="email" {...confirmEmail} className="form-control"/>
+            {confirmEmail.touched && confirmEmail.error && <div className="error">{confirmEmail.error}</div>}
+          </fieldset>
+          <fieldset className="form-group">
+            <label>Message:</label>
+            <textarea {...message} className="form-control"/>
+            {message.touched && message.error && <div className="error">{message.error}</div>}
+          </fieldset>
+          <button action="submit" className="btn">Submit</button>
+        </form>
+      </div>
     );
   }
 }

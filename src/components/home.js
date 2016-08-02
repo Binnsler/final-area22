@@ -27,7 +27,7 @@ class Home extends Component {
     if(this.props.members){
       return(
         <div>
-        <h1 className="center-me">Staff</h1>
+        <h1 className="red-header">Staff</h1>
         <ul className="member-list">
           {this.props.members.map(this.renderMembers.bind(this))}
         </ul>
@@ -39,7 +39,7 @@ class Home extends Component {
   renderEvent(eventData){
     console.log('rendering event')
     return(
-      <li key={eventData.name} className="col-1-2">
+      <li key={eventData.name} className="col-1-2 event">
         <div className="width-50 align-top">
           <img className="event-thumbnail" src={eventData.profilePic}/>
         </div>
@@ -57,7 +57,7 @@ class Home extends Component {
     if(this.props.events){
       return(
         <div>
-          <h1 className="center-me">Events</h1>
+          <h1 className="red-header bottom-20">Events</h1>
           <ul className="event-list">
             {this.props.events.map(this.renderEvent.bind(this))}
           </ul>
@@ -69,6 +69,18 @@ class Home extends Component {
   render(){
       return(
         <div>
+          <img className='page-splash home-splash' src='../images/homeSplash.jpg'/>
+          <div>
+            <div className='brain-container col-1-2'>
+              <img className='brain-splash' src='../images/brainSplash.jpg'/>
+            </div>
+            <div className='col-1-2'>
+              <div className="pad-20">
+                <h2>Area Twenty-Two</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mi orci, molestie ac erat eu, lobortis vulputate mauris. Nam sed arcu ac massa feugiat accumsan at sit amet sapien. Sed ut nisi non est porta vehicula tristique ac mauris. Nam imperdiet ligula ac aliquet ornare. Morbi sollicitudin, augue a sodales auctor, odio ante fringilla velit, efficitur elementum orci ex et erat. Integer aliquam volutpat dapibus.\</p>
+              </div>
+            </div>
+          </div>
           {this.renderMembersList()}
           {this.renderEventList()}
         </div>

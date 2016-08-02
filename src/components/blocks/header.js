@@ -2,17 +2,50 @@ import React, {Component} from 'react';
 import {Link} from 'react-router';
 
 class Header extends Component {
+
+  constructor(props){
+    super(props);
+
+    this.state = {
+      menuVisible: false
+    }
+  }
+
+
+
+  handleClick(){
+    this.setState({menuVisible: !this.state.menuVisible})
+    console.log(this.state.menuVisible)
+  }
+
   render(){
+
+    var visible = '';
+    var active = '';
+
+    if(this.state.menuVisible){
+      var visible = 'open';
+      var active = 'red';
+    }
+
+
+    var visibleMenu = `header-menu ${visible}`;
+    var sandwichClasses = `nav-button hamburger-button ${active}`;
+
+
     return(
       <div className="header">
-        <ul>
-          <li key={1} className="nav-link"><Link to="/">Home</Link></li>
-          <li key={2} className="nav-link"><Link to="/about">About</Link></li>
-          <li key={3} className="nav-link"><Link to="/learn">Learn</Link></li>
-          <li key={3} className="nav-link"><Link to="/humanity">Humanity</Link></li>
-          <li key={4} className="nav-link"><Link to="/audio">Audio</Link></li>
-          <li key={5} className="nav-link"><Link to="/contact">Contact</Link></li>
-        </ul>
+        <span className={sandwichClasses} onClick={this.handleClick.bind(this)}>&#9776;</span>
+        <div className={visibleMenu} >
+          <ul className="header-list">
+            <li key={1} className="nav-link-container"><Link to="/" className="nav-link" onClick={this.handleClick.bind(this)}>Home</Link></li>
+            <li key={2} className="nav-link-container"><Link to="/about" className="nav-link" onClick={this.handleClick.bind(this)}>About</Link></li>
+            <li key={3} className="nav-link-container"><Link to="/development" className="nav-link" onClick={this.handleClick.bind(this)}>Development</Link></li>
+            <li key={3} className="nav-link-container"><Link to="/humanity" className="nav-link" onClick={this.handleClick.bind(this)}>Humanity</Link></li>
+            <li key={4} className="nav-link-container"><Link to="/audio" className="nav-link" onClick={this.handleClick.bind(this)}>Audio</Link></li>
+            <li key={5} className="nav-link-container"><Link to="/contact" className="nav-link" onClick={this.handleClick.bind(this)}>Contact</Link></li>
+          </ul>
+        </div>
       </div>
     );
   }
