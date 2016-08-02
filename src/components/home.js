@@ -76,7 +76,7 @@ class Home extends Component {
             </div>
             <div className='col-1-2'>
               <div className="pad-20">
-                <h2>Area Twenty-Two</h2>
+                <img src="/images/area22logo.png"/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mi orci, molestie ac erat eu, lobortis vulputate mauris. Nam sed arcu ac massa feugiat accumsan at sit amet sapien. Sed ut nisi non est porta vehicula tristique ac mauris. Nam imperdiet ligula ac aliquet ornare. Morbi sollicitudin, augue a sodales auctor, odio ante fringilla velit, efficitur elementum orci ex et erat. Integer aliquam volutpat dapibus.\</p>
               </div>
             </div>
