@@ -35,7 +35,7 @@ ul {padding-left: 0;}
 .nav-button {color: white; font-size:30px; display:inline-block;}
 .header-menu {display: inline-block; z-index:90; width:100%; left:0; text-align:center;}
 .hamburger-button {cursor: pointer; vertical-align:top; position:absolute; z-index: 100; left:10px; top:5px;}
-.site-logo {position:absolute; right:10px; top: 6px;}
+.site-logo {position:absolute; right:10px; top: 6px; cursor:pointer;}
 
 /* Footer */
 .social-icon {width:40px; height: 40px; border-radius:25px; border:2px solid black; background-color:white; margin: 0 10px; cursor:pointer; display: -ms-flexbox; -ms-flex-pack: center; -ms-flex-align: center; display: flex; justify-content: center; align-items: center;}

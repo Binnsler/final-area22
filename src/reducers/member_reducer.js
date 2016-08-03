@@ -9,7 +9,6 @@ export default function(state = {memberData: {}}, action){
       return {...state, memberData: action.payload}
 
     case GET_MEMBERS:
-      console.log('updating now!')
       return {...state, all: action.payload}
 
     case CLEAR_USER:

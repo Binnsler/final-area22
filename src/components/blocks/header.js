@@ -44,7 +44,7 @@ class Header extends Component {
             <li key={5} className="nav-link-container"><Link to="/contact" className="nav-link" onClick={this.handleClick.bind(this)}>Contact</Link></li>
           </ul>
         </div>
-        <img className="site-logo" src="/images/area22logo.png"/>
+        <Link to="/"><img className="site-logo" src="/images/area22logo.png"/></Link>
       </div>
     );
   }
