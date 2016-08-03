@@ -15,7 +15,6 @@ class Header extends Component {
 
   handleClick(){
     this.setState({menuVisible: !this.state.menuVisible})
-    console.log(this.state.menuVisible)
   }
 
   render(){
