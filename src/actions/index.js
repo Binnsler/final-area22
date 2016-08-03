@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {browserHistory} from 'react-router';
-import {EMAIL_ERROR, MEMBER_ERROR, SET_MEMBER, GET_MEMBERS, GET_EVENTS, SET_EVENT, EVENT_ERROR} from './types';
+import {EMAIL_ERROR, MEMBER_ERROR, SET_MEMBER, GET_MEMBERS, GET_EVENTS, SET_EVENT, EVENT_ERROR, CLEAR_USER} from './types';
 
 // Development
 // var ROOT_URL = 'http://localhost:3090';
@@ -221,5 +221,14 @@ export function editEvent(eventData){
         payload: error.response.data
       })
     })
+  }
+}
+
+// Clear member data from state
+export function clearUserState(){
+  return function(dispatch){
+      dispatch({
+        type: CLEAR_USER
+      })
   }
 }

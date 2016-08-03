@@ -3,7 +3,6 @@ import {Route, IndexRoute} from 'react-router';
 
 import App from './components/app';
 import Home from './components/home';
-import About from './components/about';
 import Development from './components/development';
 import Humanity from './components/humanity';
 import Audio from './components/audio';
@@ -20,7 +19,6 @@ import NoMatch from './components/no_match';
 export default(
   <Route path="/" component={App}>
     <IndexRoute component={Home}/>
-    <Route path="/about" component={About}/>
     <Route path="/humanity" component={Humanity}/>
     <Route path="/development" component={Development}/>
     <Route path="/audio" component={Audio}/>

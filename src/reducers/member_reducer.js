@@ -1,4 +1,4 @@
-import {MEMBER_ERROR, SET_MEMBER, GET_MEMBERS} from '../actions/types';
+import {MEMBER_ERROR, SET_MEMBER, GET_MEMBERS, CLEAR_USER} from '../actions/types';
 
 export default function(state = {memberData: {}}, action){
   switch(action.type){
@@ -11,6 +11,9 @@ export default function(state = {memberData: {}}, action){
     case GET_MEMBERS:
       console.log('updating now!')
       return {...state, all: action.payload}
+
+    case CLEAR_USER:
+      return {...state, memberData: {}}
   }
 
   return state;

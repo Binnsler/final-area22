@@ -39,13 +39,13 @@ class Header extends Component {
         <div className={visibleMenu} >
           <ul className="header-list">
             <li key={1} className="nav-link-container"><Link to="/" className="nav-link" onClick={this.handleClick.bind(this)}>Home</Link></li>
-            <li key={2} className="nav-link-container"><Link to="/about" className="nav-link" onClick={this.handleClick.bind(this)}>About</Link></li>
-            <li key={3} className="nav-link-container"><Link to="/development" className="nav-link" onClick={this.handleClick.bind(this)}>Development</Link></li>
+            <li key={2} className="nav-link-container"><Link to="/development" className="nav-link" onClick={this.handleClick.bind(this)}>Development</Link></li>
             <li key={3} className="nav-link-container"><Link to="/humanity" className="nav-link" onClick={this.handleClick.bind(this)}>Humanity</Link></li>
-            <li key={4} className="nav-link-container"><Link to="/audio" className="nav-link" onClick={this.handleClick.bind(this)}>Audio</Link></li>
+            <li key={4} className="nav-link-container"><Link to="/audio" className="nav-link" onClick={this.handleClick.bind(this)}>Audio Production</Link></li>
             <li key={5} className="nav-link-container"><Link to="/contact" className="nav-link" onClick={this.handleClick.bind(this)}>Contact</Link></li>
           </ul>
         </div>
+        <img className="site-logo" src="/images/area22logo.png"/>
       </div>
     );
   }

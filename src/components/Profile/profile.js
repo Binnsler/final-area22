@@ -9,6 +9,11 @@ class Profile extends Component {
     this.props.getProfile(this.props.params.username)
   }
 
+  componentWillUnmount(){
+    // Action to clear user data from state
+    this.props.clearUserState();
+  }
+
   render(){
     return(
       <div className="pad-20">

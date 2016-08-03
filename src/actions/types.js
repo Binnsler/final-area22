@@ -6,3 +6,4 @@ export const DELETE_MEMBER = 'DELETE_MEMBER';
 export const EVENT_ERROR = 'EVENT_ERROR';
 export const GET_EVENTS = 'GET_EVENTS';
 export const SET_EVENT = 'SET_EVENT';
+export const CLEAR_USER = 'CLEAR_USER';

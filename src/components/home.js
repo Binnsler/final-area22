@@ -28,6 +28,7 @@ class Home extends Component {
       return(
         <div>
         <h1 className="red-header">Staff</h1>
+        <img className='page-splash pad-20' src='../images/homeSplash.jpg'/>
         <ul className="member-list">
           {this.props.members.map(this.renderMembers.bind(this))}
         </ul>
@@ -69,20 +70,38 @@ class Home extends Component {
   render(){
       return(
         <div>
-          <img className='page-splash home-splash' src='../images/homeSplash.jpg'/>
+          <img className='page-splash home-splash' src='../images/singSplash.jpg'/>
           <div>
             <div className='brain-container col-1-2'>
               <img className='brain-splash' src='../images/brainSplash.jpg'/>
             </div>
             <div className='col-1-2'>
               <div className="pad-20">
-                <img src="/images/area22logo.png"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mi orci, molestie ac erat eu, lobortis vulputate mauris. Nam sed arcu ac massa feugiat accumsan at sit amet sapien. Sed ut nisi non est porta vehicula tristique ac mauris. Nam imperdiet ligula ac aliquet ornare. Morbi sollicitudin, augue a sodales auctor, odio ante fringilla velit, efficitur elementum orci ex et erat. Integer aliquam volutpat dapibus.\</p>
+                <p className="paragraph">We are a group of artists who communicate our passions through music, dance, production, visual arts and writing. We believe that all individuals possess great creative potential in which some have not fully realized because of imposed limitations or fear. Through our endeavors we strive to inspire others to seek out the creativity that exists within them.</p>
               </div>
+            </div>
+            <div>
+              <h1 className="red-header">What We Do</h1>
+              <div className="col-1-2 pad-20">
+                <h3>Artist Development</h3>
+                <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et nulla at velit sagittis imperdiet non gravida urna. Morbi convallis mollis risus sit amet pharetra. Praesent porta neque vel ex cursus, quis finibus nibh pellentesque. Nam sit amet odio id orci luctus ultricies quis a odio. Fusce condimentum non orci sit amet bibendum. Maecenas aliquam tortor ut lorem pellentesque, at feugiat turpis pretium.</p>
+                <Link to="/development" className="black-button">See Classes</Link>
+              </div>
+              <div className="col-1-2">
+                <img className="page-splash" src="/images/artistDevelopment.jpg"/>
+              </div>
+              <div className="col-1-2">
+              <img className="page-splash" src="/images/audioProduction.jpg"/>
+              </div>
+              <div className="col-1-2 pad-20">
+                <h3>Audio Production</h3>
+                <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et nulla at velit sagittis imperdiet non gravida urna. Morbi convallis mollis risus sit amet pharetra. Praesent porta neque vel ex cursus, quis finibus nibh pellentesque. Nam sit amet odio id orci luctus ultricies quis a odio. Fusce condimentum non orci sit amet bibendum. Maecenas aliquam tortor ut lorem pellentesque, at feugiat turpis pretium.</p>
+                <Link to="/audio" className="black-button">Tour Studio</Link>
+              </div>
+
             </div>
           </div>
           {this.renderMembersList()}
-          {this.renderEventList()}
         </div>
       );
   }

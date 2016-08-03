@@ -29,7 +29,7 @@ class Contact extends Component {
 
     return(
       <div>
-        <h1 className="red-header">Contact</h1>
+        <h1 className="red-header2">Contact</h1>
         <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))} className="pad-20">
           <fieldset className="form-group">
             <label>Email:</label>
