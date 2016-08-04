@@ -27,8 +27,8 @@ class Home extends Component {
     if(this.props.members){
       return(
         <div>
-        <h1 className="red-header">Staff</h1>
-        <img className='page-splash pad-20' src='../images/homeSplash.jpg'/>
+        <h1 className="red-header">A22 Crew</h1>
+        <img className='page-splash bottom-20' src='../images/homeSplash.jpg'/>
         <ul className="member-list">
           {this.props.members.map(this.renderMembers.bind(this))}
         </ul>
@@ -38,7 +38,6 @@ class Home extends Component {
   }
 
   renderEvent(eventData){
-    console.log('rendering event')
     return(
       <li key={eventData.name} className="col-1-2 event">
         <div className="width-50 align-top">
