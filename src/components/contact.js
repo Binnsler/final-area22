@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {reduxForm} from 'redux-form';
 import * as actions from '../actions';
+import GoogleMapComponent from './blocks/google_map';
+
 
 class Contact extends Component {
 
@@ -29,6 +31,9 @@ class Contact extends Component {
 
     return(
       <div>
+        <div className="map-container">
+          <GoogleMapComponent/>
+        </div>
         <h1 className="red-header2">Contact</h1>
         <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))} className="pad-20">
           <fieldset className="form-group">
@@ -43,7 +48,7 @@ class Contact extends Component {
           </fieldset>
           <fieldset className="form-group">
             <label>Message:</label>
-            <textarea {...message} className="form-control"/>
+            <textarea {...message} className="form-control" placeholder="Hint: drag the bottom right corner down for more space."/>
             {message.touched && message.error && <div className="error">{message.error}</div>}
           </fieldset>
           <button action="submit" className="btn">Submit</button>

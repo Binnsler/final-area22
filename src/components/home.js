@@ -17,7 +17,7 @@ class Home extends Component {
     return(
       <li key={memberData.username} className="col-1-3 member">
         <Link to={userLink}><img className="member-thumbnail" src={memberData.profilePic}/></Link>
-        <h4>{memberData.name}</h4>
+        <h3>{memberData.name}</h3>
         <p className="member-title">{memberData.title}</p>
       </li>
     )
@@ -87,7 +87,7 @@ class Home extends Component {
                 <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et nulla at velit sagittis imperdiet non gravida urna. Morbi convallis mollis risus sit amet pharetra. Praesent porta neque vel ex cursus, quis finibus nibh pellentesque. Nam sit amet odio id orci luctus ultricies quis a odio. Fusce condimentum non orci sit amet bibendum. Maecenas aliquam tortor ut lorem pellentesque, at feugiat turpis pretium.</p>
                 <Link to="/development" className="black-button">See Classes</Link>
               </div>
-              <div className="col-1-2">
+              <div className="col-1-2 mobile-white-bottom">
                 <img className="page-splash" src="/images/artistDevelopment.jpg"/>
               </div>
               <div className="col-1-2">
