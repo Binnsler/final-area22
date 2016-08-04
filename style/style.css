@@ -6,7 +6,7 @@ p, h1, h2, h3, h4, h5, span {font-family: Arial, Helvetica, sans-serif;}
 body {background-color:black !important; }
 ul {padding-left: 0;}
 .container {background-color: white; padding:0 !important; width:100% !important;}
-.header {position:fixed; height:55px; background-color:black; color: white; width: 100%; text-align:left;}
+.header {z-index:10; position:fixed; height:55px; background-color:black; color: white; width: 100%; text-align:left;}
 .break-div {width:100%; height: 55px;}
 
 .error {color:red;}
@@ -60,6 +60,8 @@ ul {}
 
 /* Contact */
 .map-container {height:300px;}
+.contact-title {padding-right: 20px; display:inline-block;}
+.contact-text {display:inline-block;}
 
 /* Development */
 .class-list {padding-left:35px; font-size: 18px;}
@@ -68,6 +70,20 @@ ul {}
 .col-1-2 {width: 100%; display:inline-block; vertical-align:top;}
 .col-1-3 {width: 100%; }
 .width-50 {width:100%; display:inline-block;}
+
+/* CSS Animations */
+.header-menu {
+  position:fixed;
+  top:3px; l
+  left:0;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+}
+
+.header-menu.open {
+  transform: translateY(0);
+}
 
 /* Above 600px */
 @media (min-width: 796px) {
@@ -80,7 +96,8 @@ ul {}
 
   /* Nav */
   .nav-link-container {display:inline; padding:0 15px; }
-  .header-menu {padding-left:40px; text-align:left;}
+  .header-menu {padding-left:10px; text-align:left; transform: translateY(0%); width:auto;}
+  .hamburger-button {display:none;}
 
   /* Home */
   .home-splash {display:block;}
@@ -95,18 +112,4 @@ ul {}
 /* Widescreen */
 @media (min-width: 1300px) {
 
-}
-
-/* CSS Animations */
-.header-menu {
-  position:fixed;
-  top:3px; l
-  left:0;
-  width: 100%;
-  transform: translateY(-100%);
-  transition: transform 0.4s ease;
-}
-
-.header-menu.open {
-  transform: translateY(0);
 }
