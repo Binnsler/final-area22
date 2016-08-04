@@ -55,7 +55,7 @@ exports.edit = function(req, res){
       existingUser.email = req.body.email
 
       if(req.body.profilePic !== null){
-        existingUser.profilePic - req.body.profilePic
+        existingUser.profilePic = req.body.profilePic;
       }
 
     existingUser.save(function(err, member){
