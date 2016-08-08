@@ -33,18 +33,22 @@ class Header extends Component {
 
 
     return(
-      <div className="header">
-        <span className={sandwichClasses} onClick={this.handleClick.bind(this)}>&#9776;</span>
-        <div className={visibleMenu} >
-          <ul className="header-list">
-            <li key={1} className="nav-link-container"><Link to="/" className="nav-link" onClick={this.handleClick.bind(this)}>Home</Link></li>
-            <li key={2} className="nav-link-container"><Link to="/development" className="nav-link" onClick={this.handleClick.bind(this)}>Development</Link></li>
-            <li key={3} className="nav-link-container"><Link to="/humanity" className="nav-link" onClick={this.handleClick.bind(this)}>Humanity</Link></li>
-            <li key={4} className="nav-link-container"><Link to="/audio" className="nav-link" onClick={this.handleClick.bind(this)}>Audio Production</Link></li>
-            <li key={5} className="nav-link-container"><Link to="/contact" className="nav-link" onClick={this.handleClick.bind(this)}>Contact</Link></li>
-          </ul>
+      <div>
+        <div className="header">
+          <span className={sandwichClasses} onClick={this.handleClick.bind(this)}>menu</span>
+          <div className={visibleMenu} >
+            <ul className="header-list">
+              <li key={1} className="nav-link-container"><Link to="" className="nav-link" onlyActiveOnIndex={true} activeClassName="active" onClick={this.handleClick.bind(this)}>Home</Link></li>
+              <li key={2} className="nav-link-container"><Link to="development" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Development</Link></li>
+              <li key={4} className="nav-link-container"><Link to="audio" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Audio Production</Link></li>
+              <li key={3} className="nav-link-container"><Link to="humanity" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Humanity</Link></li>
+              <li key={5} className="nav-link-container"><Link to="contact" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Contact</Link></li>
+            </ul>
+          </div>
         </div>
-        <Link to="/"><img className="site-logo" src="/images/area22logo.png"/></Link>
+        <div className="logo-container">
+        <Link to="/"><img className="site-logo" src="/images/area22biglogo.png"/></Link>
+        </div>
       </div>
     );
   }

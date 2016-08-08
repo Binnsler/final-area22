@@ -19,17 +19,17 @@ import NoMatch from './components/no_match';
 export default(
   <Route path="/" component={App}>
     <IndexRoute component={Home}/>
-    <Route path="/humanity" component={Humanity}/>
-    <Route path="/development" component={Development}/>
-    <Route path="/audio" component={Audio}/>
-    <Route path="/contact" component={Contact}/>
-    <Route path="/profile/:username" component={Profile}/>
-    <Route path="/new-member" component={NewMember}/>
-    <Route path="/members" component={Members}/>
-    <Route path="/edit/:username" component={EditMember}/>
-    <Route path="/new-event" component={NewEvent}/>
-    <Route path="/events" component={Events}/>
-    <Route path="/edit-event/:id" component={EditEvent}/>
+    <Route path="humanity" component={Humanity}/>
+    <Route path="development" component={Development}/>
+    <Route path="audio" component={Audio}/>
+    <Route path="contact" component={Contact}/>
+    <Route path="profile/:username" component={Profile}/>
+    <Route path="new-member" component={NewMember}/>
+    <Route path="members" component={Members}/>
+    <Route path="edit/:username" component={EditMember}/>
+    <Route path="new-event" component={NewEvent}/>
+    <Route path="events" component={Events}/>
+    <Route path="edit-event/:id" component={EditEvent}/>
     <Route path="*" component={NoMatch}/>
   </Route>
 );

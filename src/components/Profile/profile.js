@@ -16,7 +16,7 @@ class Profile extends Component {
 
   render(){
     return(
-      <div className="pad-20">
+      <div className="profile-container">
         <img className='image-preview' src={this.props.member.profilePic} />
         <h3>{this.props.member.name}</h3>
         <p>{this.props.member.title}</p>

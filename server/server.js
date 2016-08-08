@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/app', fun
   }
 });
 
-// Setup
+// App Setup
 app.use(morgan('combined')); // Logging requests to console
 app.use(cors()); // Allow cross-origin requests
 app.use(bodyParser.json({type: '*/*', limit: '50mb'})); // Parse requests to JSON

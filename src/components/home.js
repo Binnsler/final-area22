@@ -27,11 +27,10 @@ class Home extends Component {
     if(this.props.members){
       return(
         <div>
-        <h1 className="red-header">A22 Crew</h1>
-        <img className='page-splash bottom-20' src='../images/homeSplash.jpg'/>
-        <ul className="member-list">
-          {this.props.members.map(this.renderMembers.bind(this))}
-        </ul>
+          <img className='page-splash pad-20' src='../images/homeSplash.jpg'/>
+          <ul className="member-list">
+            {this.props.members.map(this.renderMembers.bind(this))}
+          </ul>
         </div>
       )
     }
@@ -57,7 +56,10 @@ class Home extends Component {
     if(this.props.events){
       return(
         <div>
-          <h1 className="red-header bottom-20">Events</h1>
+          <div className="title-container">
+            <div className="red-triangle"></div>
+            <h1 className="title-text">Events</h1>
+          </div>
           <ul className="event-list">
             {this.props.events.map(this.renderEvent.bind(this))}
           </ul>
@@ -69,37 +71,43 @@ class Home extends Component {
   render(){
       return(
         <div>
-          <img className='page-splash home-splash' src='../images/singSplash.jpg'/>
-          <div>
-            <div className='brain-container col-1-2'>
-              <img className='brain-splash' src='../images/brainSplash.jpg'/>
+          <div className="splash-container">
+            <img className='page-splash home-splash' src='../images/singSplash.jpg'/>
+            <div className='splash-text'><h3 className="pad-20 no-margin">Some great summary text about Area Twenty-Two</h3></div>
             </div>
-            <div className='col-1-2'>
+        <div>
+          <div className="services-container">
+            <div className="col-1-3 service">
+              <img className="service-graphic" src='../images/developmentProductionIcon.png'/>
+              <h3>Artist Development</h3>
+              <p className="paragraph">Do you have a talent that needs to shine? We help you realize your musical dreams from the bottom up. </p>
+              <Link to="/development" className="black-button">See Classes</Link>
+            </div>
+            <div className="col-1-3 service">
+              <img className="service-graphic" src='../images/audioProductionIcon.png'/>
+              <h3>Audio Production</h3>
+              <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. </p>
+              <Link to="/audio" className="black-button">Tour Studio</Link>
+            </div>
+            <div className="col-1-3 service">
+              <img className="service-graphic" src='../images/communityIcon.png'/>
+              <h3>Community</h3>
+              <p className="paragraph">We are a community of like minded artists working together to achieve our collective dreams.</p>
+              <Link to="/audio" className="black-button">Meet Community</Link>
+            </div>
+          </div>
+          <div className='philosophy'>
+            <div className='col-3-4 philosophy'>
               <div className="pad-20">
+                <h1 className="white">Our Philosophy</h1>
                 <p className="paragraph">We are a group of artists who communicate our passions through music, dance, production, visual arts and writing. We believe that all individuals possess great creative potential in which some have not fully realized because of imposed limitations or fear. Through our endeavors we strive to inspire others to seek out the creativity that exists within them.</p>
               </div>
             </div>
-            <div>
-              <h1 className="red-header">What We Do</h1>
-              <div className="col-1-2 pad-20">
-                <h3>Artist Development</h3>
-                <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et nulla at velit sagittis imperdiet non gravida urna. Morbi convallis mollis risus sit amet pharetra. Praesent porta neque vel ex cursus, quis finibus nibh pellentesque. Nam sit amet odio id orci luctus ultricies quis a odio. Fusce condimentum non orci sit amet bibendum. Maecenas aliquam tortor ut lorem pellentesque, at feugiat turpis pretium.</p>
-                <Link to="/development" className="black-button">See Classes</Link>
-              </div>
-              <div className="col-1-2 mobile-white-bottom">
-                <img className="page-splash" src="/images/artistDevelopment.jpg"/>
-              </div>
-              <div className="col-1-2">
-              <img className="page-splash" src="/images/audioProduction.jpg"/>
-              </div>
-              <div className="col-1-2 pad-20">
-                <h3>Audio Production</h3>
-                <p className="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et nulla at velit sagittis imperdiet non gravida urna. Morbi convallis mollis risus sit amet pharetra. Praesent porta neque vel ex cursus, quis finibus nibh pellentesque. Nam sit amet odio id orci luctus ultricies quis a odio. Fusce condimentum non orci sit amet bibendum. Maecenas aliquam tortor ut lorem pellentesque, at feugiat turpis pretium.</p>
-                <Link to="/audio" className="black-button">Tour Studio</Link>
-              </div>
-
+            <div className='brain-container col-1-4'>
+            <img className='brain-splash' src='../images/brainSplash.jpg'/>
             </div>
           </div>
+        </div>
           {this.renderMembersList()}
         </div>
       );

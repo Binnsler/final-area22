@@ -1,21 +1,25 @@
 /* Header Menu Animations */
 
 
-p, h1, h2, h3, h4, h5, span {font-family: Arial, Helvetica, sans-serif;}
+a, h1, h2, h3, h4, h5 {font-family: 'Montserrat', sans-serif !important;}
+p, span {font-family: 'Domine', serif !important;}
 
 body {background-color:black !important; }
 ul {padding-left: 0;}
 .container {background-color: white; padding:0 !important; width:100% !important;}
-.header {z-index:10; position:fixed; height:55px; background-color:black; color: white; width: 100%; text-align:left;}
 .break-div {width:100%; height: 55px;}
 
+.no-margin {margin:0;}
 .error {color:red;}
 .align-top {vertical-align:top;}
 .center-me {text-align:center;}
 .page-splash {width:100%; height:auto;}
-.red {color:red !important;}
-.red-header {color:white; background-color: #d10000; text-align:left; padding: 10px 0 10px 10%; margin:0; text-transform: uppercase;}
-.red-header2 {color:white; background-color:#d10000; text-align:left; padding: 10px 0 10px 10%; margin:0; text-transform: uppercase; }
+.red {color:#d10000 !important;}
+.title-container {background-color:#eee; text-align:center;}
+.title-text {vertical-align:middle; display:inline-block; }
+.red-triangle {vertical-align:middle; display:none; width:0; height:0; border-top:100px solid red; border-right:100px solid transparent;}
+.red-header {color:white; background-color: #d10000; text-align:left; padding: 10px 0 10px 10%; margin:0;}
+.red-header2 {color:white; background-color:#d10000; text-align:left; padding: 10px 0 10px 10%; margin:0;}
 .red-bottom {border-bottom: 2px solid red;}
 .pad-20 {padding:20px;}
 .top-20 {margin-top: 20px;}
@@ -26,34 +30,51 @@ ul {padding-left: 0;}
 .paragraph {font-size:18px;}
 .black-button {color:black; border: 2px solid black;  display:inline-block; padding: 5px 15px; margin:5px 0; text-transform:uppercase; font-family: 'Oswald', sans-serif; text-decoration:none;}
 .black-button:hover {color:red; border:2px solid red; display:inline-block; text-decoration:none; }
+.service-page {padding:20px; display:none; margin:0 auto;}
+.back-yellow {background-color: #f1c14d}
+.back-white {background-color:white;}
 
 /* Header */
+.header {z-index:10; position:fixed; height:55px; background-color: rgba(0, 0, 0, 0.5); color: white; width: 100px; text-align:left;}
 .nav-link-container {display:block;font-size:20px; background-color:black; padding: 20px 0;}
 .nav-link {color:white;}
 .nav-link:hover {color:red; border-bottom: 2px solid red; text-decoration: none; }
+.nav-link.active {color:red; text-decoration:none;}
 .header-list {margin-bottom: 0px; padding: 10px 0; display:inline-block; width:100%; background-color:black;}
-.nav-button {color: white; font-size:30px; display:inline-block;}
-.header-menu {display: inline-block; z-index:90; width:100%; left:0; text-align:center;}
-.hamburger-button {cursor: pointer; vertical-align:top; position:absolute; z-index: 100; left:10px; top:5px;}
+.nav-button {color: white; font-size:27px; display:inline-block;}
+.header-menu {display: inline-block; z-index:90; width:100%; left:0; text-align:center; }
+.hamburger-button {cursor: pointer; vertical-align:top; position:absolute; z-index: 100; left:10px; top:5px; font-family: 'Montserrat', sans-serif !important; font-weight:bold;}
 .hamburger-button:hover {color:red;}
-.site-logo {position:absolute; right:10px; top: 6px; cursor:pointer;}
+.mobile-site-logo {position:absolute; right:10px; top: 9px; cursor:pointer;}
+.logo-container {width: 100%; display:block; background-color:black; text-align:center; border-top:55px solid #303030 }
 
 /* Footer */
 .social-icon {width:40px; height: 40px; border-radius:25px; border:2px solid black; background-color:white; margin: 0 10px; cursor:pointer; display: -ms-flexbox; -ms-flex-pack: center; -ms-flex-align: center; display: flex; justify-content: center; align-items: center;}
 .social-icon:hover {background-color:red; border: 2px solid red;}
-.footer {width:100%; background-color:black; padding:20px 0; border-bottom: 30px solid white; }
+.footer {width:100%; background-color:black; padding:20px 0; border-bottom: 30px solid white; text-align:center;}
+.footer-logo {padding:20px;}
 
 /* Home */
-.home-splash {display:none; border-bottom: 6px solid #d10000;}
+.site-logo {position:relative; cursor:pointer; padding: 10px 0;}
+.splash-container {position:relative;}
+.splash-text {position:relative; text-align:center; background-color: #d10000; color:white; width:100%;}
+.home-splash {border-bottom: 6px solid #d10000;}
 .brain-container {text-align:center; background-color:black; vertical-align:top; padding:20px;}
 .brain-splash {width:200px; height:auto; padding:40px 0;}
 .mobile-white-bottom {border-bottom: 7px solid white;}
+.philosophy {background-color:#f1c14d;}
 
+.services-container {max-width:1000px; margin:0 auto; padding:20px;}
+.service {padding:20px; text-align:center; display:inline-block; vertical-align: top;}
+.service-graphic {width:150px; height:auto;}
+
+.member-splash {height:200px; background-image: url("../images/homeSplash.jpg"); background-size: 100% auto;};
+.member-header {background-color:rgba(255, 255, 255, 0.5); color:white; }
+.white-header {color:white; background-color:rgba(255, 255, 255, 0.5); width:100%; height: 100%;}
+.member-title {word-wrap: break-word; padding: 0 41px;}
 .image-preview {width:100%; max-width: 500px; height: auto}
-ul {}
 .member-thumbnail {width:100%; padding: 0 20px 20px 20px; list-style:none; -webkit-filter: grayscale(95%);}
 .member {text-align:center; display: inline-block; vertical-align: middle;}
-.member-title {word-wrap: break-word; padding: 0 41px;}
 
 .event {text-align:center; padding-bottom:20px;}
 .event-thumbnail {width: 50%; height: auto; padding: 0 30px;}
@@ -67,9 +88,14 @@ ul {}
 /* Development */
 .class-list {padding-left:35px; font-size: 18px;}
 
+/* Profile */
+.profile-container {max-width:800px; margin: 0 auto; padding: 20px;text-align:center;}
+
 /* Grid Layout */
 .col-1-2 {width: 100%; display:inline-block; vertical-align:top;}
-.col-1-3 {width: 100%; }
+.col-1-3 {width: 100%; vertical-align:top;}
+.col-1-4 {width:100%;vertical-align:top;}
+.col-3-4 {width:100%;vertical-align:top;}
 .width-50 {width:100%; display:inline-block;}
 
 /* CSS Animations */
@@ -92,13 +118,20 @@ ul {}
   /* Helper Classes Desktop */
   .col-1-3 {width: 33.33%;}
   .col-1-2 {width: 50%;}
+  .col-1-4 {width:25%; display:inline-block;}
+  .col-3-4 {width:75%; display:inline-block;}
   .width-50 {width: 50%;}
   .member {min-height:380px;}
 
   /* Nav */
-  .nav-link-container {display:inline; padding:0 15px; }
-  .header-menu {padding-left:10px; text-align:left; transform: translateY(0%); width:auto;}
-  .hamburger-button {display:none;}
+  .nav-link-container {}
+  .header-menu {width:300px; padding-top:52px;}
+  .hamburger-button {}
+  .site-logo {display:block; position:absolute; right: 10px; top: 6px; z-index:100; }
+  .mobile-site-logo {display:none;}
+  .mobile-breakdiv {display:none;}
+  .logo-container {right:0;border:0;}
+
 
   /* Home */
   .home-splash {display:block;}
@@ -106,6 +139,10 @@ ul {}
   .event {padding-bottom: 0;}
   .mobile-white-bottom {border-bottom:0;}
   .red-header {font-size: 40px;}
+  .red-triangle {display:inline-block;}
+  .title-container {text-align:left;}
+  .splash-text {position:absolute; bottom:20%; background-color:rgba(255, 255, 255, 0.5); color:black;}
+  .service-page {display:block;}
 
   /* Contact */
   .contact-container {text-align:center; padding:0;}
