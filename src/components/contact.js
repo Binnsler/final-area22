@@ -34,10 +34,7 @@ class Contact extends Component {
         <div className="map-container">
           <GoogleMapComponent/>
         </div>
-        <div className="title-container">
-          <div className="red-triangle"></div>
-          <h1 className="title-text">Contact Us</h1>
-        </div>
+        <h3 className="red center-me">Contact Us</h3>
         <div className="contact-container">
           <div><h3 className="contact-title">Address:</h3><p className="contact-text">2277 State Rd, Plymouth, MA 02360</p></div>
           <div><h3 className="contact-title">Email:</h3><p className="contact-text">info@areatwenty-two.com</p></div>
@@ -56,7 +53,7 @@ class Contact extends Component {
           </fieldset>
           <fieldset className="form-group">
             <label>Message:</label>
-            <textarea {...message} className="form-control" placeholder="Hint: drag the bottom right corner down for more space."/>
+            <textarea {...message} className="form-control" placeholder="Drag the bottom right corner of this box down for more space."/>
             {message.touched && message.error && <div className="error">{message.error}</div>}
           </fieldset>
           <button action="submit" className="btn">Submit</button>
