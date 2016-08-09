@@ -3,9 +3,9 @@ import {browserHistory} from 'react-router';
 import {EMAIL_ERROR, MEMBER_ERROR, SET_MEMBER, GET_MEMBERS, GET_EVENTS, SET_EVENT, EVENT_ERROR, CLEAR_USER} from './types';
 
 // Development
-var ROOT_URL = 'http://localhost:3090';
+// var ROOT_URL = 'http://localhost:3090';
 // Production
-// var ROOT_URL = '';
+var ROOT_URL = '';
 
 
 // Pull in data from /contact form and send off to Sendgrid API
