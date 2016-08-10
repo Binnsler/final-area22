@@ -11,7 +11,7 @@ class Humanity extends Component {
       <div>
         <img className="page-splash" src="/images/humanitySplash.jpg" />
         <div className="col-1-4 center-me">
-          <h3 className="center-me red">Development</h3>
+          <h3 className="center-me red">Humanity</h3>
           <img className="service-page" src='../images/communityIcon.png'/>
         </div>
         <div className="col-3-4">

@@ -11,7 +11,15 @@ class Header extends Component {
     }
   }
 
+  componentDidMount(){
+    var mainBody = document.querySelector('.main-body');
+    console.log(mainBody)
+    mainBody.addEventListener('click', this.bodyClick.bind(this));
+  }
 
+  bodyClick(){
+    this.setState({menuVisible: false})
+  }
 
   handleClick(){
     this.setState({menuVisible: !this.state.menuVisible})
