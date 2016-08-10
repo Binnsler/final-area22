@@ -8,7 +8,7 @@ class Audio extends Component {
         <div>
         <div className="col-1-4">
         <h3 className="center-me red">Audio Production</h3>
-        <img className="service-page" src='../images/audioIcon.png'/>
+        <img className="service-page" src='../images/audioProductionIcon.png'/>
         </div>
           <div className="col-3-4">
             <p className="paragraph pad-20">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. Artists from home and from across the globe have come to experience what we have to offer. From pre-production to mastering, we provide it all. Come to Area Twenty-Two to see and hear your ideas come to life.</p>
