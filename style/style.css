@@ -14,7 +14,7 @@ ul {padding-left: 0;}
 .align-top {vertical-align:top;}
 .center-me {text-align:center;}
 .page-splash {width:100%; height:auto;}
-.red {color:#e9682f !important;}
+.red {color:#D36135 !important;}
 .title-container {background-color:#eee; text-align:center;}
 .title-text {vertical-align:middle; display:inline-block; }
 .red-triangle {vertical-align:middle; display:none; width:0; height:0; border-top:100px solid red; border-right:100px solid transparent;}
@@ -25,6 +25,7 @@ ul {padding-left: 0;}
 .top-20 {margin-top: 20px;}
 .bottom-20 {margin-bottom: 20px;}
 .right-20 {margin-right: 20px;}
+.updown-20 {margin:20px 0;}
 .white {color: white;}
 .absolute-center-children {display: -ms-flexbox; -ms-flex-pack: center; -ms-flex-align: center; display: flex; justify-content: center; align-items: center;}
 .paragraph {font-size:18px;}
@@ -38,13 +39,13 @@ ul {padding-left: 0;}
 .header {z-index:10; position:fixed; height:55px; background-color: rgba(0, 0, 0, 0.5); color: white; width: 100px; text-align:left;}
 .nav-link-container {display:block;font-size:20px; background-color:black; padding: 20px 0;}
 .nav-link {color:white;}
-.nav-link:hover {color:#e9682f; border-bottom: 2px solid #e9682f; text-decoration: none; }
-.nav-link.active {color:#e9682f; text-decoration:none;}
+.nav-link:hover {color:#D36135; border-bottom: 2px solid #D36135; text-decoration: none; }
+.nav-link.active {color:#D36135; text-decoration:none;}
 .header-list {margin-bottom: 0px; padding: 10px 0; display:inline-block; width:100%; background-color:black;}
 .nav-button {color: white; font-size:27px; display:inline-block;}
 .header-menu {display: inline-block; z-index:90; width:100%; left:0; text-align:center; }
 .hamburger-button {cursor: pointer; vertical-align:top; position:absolute; z-index: 100; left:10px; top:5px; font-family: 'Montserrat', sans-serif !important; font-weight:bold;}
-.hamburger-button:hover {color:#e9682f;}
+.hamburger-button:hover {color:#D36135;}
 .mobile-site-logo {position:absolute; right:10px; top: 9px; cursor:pointer;}
 .logo-container {width: 100%; display:block; background-color:black; text-align:center; border-top:55px solid #303030 }
 
@@ -53,6 +54,7 @@ ul {padding-left: 0;}
 .social-icon:hover {background-color:#00dde5;; border: 2px solid #00dde5;}
 .footer {width:100%; background-color:black; padding:20px 0; border-bottom: 30px solid white; text-align:center;}
 .footer-logo {padding:20px;}
+.footer-credit {font-size:10px; color:white;}
 
 /* Home */
 .site-logo {position:relative; cursor:pointer; padding: 10px 0;}
@@ -63,7 +65,7 @@ ul {padding-left: 0;}
 .brain-container {text-align:center; background-color:black; vertical-align:top; padding:20px;}
 .brain-splash {width:200px; height:auto; padding:40px 0;}
 .mobile-white-bottom {border-bottom: 7px solid white;}
-.philosophy {background-color:#e9682f;}
+.philosophy {background-color:#D36135;}
 
 .services-container {max-width:1000px; margin:0 auto; padding:20px;}
 .service {padding:20px; text-align:center; display:inline-block; vertical-align: top;}

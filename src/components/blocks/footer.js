@@ -11,6 +11,9 @@ class Footer extends Component {
           <a href="https://www.youtube.com"><div className="social-icon youtube"><img src="/images/youtube.png" alt=""/></div></a>
         </div>
         <Link to="/"><img className="footer-logo" src="/images/area22biglogo.png"/></Link>
+        <p className="footer-credit">Photo Credit: <a href="https://www.facebook.com/PhotographyByElleMichelle/?fref=ts ">Elle Michelle</a></p>
+        <p className="footer-credit">Photo Credit: <Link to="/profile/bobyen">Bob Yen Jr.</Link></p>
+        <p className="footer-credit">Website: <a href="https://www.google.com">Jamie Binns</a></p>
       </div>
     );
   }

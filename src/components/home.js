@@ -27,7 +27,7 @@ class Home extends Component {
     if(this.props.members){
       return(
         <div>
-          <img className='page-splash pad-20' src='../images/homeSplash.jpg'/>
+          <img className='page-splash bottom-20' src='../images/homeSplash.jpg'/>
           <ul className="member-list">
             {this.props.members.map(this.renderMembers.bind(this))}
           </ul>
@@ -97,14 +97,14 @@ class Home extends Component {
             </div>
           </div>
           <div className='philosophy'>
-            <div className='col-3-4 philosophy'>
-              <div className="pad-20">
-                <h1 className="white">Our Philosophy</h1>
-                <p className="paragraph">We are a group of artists who communicate our passions through music, dance, production, visual arts and writing. We believe that all individuals possess great creative potential in which some have not fully realized because of imposed limitations or fear. Through our endeavors we strive to inspire others to seek out the creativity that exists within them.</p>
-              </div>
-            </div>
+          <div className='col-3-4 philosophy'>
+          <div className="pad-20">
+          <h1 className="white">Our Philosophy</h1>
+          <p className="paragraph">We are a group of artists who communicate our passions through music, dance, production, visual arts and writing. We believe that all individuals possess great creative potential in which some have not fully realized because of imposed limitations or fear. Through our endeavors we strive to inspire others to seek out the creativity that exists within them.</p>
+          </div>
+          </div>
             <div className='brain-container col-1-4'>
-            <img className='brain-splash' src='../images/brainSplash.jpg'/>
+              <img className='brain-splash' src='../images/brainSplash.jpg'/>
             </div>
           </div>
         </div>
