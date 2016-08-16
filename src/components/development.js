@@ -13,17 +13,18 @@ class Development extends Component {
         </div>
         <div className="col-3-4">
           <div className="pad-20">
-            <p className="paragraph">Do you have a talent that needs to shine? We are here help you realize your musical dreams from the bottom up. Attend personal 1-on-1 classes with our staff members to learn a variety of instruments, singing, sound engineering, and business. If you are interested in attending a class, please reach out to us via the contact form on our contact page or send us an email at info@areatwenty-two.com</p>
+            <p className="paragraph">We are here to help you realize your musical dreams from the bottom up. Attend personal 1-on-1 classes with our staff members to learn a variety of instruments, singing, sound engineering, and business. Interested in getting started? Please reach out to us via the contact form on our contact page or send us an email at info@areatwenty-two.com. We will set up a consultation to design a program that works for you.</p>
             <Link to="/contact" className="black-button">Contact Us</Link>
           </div>
           <div className="pad-20">
-            <p className="paragraph">Wherever you envision yourself as an artist, we are here to get you there. We offer classes for:</p>
+            <p className="paragraph">However you envision yourself as an artist, we are here to help you achieve your dreams. We offer classes for:</p>
             <ul className="class-list">
               <li>Vocals</li>
               <li>Guitar</li>
-              <li>Bass</li>
+              <li>Graphic Artists</li>
               <li>Piano</li>
-              <li>Song Writing</li>
+              <li>Illustators</li>
+              <li>Painters</li>
               <li>Audio Engineering</li>
               <li>Music Business</li>
             </ul>

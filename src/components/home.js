@@ -73,15 +73,15 @@ class Home extends Component {
         <div>
           <div className="splash-container">
             <img className='page-splash home-splash' src='../images/singSplash.jpg'/>
-            <div className='splash-text'><h3 className="summary-text">Some great summary text about Area Twenty-Two</h3></div>
+            <div className='splash-text'><h3 className="summary-text">Artists helping artists achieve their fullest potential</h3><Link to="/community" className="solid-black-button">Learn More</Link></div>
             </div>
         <div>
           <div className="services-container">
             <div className="col-1-3 service">
               <img className="service-graphic" src='../images/developmentProductionIcon.png'/>
               <h3>Artist Development</h3>
-              <p className="paragraph">Do you have a talent that needs to shine? We help you realize your musical dreams from the bottom up. </p>
-              <Link to="/development" className="black-button">See Classes</Link>
+              <p className="paragraph">Do you have a talent that needs to shine? We are dedicated to developing and promoting artists and all types of art forms.</p>
+              <Link to="/development" className="black-button">See Offerings</Link>
             </div>
             <div className="col-1-3 service">
               <img className="service-graphic" src='../images/audioProductionIcon.png'/>
