@@ -73,7 +73,7 @@ class Home extends Component {
         <div>
           <div className="splash-container">
             <img className='page-splash home-splash' src='../images/singSplash.jpg'/>
-            <div className='splash-text'><h3 className="summary-text">Artists helping artists achieve their fullest potential</h3><Link to="/community" className="solid-black-button">Learn More</Link></div>
+            <div className='splash-text'><h3 className="summary-text">Artists helping artists achieve their fullest potential.</h3><Link to="/community" className="solid-black-button">Learn More</Link></div>
             </div>
         <div>
           <div className="services-container">
