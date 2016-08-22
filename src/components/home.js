@@ -73,41 +73,41 @@ class Home extends Component {
         <div>
           <div className="splash-container">
             <img className='page-splash home-splash' src='../images/singSplash.jpg'/>
-            <div className='splash-text'><h3 className="summary-text">Artists helping artists achieve their fullest potential.</h3><Link to="/community" className="solid-black-button">Learn More</Link></div>
+            <div className='splash-text'><h3 className="summary-text">Artists helping artists achieve their fullest potential.</h3><Link to="/philosophy" className="solid-black-button">Learn More</Link></div>
             </div>
-        <div>
-          <div className="services-container">
-            <div className="col-1-3 service">
-              <img className="service-graphic" src='../images/developmentProductionIcon.png'/>
-              <h3>Artist Development</h3>
-              <p className="paragraph">Do you have a talent that needs to shine? We are dedicated to developing and promoting artists and all types of art forms.</p>
-              <Link to="/development" className="black-button">See Offerings</Link>
+            <div className='philosophy'>
+            <div className='col-3-4 philosophy'>
+            <div className="pad-20">
+            <h1 className="white">We Record Music</h1>
+            <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. Artists from home and from across the globe have come to experience what we have to offer. From pre-production to mastering, we provide it all. Come to Area Twenty-Two to see and hear your ideas come to life.</p>
             </div>
-            <div className="col-1-3 service">
-              <img className="service-graphic" src='../images/audioProductionIcon.png'/>
-              <h3>Audio Production</h3>
-              <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. </p>
-              <Link to="/audio" className="black-button">Tour Studio</Link>
             </div>
-            <div className="col-1-3 service">
-              <img className="service-graphic" src='../images/communityIcon.png'/>
-              <h3>Community</h3>
-              <p className="paragraph">We are a community of like minded artists working together to achieve our collective dreams.</p>
-              <Link to="/audio" className="black-button">Meet Community</Link>
-            </div>
-          </div>
-          <div className='philosophy'>
-          <div className='col-3-4 philosophy'>
-          <div className="pad-20">
-          <h1 className="white">Our Philosophy</h1>
-          <p className="paragraph">We are a group of artists who communicate our passions through music, dance, production, visual arts and writing. We believe that all individuals possess great creative potential in which some have not fully realized because of imposed limitations or fear. Through our endeavors we strive to inspire others to seek out the creativity that exists within them.</p>
-          </div>
-          </div>
             <div className='brain-container col-1-4'>
-              <img className='brain-splash' src='../images/brainSplash.jpg'/>
+            <img className='brain-splash' src='../images/brainSplash.jpg'/>
             </div>
-          </div>
-        </div>
+            </div>
+            <div>
+              <div className="services-container">
+                <div className="col-1-3 service">
+                <img className="service-graphic" src='../images/audioProductionIcon.png'/>
+                <h3>Audio Production</h3>
+                <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. </p>
+                <Link to="/audio" className="black-button">Tour Studio</Link>
+                </div>
+                <div className="col-1-3 service">
+                  <img className="service-graphic" src='../images/developmentProductionIcon.png'/>
+                  <h3>Artist Development</h3>
+                  <p className="paragraph">Do you have a talent that needs to shine? We are dedicated to developing and promoting artists and all types of art forms.</p>
+                  <Link to="/development" className="black-button">See Offerings</Link>
+                </div>
+                <div className="col-1-3 service">
+                  <img className="service-graphic" src='../images/communityIcon.png'/>
+                  <h3>Philosophy</h3>
+                  <p className="paragraph">We are a community of like minded artists working together to achieve our collective dreams.</p>
+                  <Link to="/philosophy" className="black-button">Learn More</Link>
+                </div>
+              </div>
+            </div>
           {this.renderMembersList()}
         </div>
       );

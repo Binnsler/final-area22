@@ -40,7 +40,7 @@ class Contact extends Component {
           <div><h3 className="contact-title">Email:</h3><p className="contact-text">info@areatwenty-two.com</p></div>
           <div><h3 className="contact-title">Phone:</h3><p className="contact-text">(508) 333-2953 (ask for Mal)</p></div>
         </div>
-        <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))} className="pad-20">
+        <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))} className="contact-form">
           <fieldset className="form-group">
             <label>Email:</label>
             <input type="email" {...email} className="form-control"/>
@@ -56,7 +56,7 @@ class Contact extends Component {
             <textarea {...message} className="form-control" placeholder="Drag the bottom right corner of this box down for more space."/>
             {message.touched && message.error && <div className="error">{message.error}</div>}
           </fieldset>
-          <button action="submit" className="btn">Submit</button>
+          <button action="submit" className="black-button">Submit</button>
         </form>
       </div>
     );

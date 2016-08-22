@@ -4,7 +4,7 @@ import {Route, IndexRoute} from 'react-router';
 import App from './components/app';
 import Home from './components/home';
 import Development from './components/development';
-import Humanity from './components/humanity';
+import Philosophy from './components/philosophy';
 import Audio from './components/audio';
 import Contact from './components/contact';
 import Profile from './components/Profile/profile';
@@ -19,7 +19,7 @@ import NoMatch from './components/no_match';
 export default(
   <Route path="/" component={App}>
     <IndexRoute component={Home}/>
-    <Route path="humanity" component={Humanity}/>
+    <Route path="philosophy" component={Philosophy}/>
     <Route path="development" component={Development}/>
     <Route path="audio" component={Audio}/>
     <Route path="contact" component={Contact}/>
