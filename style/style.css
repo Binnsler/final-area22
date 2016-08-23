@@ -7,14 +7,14 @@ p, span {font-family: 'Domine', serif !important;}
 body {background-color:black !important; }
 ul {padding-left: 0;}
 .container {background-color: white; padding:0 !important; width:100% !important;}
-.break-div {width:100%; height: 55px;}
+.break-div {width:100%; height: 55px; background-color: black;}
 
 .no-margin {margin:0;}
 .error {color:red;}
 .align-top {vertical-align:top;}
 .center-me {text-align:center;}
 .page-splash {width:100%; height:auto;}
-.red {color:#D36135 !important;}
+.red {color:#ec6e48 !important;}
 .title-container {background-color:#eee; text-align:center;}
 .title-text {vertical-align:middle; display:inline-block; }
 .red-triangle {vertical-align:middle; display:none; width:0; height:0; border-top:100px solid red; border-right:100px solid transparent;}
@@ -32,7 +32,7 @@ ul {padding-left: 0;}
 .black-button {color:black; background-color:white; border: 2px solid black;  display:inline-block; padding: 5px 15px; margin:5px 0; text-transform:uppercase; font-family: 'Oswald', sans-serif; text-decoration:none;}
 .black-button:hover {color:#e9682f; border:2px solid #e9682f; display:inline-block; text-decoration:none; }
 .solid-black-button {color:white; border: 2px solid white; background-color: black; display:inline-block; padding: 5px 15px; margin:5px 0; text-transform:uppercase; font-family: 'Oswald', sans-serif; text-decoration:none;}
-.solid-black-button:hover {color:white; border:2px solid #e9682f; display:inline-block; text-decoration:none; }
+.solid-black-button:hover {color:#e9682f; border:2px solid #e9682f; display:inline-block; text-decoration:none; }
 .service-page {padding:20px; display:none; margin:0 auto;}
 .back-yellow {background-color: #f1c14d}
 .back-white {background-color:white;}
@@ -69,8 +69,9 @@ ul {padding-left: 0;}
 .mobile-white-bottom {border-bottom: 7px solid white;}
 .philosophy {background-color:#ec6e48;}
 
-.services-container {max-width:1000px; margin:0 auto; padding:20px;}
-.service {padding:20px; text-align:center; display:inline-block; vertical-align: top;}
+.services-container {max-width:1000px; margin:0 auto;}
+.service {padding:40px 20px; text-align:center; display:inline-block; vertical-align: top;}
+.service:hover {background-color: #f2f2f2;}
 .service-graphic {width:150px; height:auto;}
 
 .member-splash {height:200px; background-image: url("../images/homeSplash.jpg"); background-size: 100% auto;};
@@ -98,12 +99,16 @@ ul {padding-left: 0;}
 .black-break {width:100%; height:55px; background-color:black; display:none;}
 .profile-container {max-width:800px; margin: 0 auto; padding: 20px;text-align:center;}
 
+/* 404 */
+.four0four {padding: 40px 0; text-align:center;}
+
 /* Grid Layout */
 .col-1-2 {width: 100%; display:inline-block; vertical-align:top;}
 .col-1-3 {width: 100%; vertical-align:top;}
 .col-1-4 {width:100%;vertical-align:top;}
 .col-3-4 {width:100%;vertical-align:top;}
 .width-50 {width:100%; display:inline-block;}
+.width-100 {width: 100%;}
 
 /* CSS Animations */
 .header-menu {
@@ -134,7 +139,7 @@ ul {padding-left: 0;}
   .nav-link-container {}
   .header-menu {width:300px; padding-top:52px;}
   .hamburger-button {}
-  .site-logo {display:block; position:absolute; right: 10px; top: 0px; z-index:100; }
+  .site-logo {display:block; position:absolute; right: 10px; top: -5px; z-index:100; }
   .mobile-site-logo {display:none;}
   .mobile-breakdiv {display:none;}
   .logo-container {right:0;border:0;}
@@ -158,6 +163,9 @@ ul {padding-left: 0;}
 
   /* Profile */
   .black-break {display:block;}
+
+  /* 404 */
+  .four0four {border-top:55px solid black;}
 
 
 

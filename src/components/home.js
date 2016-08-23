@@ -103,7 +103,7 @@ class Home extends Component {
                 <div className="col-1-3 service">
                   <img className="service-graphic" src='../images/communityIcon.png'/>
                   <h3>Philosophy</h3>
-                  <p className="paragraph">We are a community of like minded artists working together to achieve our collective dreams.</p>
+                  <p className="paragraph">We are a community of like minded artists working together in order to achieve our collective dreams.</p>
                   <Link to="/philosophy" className="black-button">Learn More</Link>
                 </div>
               </div>
