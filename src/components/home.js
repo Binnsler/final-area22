@@ -5,6 +5,13 @@ import * as actions from '../actions';
 
 class Home extends Component {
 
+  constructor(props){
+    super(props);
+    this.state = {
+      route: 'What do you want to learn about?'
+    }
+  }
+
   componentWillMount(){
     this.props.getMembers();
     this.props.getEvents();
@@ -70,6 +77,10 @@ class Home extends Component {
     }
   }
 
+  setRoute(text){
+    this.setState({route:text})
+  }
+
   render(){
       return(
         <div>
@@ -78,14 +89,20 @@ class Home extends Component {
             <div className='splash-text'><h3 className="summary-text">Artists helping artists achieve their fullest potential.</h3><Link to="/philosophy" className="solid-black-button">Learn More</Link></div>
             </div>
             <div className='philosophy'>
-            <div className='col-3-4 philosophy'>
+            <div className='philosophy'>
             <div className="pad-20">
             <h1 className="white">We Record Music</h1>
             <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. Artists from home and from across the globe have come to experience what we have to offer. From pre-production to mastering, we provide it all. Come to Area Twenty-Two to see and hear your ideas come to life.</p>
             </div>
             </div>
-            <div className='brain-container col-1-4'>
-            <img className='brain-splash' src='../images/brainSplash.jpg'/>
+            <div className="brain-block">
+              <h1 className="pad-20 white">{this.state.route}</h1>
+              <div className='brain-container'>
+                <img className='brain-splash' src='../images/brainSplash.jpg'/>
+                <Link to="/philosophy"><img className='brain-dolphin' src='../images/dolphin.png' onMouseOver={() => this.setRoute('Philosophy')}/></Link>
+                <Link to="/audio"><img className='brain-saxophone' src='../images/saxophone.png' onMouseOver={() => this.setRoute('Audio Production')}/></Link>
+                <Link to="/development"><img className='brain-piano' src='../images/piano.png' onMouseOver={() => this.setRoute('Artist Development')}/></Link>
+              </div>
             </div>
             </div>
             <div>
