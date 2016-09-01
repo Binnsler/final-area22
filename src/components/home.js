@@ -91,7 +91,7 @@ class Home extends Component {
             <div className='philosophy'>
             <div className='philosophy'>
             <div className="pad-20">
-            <h1 className="white">We Record Music</h1>
+            <h1 className="white">What do you want to achieve?</h1>
             <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. Artists from home and from across the globe have come to experience what we have to offer. From pre-production to mastering, we provide it all. Come to Area Twenty-Two to see and hear your ideas come to life.</p>
             </div>
             </div>

@@ -34,6 +34,8 @@ class Development extends Component {
         <div className="col-1-2"><img className="page-splash" src="/images/developmentTwo.jpg"/></div>
         <div className="col-1-2"><img className="page-splash" src="/images/developmentThree.jpg"/></div>
         <div className="col-1-2"><img className="page-splash" src="/images/developmentFour.jpg"/></div>
+        <div className="col-1-2"><img className="page-splash" src="/images/developmentFive.jpg"/></div>
+        <div className="col-1-2"><img className="page-splash" src="/images/developmentSix.jpg"/></div>
       </div>
     )
   }
