@@ -8,7 +8,7 @@ class Development extends Component {
       <div>
         <img className="page-splash" src="/images/artistDevelopment.jpg" />
         <div className="col-1-4 center-me">
-          <h3 className="center-me red">Development</h3>
+          <h3 className="center-me member-name">Development</h3>
           <img className="service-page" src='../images/developmentProductionIcon.png'/>
         </div>
         <div className="col-3-4">

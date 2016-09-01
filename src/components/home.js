@@ -18,7 +18,7 @@ class Home extends Component {
       <Link to={userLink}>
         <li key={memberData.username} className="col-1-3 member">
           <img className="member-thumbnail" src={memberData.profilePic}/>
-          <h3>{memberData.name}</h3>
+          <h3 className="member-name">{memberData.name}</h3>
           <p className="member-title">{memberData.title}</p>
         </li>
       </Link>

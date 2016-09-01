@@ -7,7 +7,7 @@ class Audio extends Component {
         <img className="page-splash" src="/images/audioSplash.jpg" />
         <div>
         <div className="col-1-4">
-        <h3 className="center-me red">Audio Production</h3>
+        <h3 className="center-me member-name">Audio Production</h3>
         <img className="service-page" src='../images/audioProductionIcon.png'/>
         </div>
           <div className="col-3-4">
