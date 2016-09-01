@@ -19,6 +19,10 @@ class Audio extends Component {
         <div className="col-1-2"><img className="page-splash" src="/images/audioProduction2.jpg"/></div>
         <div className="col-1-2"><img className="page-splash" src="/images/audioProduction3.jpg"/></div>
         <div className="col-1-2"><img className="page-splash" src="/images/audioProduction4.jpg"/></div>
+        <div className="col-1-2"><img className="page-splash" src="/images/audioProduction5.jpg"/></div>
+        <div className="col-1-2"><img className="page-splash" src="/images/audioProduction6.jpg"/></div>
+        <div className="col-1-2"><img className="page-splash" src="/images/audioProduction7.jpg"/></div>
+        <div className="col-1-2"><img className="page-splash" src="/images/audioProduction8.jpg"/></div>
       </div>
     );
   }
