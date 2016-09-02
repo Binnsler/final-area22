@@ -67,10 +67,10 @@ ul {padding-left: 0;}
 .summary-text {margin: 0; display:inline-block; padding: 20px;}
 .brain-block {text-align:center; color:white; display:none; background-color:black; }
 .brain-container {text-align:center; position: relative; margin: 0 auto; display:inline-block; background-color:black; vertical-align:top; padding:20px;}
-.brain-splash {width:600px; height:auto; padding-bottom:40px; margin:0 auto;}
-.brain-dolphin {cursor:pointer; position:absolute; right:201px; top:12px; width:245px;}
-.brain-saxophone {cursor:pointer; position:absolute; left:122px; top:103px; width:137px;}
-.brain-piano {cursor:pointer; position:absolute; left:85px; bottom: 122px; width:304px;}
+.brain-splash {width:600px; height:auto; padding:40px; margin:0 auto;}
+.brain-dolphin {cursor:pointer; position:absolute; right:219px; top:16px; width:210px; border:0;}
+.brain-saxophone {cursor:pointer; position:absolute; left:13px; top:130px; width:257px;}
+.brain-piano {cursor:pointer; position:absolute; left:36px; bottom: 81px; width:344px;}
 
 .mobile-white-bottom {border-bottom: 7px solid white;}
 .philosophy {background-color:#47b7a5;}

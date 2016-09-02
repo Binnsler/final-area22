@@ -8,7 +8,10 @@ class Home extends Component {
   constructor(props){
     super(props);
     this.state = {
-      route: 'What do you want to learn about?'
+      route: 'What do you want to learn about?',
+      dolphin: '../images/dolphin.png',
+      saxophone: '../images/saxophone.png',
+      piano: '../images/piano.png'
     }
   }
 
@@ -81,6 +84,33 @@ class Home extends Component {
     this.setState({route:text})
   }
 
+  toggleDolphin(){
+    if(this.state.dolphin === '../images/dolphin.png'){
+      this.setState({dolphin: '../images/dolphinHover.png'})
+    }
+    else {
+      this.setState({dolphin: '../images/dolphin.png'})
+    }
+  }
+
+  toggleSax(){
+    if(this.state.saxophone === '../images/saxophone.png'){
+      this.setState({saxophone: '../images/saxophoneHover.png'})
+    }
+    else {
+      this.setState({saxophone: '../images/saxophone.png'})
+    }
+  }
+
+  togglePiano(){
+    if(this.state.piano === '../images/piano.png'){
+      this.setState({piano: '../images/pianoHover.png'})
+    }
+    else {
+      this.setState({piano: '../images/piano.png'})
+    }
+  }
+
   render(){
       return(
         <div>
@@ -96,12 +126,11 @@ class Home extends Component {
             </div>
             </div>
             <div className="brain-block">
-              <h1 className="pad-20 white">{this.state.route}</h1>
               <div className='brain-container'>
                 <img className='brain-splash' src='../images/brainSplash.jpg'/>
-                <Link to="/philosophy"><img className='brain-dolphin' src='../images/dolphin.png' onMouseOver={() => this.setRoute('Philosophy')}/></Link>
-                <Link to="/audio"><img className='brain-saxophone' src='../images/saxophone.png' onMouseOver={() => this.setRoute('Audio Production')}/></Link>
-                <Link to="/development"><img className='brain-piano' src='../images/piano.png' onMouseOver={() => this.setRoute('Artist Development')}/></Link>
+                <Link to="/philosophy"><img className='brain-dolphin' src={this.state.dolphin} onMouseOver={this.toggleDolphin.bind(this)} onMouseOut={this.toggleDolphin.bind(this)}/></Link>
+                <Link to="/audio"><img className='brain-saxophone' src={this.state.saxophone} onMouseOver={this.toggleSax.bind(this)} onMouseOut={this.toggleSax.bind(this)}/></Link>
+                <Link to="/development"><img className='brain-piano' src={this.state.piano} onMouseOver={this.togglePiano.bind(this)} onMouseOut={this.togglePiano.bind(this)}/></Link>
               </div>
             </div>
             </div>
