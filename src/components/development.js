@@ -6,7 +6,7 @@ class Development extends Component {
 
     return(
       <div>
-        <img className="page-splash" src="/images/artistDevelopment.jpg" />
+        <iframe className="splash-video" src="https://www.youtube.com/embed/NI7P-043jvQ" frameborder="0" allowfullscreen></iframe>
         <div className="col-1-4 center-me">
           <h3 className="center-me member-name">Development</h3>
           <img className="service-page" src='../images/developmentProductionIcon.png'/>

@@ -22,6 +22,7 @@ ul {padding-left: 0;}
 .red-header2 {color:white; background-color:#d10000; text-align:left; padding: 10px 0 10px 10%; margin:0;}
 .red-bottom {border-bottom: 2px solid #e9682f;}
 .pad-20 {padding:20px;}
+.vert-pad-20 {padding:20px 0;}
 .top-20 {margin-top: 20px;}
 .bottom-20 {margin-bottom: 20px;}
 .right-20 {margin-right: 20px;}
@@ -36,6 +37,7 @@ ul {padding-left: 0;}
 .service-page {padding:20px; display:none; margin:0 auto;}
 .back-yellow {background-color: #f1c14d}
 .back-white {background-color:white;}
+.splash-video {width:100%; height: 300px;}
 
 /* Header */
 .header {z-index:10; position:fixed; height:55px; background-color: rgba(0, 0, 0, 0.5); color: white; width: 100px; text-align:left;}
@@ -142,6 +144,8 @@ ul {padding-left: 0;}
   .col-3-4 {width:75%; display:inline-block;}
   .width-50 {width: 50%;}
   .member {min-height:380px;}
+  .splash-video {width:100%; height: 600px;}
+
 
   /* Nav */
   .nav-link-container {}
@@ -185,5 +189,6 @@ ul {padding-left: 0;}
 
 /* Widescreen */
 @media (min-width: 1300px) {
+  .splash-video {width:100%; height: 800px;}
 
 }
