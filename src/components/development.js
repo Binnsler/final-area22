@@ -17,7 +17,7 @@ class Development extends Component {
             <Link to="/contact" className="black-button">Contact Us</Link>
           </div>
           <div className="pad-20">
-            <h3 className="center-me">Artist Development Program</h3>
+            <h3 className="">Artist Development Program</h3>
             <p className="paragraph">This is an advanced program for artists who want to take their music and craft more seriously. The ultimate goal is to write and record an album and take it to the next level. If music is the only thing you envision yourself doing and you are ready for 100% dedication, this is for you.</p>
             <p className="paragraph">Please note: This premium program is designed for those who are qualified. It is not for the novice musician.
             Students will learn/build upon:</p>
