@@ -17,17 +17,23 @@ class Development extends Component {
             <Link to="/contact" className="black-button">Contact Us</Link>
           </div>
           <div className="pad-20">
-            <p className="paragraph">However you envision yourself as an artist, we are here to help you achieve your dreams. We offer classes for:</p>
+            <h3 className="center-me">Artist Development Program</h3>
+            <p className="paragraph">This is an advanced program for artists who want to take their music and craft more seriously. The ultimate goal is to write and record an album and take it to the next level. If music is the only thing you envision yourself doing and you are ready for 100% dedication, this is for you.</p>
+            <p className="paragraph">Please note: This premium program is designed for those who are qualified. It is not for the novice musician.
+            Students will learn/build upon:</p>
             <ul className="class-list">
-              <li>Vocals</li>
-              <li>Guitar</li>
-              <li>Graphic Artists</li>
-              <li>Piano</li>
-              <li>Illustators</li>
-              <li>Painters</li>
-              <li>Audio Engineering</li>
-              <li>Music Business</li>
+              <li>Perfecting skills for vocals and the instrument(s) they play</li>
+              <li>Songwriting</li>
+              <li>Music Production</li>
+              <li>Studio Recording and Live Performance technique and etiquette</li>
+              <li>The Music Industry (how it really works)</li>
+              <li>How to Copyright and Register songs and other works of art</li>
+              <li>Cultural/Humanitarian Studies (to become a better human being and artist)</li>
+              <li>PhotoShop and Illustrator (for CD/album art)</li>
+              <li>Video Production software (for music video creation)</li>
             </ul>
+            <p className="paragraph">*Some of these areas of study are also offered a la carte.
+Contact us to set up a meeting with Mallory and Bob Yen Jr. about this program.</p>
           </div>
         </div>
         <div className="col-1-2"><img className="page-splash" src="/images/developmentOne.jpg"/></div>

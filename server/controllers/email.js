@@ -6,7 +6,7 @@ exports.sendEmail = function(req, res){
 
   var helper = require('sendgrid').mail
   var from_email = new helper.Email("alert@area22.com")
-  var to_email = new helper.Email("jamie.m.binns@gmail.com")
+  var to_email = new helper.Email("malsabado@gmail.com")
   var subject = "Form submission from " + theSender
   var content = new helper.Content("text/plain", theMessage)
   var mail = new helper.Mail(from_email, subject, to_email, content)
