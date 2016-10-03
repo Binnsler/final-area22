@@ -40,7 +40,7 @@ class Audio extends Component {
               <div className="paragraph pad-20">
                 <p>Ana-Digi is an audio recording process created and pioneered by audio engineer / record producer Bob Yen Jr. over a period of three decades. Most audio production today is done by a completely digital process, which is perfect for advertising, commercials, and the like. It is sacrilege to record something that has soul, such as music being made by human beings (as opposed to just a bunch of synthesizers and digital sample loops) using digital production.</p>
 
-                <p>The digital domain is cold, lonely, sterile and devoid of any soul in terms of how it ultimately holds sound - in barren zero and ones. Why anyone would want to purposely attempt to capture a soulful event in this way is beyond belief.</p>
+                <p>The digital domain is cold, lonely, sterile and devoid of any soul in terms of how it ultimately holds sound - in barren zeros and ones. Why anyone would want to purposely attempt to capture a soulful event in this way is beyond belief.</p>
 
                 <p>When all music used to be recorded on analog medium (tape), there was a certain warmth, expansion, saturation and soulfully sweet characteristic in the sound recording. It was always taken for granted that the soulful zen sound would always be there because that’s all there was. Analog tape machines and the supporting analog equipment (such as tube amps, tube compressors and tube equalization) were all that was used to make recordings and therefore music.</p>
 
