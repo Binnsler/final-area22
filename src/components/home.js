@@ -116,46 +116,58 @@ class Home extends Component {
         <div>
           <div className="splash-container">
             <img className='page-splash home-splash' src='../images/singSplash.jpg'/>
-            <div className='splash-text'><h3 className="summary-text">Artists helping artists achieve their fullest potential.</h3><Link to="/philosophy" className="solid-black-button">Learn More</Link></div>
+            <div className='splash-text'>
+              <h3 className="summary-text">Artists helping artists achieve their fullest potential.</h3>
+              <Link to="/philosophy" className="solid-black-button">Learn More</Link>
             </div>
-            <div className='philosophy'>
-            <div className='philosophy'>
+          </div>
+
+          <div className='philosophy'>
             <div className="pad-20">
-            <h1 className="white">What do you want to achieve?</h1>
-            <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. Artists from home and from across the globe have come to experience what we have to offer. From pre-production to mastering, we provide it all. Come to Area Twenty-Two to see and hear your ideas come to life.</p>
+              <h1 className="white">What do you want to achieve?</h1>
+              <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. Artists from home and from across the globe have come to experience what we have to offer. From pre-production to mastering, we provide it all. Come to Area Twenty-Two to see and hear your ideas come to life.</p>
             </div>
-            </div>
-            <div className="brain-block">
-              <div className='brain-container'>
-                <img className='brain-splash' src='../images/brainSplash.jpg'/>
-                <Link to="/philosophy"><img className='brain-dolphin' src={this.state.dolphin} onMouseOver={this.toggleDolphin.bind(this)} onMouseOut={this.toggleDolphin.bind(this)}/></Link>
-                <Link to="/audio"><img className='brain-saxophone' src={this.state.saxophone} onMouseOver={this.toggleSax.bind(this)} onMouseOut={this.toggleSax.bind(this)}/></Link>
-                <Link to="/development"><img className='brain-piano' src={this.state.piano} onMouseOver={this.togglePiano.bind(this)} onMouseOut={this.togglePiano.bind(this)}/></Link>
-              </div>
-            </div>
-            </div>
+          </div>
+
+          <div className="community-callout">
+            <h3 className="community-text">We are excited to share that one of our members, Mallory Sabado, just released her album out into the world. Check it out!</h3>
             <div>
-              <div className="services-container">
-                <div className="col-1-3 service">
-                <img className="service-graphic" src='../images/audioProductionIcon.png'/>
-                <h3>Audio Production</h3>
-                <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. </p>
-                <Link to="/audio" className="black-button">Tour Studio</Link>
-                </div>
-                <div className="col-1-3 service">
-                  <img className="service-graphic" src='../images/developmentProductionIcon.png'/>
-                  <h3>Artist Development</h3>
-                  <p className="paragraph">Do you have a talent that needs to shine? We are dedicated to developing and promoting artists and all types of art forms.</p>
-                  <Link to="/development" className="black-button">See Offerings</Link>
-                </div>
-                <div className="col-1-3 service">
-                  <img className="service-graphic" src='../images/communityIcon.png'/>
-                  <h3>Philosophy</h3>
-                  <p className="paragraph">We are a community of like minded artists working together in order to achieve our collective dreams.</p>
-                  <Link to="/philosophy" className="black-button">Learn More</Link>
-                </div>
+              <button className="solid-black-button">CD Baby</button>
+              <button className="solid-black-button">Google Store</button>
+            </div>
+          </div>
+
+          <div className="brain-block">
+            <div className='brain-container'>
+              <img className='brain-splash' src='../images/brainSplash.jpg'/>
+              <Link to="/philosophy"><img className='brain-dolphin' src={this.state.dolphin} onMouseOver={this.toggleDolphin.bind(this)} onMouseOut={this.toggleDolphin.bind(this)}/></Link>
+              <Link to="/audio"><img className='brain-saxophone' src={this.state.saxophone} onMouseOver={this.toggleSax.bind(this)} onMouseOut={this.toggleSax.bind(this)}/></Link>
+              <Link to="/development"><img className='brain-piano' src={this.state.piano} onMouseOver={this.togglePiano.bind(this)} onMouseOut={this.togglePiano.bind(this)}/></Link>
+            </div>
+          </div>
+
+          <div>
+            <div className="services-container">
+              <div className="col-1-3 service">
+              <img className="service-graphic" src='../images/audioProductionIcon.png'/>
+              <h3>Audio Production</h3>
+              <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. </p>
+              <Link to="/audio" className="black-button">Tour Studio</Link>
+              </div>
+              <div className="col-1-3 service">
+                <img className="service-graphic" src='../images/developmentProductionIcon.png'/>
+                <h3>Artist Development</h3>
+                <p className="paragraph">Do you have a talent that needs to shine? We are dedicated to developing and promoting artists and all types of art forms.</p>
+                <Link to="/development" className="black-button">See Offerings</Link>
+              </div>
+              <div className="col-1-3 service">
+                <img className="service-graphic" src='../images/communityIcon.png'/>
+                <h3>Philosophy</h3>
+                <p className="paragraph">We are a community of like minded artists working together in order to achieve our collective dreams.</p>
+                <Link to="/philosophy" className="black-button">Learn More</Link>
               </div>
             </div>
+          </div>
           {this.renderMembersList()}
         </div>
       );

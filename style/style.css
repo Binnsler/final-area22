@@ -32,7 +32,7 @@ ul {padding-left: 0;}
 .paragraph {font-size:18px;}
 .black-button {color:black; background-color:white; border: 2px solid black;  display:inline-block; padding: 5px 15px; margin:5px 0; text-transform:uppercase; font-family: 'Oswald', sans-serif; text-decoration:none;}
 .black-button:hover {color:#47b7a5; border:2px solid #47b7a5; display:inline-block; text-decoration:none; }
-.solid-black-button {color:white; border: 2px solid white; background-color:black; display:inline-block; padding: 5px 15px; margin:5px 0; text-transform:uppercase; font-family: 'Oswald', sans-serif; text-decoration:none;}
+.solid-black-button {color:white; border: 2px solid white; background-color:black; display:inline-block; padding: 5px 15px; margin:5px 10px; text-transform:uppercase; font-family: 'Oswald', sans-serif; text-decoration:none;}
 .solid-black-button:hover {color:black; background-color: white; display:inline-block; text-decoration:none; }
 .service-page {padding:20px; display:none; margin:0 auto;}
 .back-yellow {background-color: #f1c14d}
@@ -67,12 +67,20 @@ ul {padding-left: 0;}
 .splash-text {position:relative; text-align:center; background-color: black; color:white; width:100%; padding:20px;}
 .home-splash {}
 .summary-text {margin: 0; display:inline-block; padding: 20px;}
+
+.community-callout {background-color: #ffce6c; padding:40px; text-align:center; color:black;}
+.community-text {font-size:20px;}
+.white-button {color:white; background-color:#ffce6c; border: 2px solid white;  display:inline-block; padding: 5px 15px; margin:5px 20px; text-transform:uppercase; font-family: 'Oswald', sans-serif; text-decoration:none;}
+.white-button:hover {color:black; border:2px solid black; display:inline-block; text-decoration:none; }
+
 .brain-block {text-align:center; color:white; display:none; background-color:black; }
 .brain-container {text-align:center; position: relative; margin: 0 auto; display:inline-block; background-color:black; vertical-align:top; padding:20px;}
 .brain-splash {width:600px; height:auto; padding:40px; margin:0 auto;}
 .brain-dolphin {cursor:pointer; position:absolute; right:219px; top:16px; width:210px; border:0;}
 .brain-saxophone {cursor:pointer; position:absolute; left:13px; top:130px; width:257px;}
 .brain-piano {cursor:pointer; position:absolute; left:36px; bottom: 81px; width:344px;}
+
+
 
 .mobile-white-bottom {border-bottom: 7px solid white;}
 .philosophy {background-color:#47b7a5;}
