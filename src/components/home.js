@@ -129,13 +129,6 @@ class Home extends Component {
             </div>
           </div>
 
-          <div className="community-callout">
-            <h3 className="community-text">We are excited to share that one of our members, Mallory Sabado, just released her album out into the world. Check it out!</h3>
-            <div>
-              <button className="solid-black-button" href="https://goo.gl/YO1pKw">CD Baby</button>
-              <button className="solid-black-button" href="https://goo.gl/ePJCxK">Google Store</button>
-            </div>
-          </div>
 
           <div className="brain-block">
             <div className='brain-container'>
@@ -146,6 +139,14 @@ class Home extends Component {
             </div>
           </div>
 
+          <div className="community-callout">
+          <h3 className="community-text">We are excited to share that one of our members, Mallory Sabado, just released her album out into the world. Check it out!</h3>
+          <div>
+          <button className="solid-black-button" href="https://goo.gl/YO1pKw">CD Baby</button>
+          <button className="solid-black-button" href="https://goo.gl/ePJCxK">Google Store</button>
+          </div>
+          </div>
+          
           <div>
             <div className="services-container">
               <div className="col-1-3 service">
