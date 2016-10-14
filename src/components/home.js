@@ -11,7 +11,8 @@ class Home extends Component {
       route: 'What do you want to learn about?',
       dolphin: '../images/dolphin.png',
       saxophone: '../images/saxophone.png',
-      piano: '../images/piano.png'
+      piano: '../images/piano.png',
+      successful: false
     }
   }
 

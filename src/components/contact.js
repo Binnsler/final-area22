@@ -1,18 +1,25 @@
 import React, {Component} from 'react';
+import {browserHistory} from 'react-router';
 import {reduxForm} from 'redux-form';
 import * as actions from '../actions';
 import GoogleMapComponent from './blocks/google_map';
 
 
 class Contact extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      formSuccess: 'hide'
+    }
+  }
+
 
   handleFormSubmit({email, confirmEmail, message}){
-    console.log('Email: ', email);
-    console.log('Confirm Email: ', confirmEmail);
-    console.log('Message: ', message);
-
     this.props.emailForm({email, confirmEmail, message});
-
+    this.setState({formSuccess: 'show'});
+    setTimeout(function(){
+      browserHistory.pushState('/home');
+    }, 3000);
   }
 
   renderAlert(){
@@ -58,6 +65,9 @@ class Contact extends Component {
           </fieldset>
           <button action="submit" className="black-button">Submit</button>
         </form>
+        <div className={this.state.formSuccess}>
+          <h3 className="center-me red">Your email was successfully sent. We will get back to you as soon as possible.</h3>
+        </div>
       </div>
     );
   }
