@@ -125,7 +125,7 @@ class Home extends Component {
           <div className='philosophy'>
             <div className="pad-20">
               <h1 className="white">What do you want to achieve?</h1>
-              <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. Artists from home and from across the globe have come to experience what we have to offer. From pre-production to mastering, we provide it all. Come to Area Twenty-Two to see and hear your ideas come to life.</p>
+              <p className="paragraph">We are an industry-grade production facility offering our signature analog-digital or “Ana-Digi” recording sound. Artists from home and from across the globe have come to experience what we have to offer. From pre-production to mastering, we provide it all. Come to Area Twenty-Two to see and hear your ideas come to life.</p>
             </div>
           </div>
 
@@ -152,7 +152,7 @@ class Home extends Component {
               <div className="col-1-3 service">
               <img className="service-graphic" src='../images/audioProductionIcon.png'/>
               <h3>Audio Production</h3>
-              <p className="paragraph">We are an industry-grade recording facility offering our signature analog-digital or “Ana-Digi” recording sound. </p>
+              <p className="paragraph">We are an industry-grade production facility offering our signature analog-digital or “Ana-Digi” recording sound. </p>
               <Link to="/audio" className="black-button">Tour Studio</Link>
               </div>
               <div className="col-1-3 service">

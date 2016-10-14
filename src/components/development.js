@@ -32,8 +32,7 @@ class Development extends Component {
               <li>PhotoShop and Illustrator (for CD/album art)</li>
               <li>Video Production software (for music video creation)</li>
             </ul>
-            <p className="paragraph">*Some of these areas of study are also offered a la carte.
-Contact us to set up a meeting with Mallory and Bob Yen Jr. about this program.</p>
+            <p className="paragraph">*Some of these areas of study are also offered a la carte.</p>
           </div>
         </div>
         <div className="col-1-2"><img className="page-splash" src="/images/developmentOne.jpg"/></div>
