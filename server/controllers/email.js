@@ -11,7 +11,7 @@ exports.sendEmail = function(req, res){
   var content = new helper.Content("text/plain", theMessage)
   var mail = new helper.Mail(from_email, subject, to_email, content)
 
-  var sg = require('sendgrid').SendGrid(ENV.SENDGRID_KEY)
+  var sg = require('sendgrid').SendGrid(process.env.SENDGRID_API);
   var requestBody = mail.toJSON()
   var request = sg.emptyRequest()
   request.method = 'POST'

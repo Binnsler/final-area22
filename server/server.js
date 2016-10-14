@@ -32,7 +32,7 @@ app.use(express.static(__dirname + '/../')); // Serve from root directory
 router(app);
 // Always send index.html for React/Redux
 app.get('*', function(req, res){
-  res.sendFile(path.resolve('./index.html'))
+  res.sendFile(path.resolve('./index.html'));
 });
 
 // Server Setup
