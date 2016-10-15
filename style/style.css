@@ -15,6 +15,7 @@ ul {padding-left: 0;}
 .center-me {text-align:center;}
 .page-splash {width:100%; height:auto;}
 .red {color:#f3c033 !important;}
+.success {color: #45c631;}
 .title-container {background-color:#eee; text-align:center;}
 .title-text {vertical-align:middle; display:inline-block; }
 .red-triangle {vertical-align:middle; display:none; width:0; height:0; border-top:100px solid red; border-right:100px solid transparent;}

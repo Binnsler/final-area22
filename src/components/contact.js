@@ -18,8 +18,8 @@ class Contact extends Component {
     this.props.emailForm({email, confirmEmail, message});
     this.setState({formSuccess: 'show'});
     setTimeout(function(){
-      browserHistory.pushState('/home');
-    }, 3000);
+      browserHistory.push('/home');
+    }, 4500);
   }
 
   renderAlert(){
@@ -66,7 +66,7 @@ class Contact extends Component {
           <button action="submit" className="black-button">Submit</button>
         </form>
         <div className={this.state.formSuccess}>
-          <h3 className="center-me red">Your email was successfully sent. We will get back to you as soon as possible.</h3>
+          <h3 className="center-me success">Your message was successfully sent.</h3>
         </div>
       </div>
     );
