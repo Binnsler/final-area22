@@ -13,6 +13,7 @@ class Footer extends Component {
         <Link to="/"><img className="footer-logo" src="/images/area22biglogo.png"/></Link>
         <p className="footer-credit">Photo Credit: <a href="https://www.facebook.com/PhotographyByElleMichelle/?fref=ts ">Elle Michelle</a></p>
         <p className="footer-credit">Photo Credit: <Link to="/profile/bobyen">Bob Yen Jr.</Link></p>
+        <p className="footer-credit">Website: <a href="https://linkedin.com/in/jamiebinns">Jamie Binns</a></p>
         <p className="footer-credit">All Rights Reserved Area Twenty-Two &#169; 2016</p>
       </div>
     );
