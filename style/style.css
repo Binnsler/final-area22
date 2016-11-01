@@ -64,6 +64,7 @@ ul {padding-left: 0;}
 .footer-credit {font-size:10px; color:white;}
 
 /* Home */
+.mission-statement {font-style: italic; font-size:18px;}
 .black {background-color:black;}
 .site-logo {position:relative; cursor:pointer; padding: 10px; width:100%; max-width:400px;}
 .splash-container {position:relative;}
