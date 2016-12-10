@@ -148,7 +148,7 @@ class Home extends Component {
           </div>
           </div>
 
-          <div className="philosophy">
+          <div className="community-callout philosophy">
           <h3 className="community-text">One of our students, Marisa Murphy just released her first music video!</h3>
           <div>
             <a className="solid-black-button" href="https://www.youtube.com/watch?v=Pd7BkDGHy6g">View Video</a>
