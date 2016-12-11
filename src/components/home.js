@@ -141,14 +141,14 @@ class Home extends Component {
           </div>
 
           <div className="community-callout">
-          <h3 className="community-text">We are excited to share that one of our members, Mallory Sabado, just released her album out into the world. Check it out!</h3>
+          <h3 className="community-text">We are excited to share that one of our members, Mallory Sabado, released her first solo album out into the world. Check it out!</h3>
           <div>
             <a className="solid-black-button" href="https://goo.gl/YO1pKw">CD Baby</a>
             <a className="solid-black-button" href="https://goo.gl/ePJCxK">Google Store</a>
           </div>
           </div>
 
-          <div className="community-callout">
+          <div className="community-callout philosophy">
           <h3 className="community-text">Check out the first recording and music video by our student Marisa!</h3>
           <div>
             <a className="solid-black-button" href="https://www.youtube.com/watch?v=Pd7BkDGHy6g">View Video</a>
