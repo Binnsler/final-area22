@@ -141,7 +141,7 @@ class Home extends Component {
           </div>
 
           <div className="community-callout">
-          <h3 className="community-text">We are excited to share that one of our members, Mallory Sabado, just released her album out into the world. Check it out!</h3>
+          <h3 className="community-text">We are excited to share that one of our members, Mallory Sabado, released her first solo album out into the world. Check it out!</h3>
           <div>
             <a className="solid-black-button" href="https://goo.gl/YO1pKw">CD Baby</a>
             <a className="solid-black-button" href="https://goo.gl/ePJCxK">Google Store</a>
@@ -149,7 +149,7 @@ class Home extends Component {
           </div>
 
           <div className="community-callout philosophy">
-          <h3 className="community-text">One of our students, Marisa Murphy just released her first music video!</h3>
+          <h3 className="community-text">Check out our student Marisa&#39;s first recording here!</h3>
           <div>
             <a className="solid-black-button" href="https://www.youtube.com/watch?v=Pd7BkDGHy6g">View Video</a>
           </div>
@@ -158,7 +158,7 @@ class Home extends Component {
           <div>
             <div className="services-container">
               <div className="col-1-3 service">
-              <img className="service-graphic" src='../images/audioProductionIcon.png'/>
+              <img className="service-graphic" src=../images/audioProductionIcon.png/>
               <h3>Audio Production</h3>
               <p className="paragraph">We are an industry-grade production facility offering our signature analog-digital or “Ana-Digi” recording sound. </p>
               <Link to="/audio" className="black-button">Tour Studio</Link>
