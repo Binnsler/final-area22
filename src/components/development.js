@@ -17,8 +17,8 @@ class Development extends Component {
             <Link to="/contact" className="black-button">Contact Us</Link>
           </div>
           <div className="pad-20">
-            <h3 className="">Artist Development Program</h3>
-            <p className="paragraph">This is an advanced program for artists who want to take their music and craft more seriously. The ultimate goal is to write and record an album and take it to the next level. If music is the only thing you envision yourself doing and you are ready for 100% dedication, this is for you.</p>
+            <h3 className="">Advanced Artist Development Program</h3>
+            <p className="paragraph">This is an advanced program for artists who want to take their music and craft more seriously. The ultimate goal is to write and record an album and take it to the next level. If music is the only thing you envision yourself doing and you are ready for 100% dedication, this is for you. We encourage those of all ages and skill levels to join! Classes are offered by the half hour or full hour, once a week. Call Mallory to set up your first lesson! 508 333-2953</p>
             <p className="paragraph">Please note: This premium program is designed for those who are qualified. It is not for the novice musician.
             Students will learn/build upon:</p>
             <ul className="class-list">

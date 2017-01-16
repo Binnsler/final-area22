@@ -125,8 +125,8 @@ class Home extends Component {
 
           <div className='philosophy'>
             <div className="pad-20">
-              <h1 className="white">What do you want to achieve?</h1>
-              <p className="paragraph">We are an industry-grade production facility offering our signature analog-digital or “Ana-Digi” recording sound. Artists from home and from across the globe have come to experience what we have to offer. From pre-production to mastering, we provide it all. Come to Area Twenty-Two to see and hear your ideas come to life.</p>
+              <h1 className="white">Need to let your artistic soul shine?</h1>
+              <p className="paragraph">We are an industry-grade production facility offering our signature analog-digital or “Ana-Digi” recording sound and Artist Development programs. Artists from all over have come to experience what we have to offer. From pre-production to mastering, and music lessons to engineering, we provide it all. Come to Area Twenty-Two and let us be the platform for your artistic journey of life!</p>
             </div>
           </div>
 
