@@ -13,7 +13,7 @@ class Development extends Component {
         </div>
         <div className="col-3-4">
           <div className="pad-20">
-            <p className="paragraph">We are here to help you realize your musical dreams from the bottom up. Attend personal 1-on-1 classes with our staff members to learn a variety of instruments, singing, sound engineering, and business. Interested in getting started? Please reach out to us via the contact form on our contact page or send us an email at info@areatwenty-two.com. We will set up a consultation to design a program that works for you.</p>
+            <p className="paragraph">We are here to help you realize your musical dreams from the bottom up. Attend personal 1-on-1 classes with our staff members to learn a variety of instruments, singing, sound engineering, and business. Interested in getting started? Please reach out to us via the contact form on our contact page or call Mallory at 508 333-2953 to set up your first lesson!</p>
             <Link to="/contact" className="black-button">Contact Us</Link>
           </div>
           <div className="pad-20">

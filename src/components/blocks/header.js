@@ -47,9 +47,9 @@ class Header extends Component {
           <div className={visibleMenu} >
             <ul className="header-list">
               <li key={1} className="nav-link-container"><Link to="" className="nav-link" onlyActiveOnIndex={true} activeClassName="active" onClick={this.handleClick.bind(this)}>Home</Link></li>
-              <li key={2} className="nav-link-container"><Link to="development" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Development</Link></li>
+              <li key={2} className="nav-link-container"><Link to="development" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Development/Lessons</Link></li>
               <li key={3} className="nav-link-container"><Link to="audio" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Audio Production</Link></li>
-              <li key={4} className="nav-link-container"><Link to="philosophy" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Philosophy</Link></li>
+              <li key={4} className="nav-link-container"><Link to="philosophy" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Philosophy/Artworks</Link></li>
               <li key={5} className="nav-link-container"><a href="https://www.instagram.com/area_twentytwo/" className="nav-link" activeClassName="active">Photos</a></li>
               <li key={6} className="nav-link-container"><Link to="contact" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Contact</Link></li>
             </ul>
