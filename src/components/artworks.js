@@ -3,7 +3,6 @@ import {Link} from 'react-router';
 
 class Artworks extends Component {
   render(){
-
     return(
       <div>
         <div className="col-1-2"><img className="page-splash" src="/images/ArtworksLogo.png"/></div>
