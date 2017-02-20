@@ -119,13 +119,15 @@ ul {padding-left: 0;}
 /* Artworks */
 .artworks{
     background-color: black;
+    text-align: center;
 }
 .artworks-splash{
-    margin: 0 auto;
+    max-width: 600px;
 }
 .artworks-text{
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
+    text-align: left;
 }
 
 /* Profile */
