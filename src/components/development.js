@@ -13,12 +13,12 @@ class Development extends Component {
         </div>
         <div className="col-3-4">
           <div className="pad-20">
-            <p className="paragraph">We are here to help you realize your musical dreams from the bottom up. Attend personal 1-on-1 classes with our staff members to learn a variety of instruments, singing, sound engineering, and business. Interested in getting started? Please reach out to us via the contact form on our contact page or call Mallory at 508 333-2953 to set up your first lesson!</p>
+            <p className="paragraph">We are here to help you realize your musical dreams from the bottom up. Attend personal 1-on-1 classes with our staff members to learn a variety of instruments, singing, sound engineering, and business. We encourage those of all ages and skill levels to join! Interested in getting started? Please reach out to us via the contact form on our contact page or call Mallory at 508 333-2953 to set up your first lesson!</p>
             <Link to="/contact" className="black-button">Contact Us</Link>
           </div>
           <div className="pad-20">
             <h3 className="">Advanced Artist Development Program</h3>
-            <p className="paragraph">This is an advanced program for artists who want to take their music and craft more seriously. The ultimate goal is to write and record an album and take it to the next level. If music is the only thing you envision yourself doing and you are ready for 100% dedication, this is for you. We encourage those of all ages and skill levels to join! Classes are offered by the half hour or full hour, once a week. Call Mallory to set up your first lesson! 508 333-2953</p>
+            <p className="paragraph">This is an advanced program for artists who want to take their music and craft more seriously. The ultimate goal is to write and record an album and take it to the next level. If music is the only thing you envision yourself doing and you are ready for 100% dedication, this is for you. Classes are offered by the half hour or full hour, once a week. Call Mallory to set up your first lesson! 508 333-2953</p>
             <p className="paragraph">Please note: This premium program is designed for those who are qualified. It is not for the novice musician.
             Students will learn/build upon:</p>
             <ul className="class-list">
