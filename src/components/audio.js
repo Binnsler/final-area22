@@ -11,8 +11,9 @@ class Audio extends Component {
             <img className="service-page" src='../images/audioProductionIcon.png'/>
           </div>
           <div className="col-3-4 pad-20">
-            <p className="paragraph pad-20">Standard Rate: $50/hr</p>
             <h1 className="vert-pad-20">The Recording Process</h1>
+            <h3 className="">Rates</h3>
+            <p className="paragraph pad-20">Our standard rate is $50 per hour, but can be flexible depending on your budget and needs.</p>
             <h3 className="">Pre-Production</h3>
             <p className="paragraph pad-20">This stage happens before you start to record your music. This is when the lyrics, chords, melody and arrangement are fleshed out and finalized. Basic instrumentation is used to get an organic feel of your song. Song charts can be created as a guide for the musicians to use while recording.</p>
             <h3 className="">Production</h3>
