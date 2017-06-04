@@ -9,7 +9,7 @@ const CommunityCallout = ( { text, buttons, color } ) => {
             <h3 className="community-text">{ text }</h3>
             <div>
               { buttons.map( ( button, i ) => (
-                  <a key={ i } className="solid-black-button" href={ button.href }>{ button.text }</a>
+                  <a key={ i } className="solid-black-button" href={ button.url }>{ button.text }</a>
               ) ) }
             </div>
         </div>
