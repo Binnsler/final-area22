@@ -14,7 +14,6 @@ class EditEvent extends Component {
     this.state = {
       data_uri: null
     };
-
   }
 
   handleFormSubmit({name, date, time, description}){

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {browserHistory} from 'react-router';
 import {reduxForm} from 'redux-form';
 import * as actions from '../actions';
-import GoogleMapComponent from './blocks/google_map';
+import GoogleMapComponent from '../components/blocks/google_map';
 
 
 class Contact extends Component {

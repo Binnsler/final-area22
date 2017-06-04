@@ -1,43 +1,62 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router';
+import React, { Component } from "react";
+import { Link } from "react-router";
+import HeaderLink from "../header-link.js";
 
 class Header extends Component {
 
-  constructor(props){
-    super(props);
+  constructor( props ){
+    super( props );
 
     this.state = {
-      menuVisible: false
+      "menuVisible": false
     }
   }
 
   componentDidMount(){
-    var mainBody = document.querySelector('.main-body');
-    console.log(mainBody)
-    mainBody.addEventListener('click', this.bodyClick.bind(this));
+    // TODO: Make this click handler neater
+    const mainBody = document.querySelector('.main-body');
+
+    mainBody.addEventListener( "click", this.bodyClick.bind( this ) );
   }
 
   bodyClick(){
-    this.setState({menuVisible: false})
+    this.setState( { "menuVisible": false } );
   }
 
   handleClick(){
-    this.setState({menuVisible: !this.state.menuVisible})
+    this.setState( { menuVisible: !this.state.menuVisible } );
+  }
+
+  generateHeaderLinks(){
+      const headerLinks = [
+          { "route": "", "text": "Home" },
+          { "route": "development", "text": "Development" },
+          { "route": "audio", "text": "Audio Production" },
+          { "route": "philosophy", "text": "Philosophy" },
+          { "route": "artworks", "text": "Artworks" },
+          { "route": "soapbox-souls", "text": "Soapbox Souls" },
+          { "route": "contact", "text": "Contact" },
+          { "url": "https://www.instagram.com/area_twentytwo/", "text": "Photos" }
+      ];
+
+      return headerLinks.map( ( link, i ) =>
+          <HeaderLink key={ i } link={ link } onClick={ this.handleClick.bind( this ) } />
+      );
   }
 
   render(){
+    let visible = "";
+    let active = "";
+    let visibleMenu;
+    let sandwichClasses;
 
-    var visible = '';
-    var active = '';
-
-    if(this.state.menuVisible){
-      var visible = 'open';
-      var active = 'red';
+    if( this.state.menuVisible ){
+      visible = "open";
+      active = "red";
     }
 
-
-    var visibleMenu = `header-menu ${visible}`;
-    var sandwichClasses = `nav-button hamburger-button ${active}`;
+    visibleMenu = `header-menu ${visible}`;
+    sandwichClasses = `nav-button hamburger-button ${active}`;
 
 
     return(
@@ -46,19 +65,12 @@ class Header extends Component {
           <span className={sandwichClasses} onClick={this.handleClick.bind(this)}>menu</span>
           <div className={visibleMenu} >
             <ul className="header-list">
-              <li key={1} className="nav-link-container"><Link to="" className="nav-link" onlyActiveOnIndex={true} activeClassName="active" onClick={this.handleClick.bind(this)}>Home</Link></li>
-              <li key={2} className="nav-link-container"><Link to="development" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Development/Lessons</Link></li>
-              <li key={3} className="nav-link-container"><Link to="audio" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Audio Production</Link></li>
-              <li key={4} className="nav-link-container"><Link to="philosophy" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Philosophy</Link></li>
-              <li key={5} className="nav-link-container"><Link to="artworks" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Artworks</Link></li>
-              <li key={6} className="nav-link-container"><Link to="soapbox-souls" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Soapbox Souls</Link></li>
-              <li key={7} className="nav-link-container"><a href="https://www.instagram.com/area_twentytwo/" className="nav-link" activeClassName="active">Photos</a></li>
-              <li key={8} className="nav-link-container"><Link to="contact" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Contact</Link></li>
+                { this.generateHeaderLinks() }
             </ul>
           </div>
         </div>
         <div className="logo-container">
-        <Link to="/"><img className="site-logo" src="/images/area22biglogo.png"/></Link>
+            <Link to="/"><img className="site-logo" src="/images/area22biglogo.png"/></Link>
         </div>
       </div>
     );
