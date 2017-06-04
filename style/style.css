@@ -130,6 +130,12 @@ ul {padding-left: 0;}
     text-align: left;
 }
 
+/* Soapbox Souls */
+.soapbox-splash{
+    max-width: 90%;
+}
+
+
 /* Profile */
 .black-break {width:100%; height:55px; background-color:black; display:none;}
 .profile-container {max-width:800px; margin: 0 auto; padding: 20px;text-align:center;}
@@ -160,7 +166,7 @@ ul {padding-left: 0;}
   transform: translateY(0);
 }
 
-/* Above 600px */
+/* Above 795px */
 @media (min-width: 796px) {
 
   /* Helper Classes Desktop */
@@ -207,6 +213,10 @@ ul {padding-left: 0;}
   /* 404 */
   .four0four {border-top:55px solid black;}
 
+  /* Soapbox Souls */
+  .soapbox-splash{
+      max-width: 70%;
+  }
 
 
 }

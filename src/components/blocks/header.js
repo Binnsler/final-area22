@@ -51,8 +51,9 @@ class Header extends Component {
               <li key={3} className="nav-link-container"><Link to="audio" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Audio Production</Link></li>
               <li key={4} className="nav-link-container"><Link to="philosophy" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Philosophy</Link></li>
               <li key={5} className="nav-link-container"><Link to="artworks" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Artworks</Link></li>
-              <li key={6} className="nav-link-container"><a href="https://www.instagram.com/area_twentytwo/" className="nav-link" activeClassName="active">Photos</a></li>
-              <li key={7} className="nav-link-container"><Link to="contact" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Contact</Link></li>
+              <li key={6} className="nav-link-container"><Link to="soapbox-souls" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Soapbox Souls</Link></li>
+              <li key={7} className="nav-link-container"><a href="https://www.instagram.com/area_twentytwo/" className="nav-link" activeClassName="active">Photos</a></li>
+              <li key={8} className="nav-link-container"><Link to="contact" className="nav-link" activeClassName="active" onClick={this.handleClick.bind(this)}>Contact</Link></li>
             </ul>
           </div>
         </div>

@@ -15,6 +15,7 @@ import EditMember from './components/Profile/edit_member';
 import NewEvent from './components/Event/new_event';
 import Events from './components/Event/events';
 import EditEvent from './components/Event/edit_event.js';
+import SoapboxSouls from './components/soapboxsouls.js';
 import NoMatch from './components/no_match';
 
 export default(
@@ -31,6 +32,7 @@ export default(
     <Route path="edit/:username" component={EditMember}/>
     <Route path="new-event" component={NewEvent}/>
     <Route path="events" component={Events}/>
+    <Route path="soapbox-souls" component={SoapboxSouls}/>
     <Route path="edit-event/:id" component={EditEvent}/>
     <Route path="*" component={NoMatch}/>
   </Route>
