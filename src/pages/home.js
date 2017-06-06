@@ -9,22 +9,60 @@ import BrainBlock from "../components/Home/brain-block.js";
 import CommunityCallout from "../components/Home/community-callout.js";
 import ServiceBlock from "../components/Home/service-block.js";
 
+const images = {
+    "piano": {
+        "default": "../images/piano.png",
+        "hover": "../images/pianoHover.png"
+    },
+    "saxophone": {
+        "default": "../images/saxophone.png",
+        "hover": "../images/saxophoneHover.png"
+    },
+    "dolphin": {
+        "default": "../images/dolphin.png",
+        "hover": "../images/dolphinHover.png"
+    }
+};
+
+const services = [
+    { "img": "../images/audioProductionIcon.png",
+      "title": "Audio Production",
+      "text": "We are an industry-grade production facility offering our signature analog-digital or “Ana-Digi” recording sound.",
+      "buttons": [
+          { "route": "/audio", "text": "Tour Studio" }
+      ]
+    },
+    { "img": "../images/developmentProductionIcon.png",
+      "title": "Artist Development",
+      "text": "Do you have a talent that needs to shine? We are dedicated to developing and promoting artists and all types of art forms.",
+      "buttons": [
+          { "route": "/development", "text": "See Offerings" }
+      ]
+    },
+    { "img": "../images/communityIcon.png",
+      "title": "Philosophy",
+      "text": "We are a community of like minded artists working together in order to achieve our collective dreams.",
+      "buttons": [
+          { "route": "/philosophy", "text": "Learn More" }
+      ]
+    }
+];
+
 class Home extends Component {
   constructor( props ){
     super( props );
 
     this.state = {
       "route": "What do you want to learn about?",
-      "dolphin": "../images/dolphin.png",
-      "saxophone": "../images/saxophone.png",
-      "piano": "../images/piano.png",
+      "dolphin": images[ "dolphin" ].default,
+      "saxophone": images[ "saxophone" ].default,
+      "piano": images[ "piano" ].default,
       "successful": false
     }
   }
 
   componentWillMount(){
     this.props.getMembers();
-    this.props.getEvents();
   }
 
   renderMembers( memberData ){
@@ -54,47 +92,7 @@ class Home extends Component {
     }
   }
 
-  renderEvent(eventData){
-    return(
-      <li key={ eventData.name } className="col-1-2 event">
-        <div className="width-50 align-top">
-          <img className="event-thumbnail" src={ eventData.profilePic }/>
-        </div>
-        <div className="width-50 align-top">
-          <h4>{ eventData.name }</h4>
-          <p>{ eventData.date }</p>
-          <p>{ eventData.time }</p>
-          <p>{ eventData.description }</p>
-        </div>
-      </li>
-    )
-  }
-
   renderServices(){
-      const services = [
-          { "img": "../images/audioProductionIcon.png",
-            "title": "Audio Production",
-            "text": "We are an industry-grade production facility offering our signature analog-digital or “Ana-Digi” recording sound.",
-            "buttons": [
-                { "route": "/audio", "text": "Tour Studio" }
-            ]
-          },
-          { "img": "../images/developmentProductionIcon.png",
-            "title": "Artist Development",
-            "text": "Do you have a talent that needs to shine? We are dedicated to developing and promoting artists and all types of art forms.",
-            "buttons": [
-                { "route": "/development", "text": "See Offerings" }
-            ]
-          },
-          { "img": "../images/communityIcon.png",
-            "title": "Philosophy",
-            "text": "We are a community of like minded artists working together in order to achieve our collective dreams.",
-            "buttons": [
-                { "route": "/philosophy", "text": "Learn More" }
-            ]
-          }
-      ];
-
       return (
           <div className="services-container">
             { services.map( ( service, i ) => (
@@ -105,34 +103,18 @@ class Home extends Component {
 
   }
 
-  setRoute( text ){
-    this.setState( { "route": text } );
-  }
+  toggleImage( image ){
+    const newState = {};
 
-  toggleDolphin(){
-    if( this.state.dolphin === "../images/dolphin.png" ){
-      this.setState( { "dolphin": "../images/dolphinHover.png" } );
+    if( this.state[ image ] === images[ image ].default ){
+      newState[ image ] = images[ image ].hover;
+
+      this.setState( newState );
     }
     else {
-      this.setState( { "dolphin": "../images/dolphin.png" } );
-    }
-  }
+      newState[ image ] = images[ image ].default;
 
-  toggleSax(){
-    if( this.state.saxophone === "../images/saxophone.png" ){
-      this.setState( { "saxophone": "../images/saxophoneHover.png" } );
-    }
-    else {
-      this.setState( { "saxophone": "../images/saxophone.png" } );
-    }
-  }
-
-  togglePiano(){
-    if( this.state.piano === "../images/piano.png" ){
-      this.setState( { "piano": "../images/pianoHover.png" } );
-    }
-    else {
-      this.setState( { "piano": "../images/piano.png" } );
+      this.setState( newState );
     }
   }
 
@@ -143,11 +125,11 @@ class Home extends Component {
           <HomeSummary />
           <BrainBlock
             piano={ this.state.piano }
-            togglePiano={ this.togglePiano.bind( this ) }
+            togglePiano={ this.toggleImage.bind( this, "piano" ) }
             saxophone={ this.state.saxophone }
-            toggleSax={ this.toggleSax.bind( this ) }
+            toggleSax={ this.toggleImage.bind( this, "saxophone" ) }
             dolphin={ this.state.dolphin }
-            toggleDolphin={ this.toggleDolphin.bind( this ) }
+            toggleDolphin={ this.toggleImage.bind( this, "dolphin" ) }
           />
 
           <CommunityCallout
@@ -173,8 +155,7 @@ class Home extends Component {
 }
 
 function mapStateToProps( state ){
-  return { members: state.members.all,
-          events: state.events.all };
+  return { members: state.members.all };
 }
 
 export default connect( mapStateToProps, actions )( Home );

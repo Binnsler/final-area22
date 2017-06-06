@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from "react";;
+import Header from "../components/blocks/header";
+import Footer from "../components/blocks/footer";
 
-import Header from '../components/blocks/header';
-import Footer from '../components/blocks/footer';
+const App = () => (
+  <div>
+    <Header/>
+    <div className="main-body">
+      { this.props.children }
+    </div>
+    <Footer/>
+  </div>
+)
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header/>
-        <div className="main-body">
-          {this.props.children}
-        </div>
-        <Footer/>
-      </div>
-    );
-  }
-}
+export default App;

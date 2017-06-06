@@ -1,9 +1,6 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router';
+import React from "react";
 
-class Artworks extends Component {
-  render(){
-    return(
+const Artworks = () => (
       <div className="artworks">
         <img className="artworks-splash" src="/images/ArtworksLogo.png"/>
         <div className="artworks-text">
@@ -13,8 +10,6 @@ class Artworks extends Component {
             <p className="paragraph">See what Art can do for you, and visit us at Area Twenty-Two!!!</p>
         </div>
       </div>
-    )
-  }
-}
+)
 
 export default Artworks;

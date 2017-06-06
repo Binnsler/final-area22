@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router";
-import HeaderLink from "../header-link.js";
+import HeaderLink from "./header-link.js";
 
 class Header extends Component {
 

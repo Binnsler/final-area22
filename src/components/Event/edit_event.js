@@ -3,7 +3,6 @@ import {reduxForm} from 'redux-form';
 import * as actions from '../../actions';
 
 class EditEvent extends Component {
-
   componentWillMount(){
     this.props.getEvent(this.props.params.id)
   }

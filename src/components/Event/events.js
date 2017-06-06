@@ -4,7 +4,6 @@ import {Link} from 'react-router';
 import * as actions from '../../actions';
 
 class Events extends Component {
-
   constructor(props){
     super(props);
   }

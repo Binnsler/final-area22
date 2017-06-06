@@ -3,7 +3,6 @@ import * as actions from '../../actions';
 import {reduxForm} from 'redux-form';
 
 class NewEvent extends Component {
-
   constructor(props){
     super(props);
 
@@ -23,7 +22,6 @@ class NewEvent extends Component {
       profilePic: this.state.data_uri
     };
 
-    console.log(eventData)
     this.props.createEvent(eventData);
 
   }
