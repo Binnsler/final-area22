@@ -4,10 +4,7 @@ exports.create = function(req, res){
 
   const username = req.body.username;
 
-  console.log(req.body)
-
   if(!username){
-    console.log('No username');
     return res.status(422).send({error: 'You must provide a unique username'});
   }
 
@@ -41,7 +38,6 @@ exports.create = function(req, res){
 
 // Edit a member
 exports.edit = function(req, res){
-  console.log('Trying to edit')
   const username = req.body.username;
 
   Profile.findOne({username: username}, function(err, existingUser){
@@ -91,7 +87,7 @@ exports.getAll = function(req, res){
       res.status(422).send(err);
     }
 
-    res.send(users)
+    res.send( users.sort() );
   });
 }
 
