@@ -2,11 +2,11 @@ import React from "react";;
 import Header from "../components/blocks/header";
 import Footer from "../components/blocks/footer";
 
-const App = () => (
+const App = ( props ) => (
   <div>
     <Header/>
     <div className="main-body">
-      { this.props.children }
+      { props.children }
     </div>
     <Footer/>
   </div>
