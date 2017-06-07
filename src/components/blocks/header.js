@@ -24,18 +24,18 @@ class Header extends Component {
   }
 
   handleClick(){
-    this.setState( { menuVisible: !this.state.menuVisible } );
+    this.setState( { "menuVisible": !this.state.menuVisible } );
   }
 
   generateHeaderLinks(){
       const headerLinks = [
-          { "route": "", "text": "Home" },
-          { "route": "development", "text": "Development" },
-          { "route": "audio", "text": "Audio Production" },
-          { "route": "philosophy", "text": "Philosophy" },
-          { "route": "artworks", "text": "Artworks" },
-          { "route": "soapbox-souls", "text": "Soapbox Souls" },
-          { "route": "contact", "text": "Contact" },
+          { "route": "/", "text": "Home" },
+          { "route": "/development", "text": "Development" },
+          { "route": "/audio", "text": "Audio Production" },
+          { "route": "/philosophy", "text": "Philosophy" },
+          { "route": "/artworks", "text": "Artworks" },
+          { "route": "/soapbox-souls", "text": "Soapbox Souls" },
+          { "route": "/contact", "text": "Contact" },
           { "url": "https://www.instagram.com/area_twentytwo/", "text": "Photos" }
       ];
 
