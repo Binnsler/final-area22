@@ -1,25 +1,21 @@
-const Event = require('../models/Event');
+const Event = require( "../models/Event" );
 
-exports.create = function(req, res){
-
+exports.create = function( req, res ){
   const name = req.body.name;
 
-  console.log(req.body)
-
-  if(!name){
-    console.log('No event name');
-    return res.status(422).send({error: 'You must provide an event name'});
+  if( !name ){
+    return res.status( 422 ).send( { error: "You must provide an event name" } );
   }
 
-  const event = new Event({
-    name: req.body.name,
-    date: req.body.date,
-    time: req.body.time,
-    description: req.body.description,
-    profilePic: req.body.profilePic
-  });
+  const event = new Event( {
+    "name": req.body.name,
+    "date": req.body.date,
+    "time": req.body.time,
+    "description": req.body.description,
+    "profilePic": req.body.profilePic
+  } );
 
-  event.save(function(err, event){
+  event.save( function(err, event){
     if(err){
       return res.status(422).send('Error saving event');
     }

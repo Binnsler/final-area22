@@ -1,21 +1,21 @@
-const mongoose = require('mongoose');
+const mongoose = require( "mongoose" );
 const Schema = mongoose.Schema;
 
 
 // Define our model
-const profileSchema = new Schema({
-  username: String,
-  name: String,
-  title: String,
-  description: String,
-  email: String,
-  profilePic: String
-});
+const profileSchema = new Schema( {
+  "username": String,
+  "name": String,
+  "title": String,
+  "description": String,
+  "email": String,
+  "profilePic": String
+} );
 
 
 
 // Create the model class
-const ModelClass = mongoose.model('profile', profileSchema); // corresponds to 'profile' collection
+const ModelClass = mongoose.model( "profile", profileSchema );
 
 // Export the model
 module.exports = ModelClass;

@@ -1,23 +1,25 @@
+const helper = require( "sendgrid" ).mail;
 
-exports.sendEmail = function(req, res){
+exports.sendEmail = function( req, res ){
+  const theMessage = req.body.message;
+  const theSender = req.body.email;
 
-  var theMessage = req.body.message;
-  var theSender = req.body.email;
+  const from_email = new helper.Email( "alert@area22.com" );
+  const to_email = new helper.Email( "malsabado@gmail.com" );
+  const subject = "Form submission from " + theSender;
+  const content = new helper.Content( "text/plain", theMessage );
+  const mail = new helper.Mail( from_email, subject, to_email, content );
 
-  var helper = require('sendgrid').mail
-  var from_email = new helper.Email("alert@area22.com")
-  var to_email = new helper.Email("malsabado@gmail.com")
-  var subject = "Form submission from " + theSender
-  var content = new helper.Content("text/plain", theMessage)
-  var mail = new helper.Mail(from_email, subject, to_email, content)
+  const sg = require( "sendgrid" ).SendGrid( process.env.SENDGRID_API );
+  const requestBody = mail.toJSON();
 
-  var sg = require('sendgrid').SendGrid(process.env.SENDGRID_API);
-  var requestBody = mail.toJSON()
-  var request = sg.emptyRequest()
-  request.method = 'POST'
-  request.path = '/v3/mail/send'
-  request.body = requestBody
-  sg.API(request, function (response) {
-    res.send(response);
-  })
+  let request = sg.emptyRequest();
+
+  request.method = "POST";
+  request.path = "/v3/mail/send";
+  request.body = requestBody;
+
+  sg.API( request, function ( response ){
+    res.send( response );
+} );
 }
