@@ -26,7 +26,9 @@ export default(
     <Route path="artworks" component={Artworks}/>
     <Route path="audio" component={Audio}/>
     <Route path="contact" component={Contact}/>
-    <Route path="profile/:username" component={Profile}/>
+    <Route path="profile"
+        <Route path=":username" component={Profile}/>
+    />
     <Route path="new-member" component={NewMember}/>
     <Route path="members" component={Members}/>
     <Route path="edit/:username" component={EditMember}/>
