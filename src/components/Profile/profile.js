@@ -12,7 +12,7 @@ class Profile extends Component{
   componentWillUnmount(){
     // Action to clear user data from state
     this.props.clearUserState();
-    browserHistory.push( "/" );
+    browserHistory.replace( "/" );
   }
 
   render(){
