@@ -69,7 +69,7 @@ class Home extends Component {
     const userLink = `/profile/${ memberData.username }`
 
     return(
-      <Link to={userLink}>
+      <Link to={ userLink }>
         <li key={ memberData.username } className="col-1-3 member">
           <img className="member-thumbnail" src={ memberData.profilePic }/>
           <h3 className="member-name">{ memberData.name }</h3>
