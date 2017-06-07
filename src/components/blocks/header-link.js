@@ -12,7 +12,7 @@ const HeaderLink = ( { link, key, onClick } ) => {
 
     return (
         <li key={ key } className="nav-link-container">
-            <Link to={ link.route } className="nav-link" onlyActiveOnIndex={ link.route === "" ? true : false } activeClassName="active" onClick={ onClick }>
+            <Link to={ link.route } className="nav-link" activeClassName="active" onClick={ onClick }>
                 { link.text }
             </Link>
         </li>
