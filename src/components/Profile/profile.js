@@ -12,7 +12,6 @@ class Profile extends Component{
   componentWillUnmount(){
     // Action to clear user data from state
     this.props.clearUserState();
-    browserHistory.replace( "/" );
   }
 
   render(){
