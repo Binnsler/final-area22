@@ -85,6 +85,7 @@ ul {padding-left: 0;}
 .brain-saxophone {cursor:pointer; position:absolute; left:13px; top:130px; width:257px;}
 .brain-piano {cursor:pointer; position:absolute; left:36px; bottom: 81px; width:344px;}
 
+.member-list{ background-color:white;}
 
 
 .mobile-white-bottom {border-bottom: 7px solid white;}
