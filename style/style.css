@@ -134,7 +134,7 @@ ul {padding-left: 0;}
 
 /* Soapbox Souls */
 .soapbox-splash{
-    max-width: 90%;
+    width: 100%;
 }
 
 
@@ -214,12 +214,6 @@ ul {padding-left: 0;}
 
   /* 404 */
   .four0four {border-top:55px solid black;}
-
-  /* Soapbox Souls */
-  .soapbox-splash{
-      max-width: 70%;
-  }
-
 
 }
 
