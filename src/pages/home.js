@@ -133,7 +133,7 @@ class Home extends Component {
           />
 
           <CommunityCallout
-            text={ "Soapbox Souls will be performing November 18th at 7pm in Dennisport at the Cape Cod Community Media Center. Tickets are $12 online and $15 at the door" }
+            text={ "Soapbox Souls will be performing November 18th at 7pm in Dennisport at the Cape Cod Community Media Center. Tickets are $12 online and $15 at the door. Check it out!" }
             buttons={ [
                 { "url": "http://livefromcenterstage.com/product/soapbox-souls-nov-18-7pm-live-from-center-stage/", "text": "Tickets" }
             ] }
