@@ -133,10 +133,9 @@ class Home extends Component {
           />
 
           <CommunityCallout
-            text={ "We are excited to share that one of our members, Mallory Sabado, released her first solo album out into the world. Check it out!" }
+            text={ "Soapbox Souls will be performing November 18th at 7pm in Dennisport at the Cape Cod Community Media Center. Tickets are $12 online and $15 at the door" }
             buttons={ [
-                { "url": "https://goo.gl/YO1pKw", "text": "CD Baby" },
-                { "url": "https://goo.gl/ePJCxK", "text": "GoogleStore" }
+                { "url": "http://livefromcenterstage.com/product/soapbox-souls-nov-18-7pm-live-from-center-stage/", "text": "Tickets" }
             ] }
           />
           <CommunityCallout
