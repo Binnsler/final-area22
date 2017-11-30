@@ -131,17 +131,10 @@ class Home extends Component {
             dolphin={ this.state.dolphin }
             toggleDolphin={ this.toggleImage.bind( this, "dolphin" ) }
           />
-
           <CommunityCallout
-            text={ "Soapbox Souls will be performing November 18th at 7pm in Dennisport at the Cape Cod Community Media Center. Tickets are $12 online and $15 at the door. Check it out!" }
+            text={ "Check out the first recording and music video by our student Heather!" }
             buttons={ [
-                { "url": "http://livefromcenterstage.com/product/soapbox-souls-nov-18-7pm-live-from-center-stage/", "text": "Tickets" }
-            ] }
-          />
-          <CommunityCallout
-            text={ "Check out the first recording and music video by our student Marisa!" }
-            buttons={ [
-                { "url": "https://www.youtube.com/watch?v=Pd7BkDGHy6g", "text": "View Video" }
+                { "url": "https://www.youtube.com/watch?v=WU539EcuxKM", "text": "View Video" }
             ] }
             color="#47b7a5"
           />
