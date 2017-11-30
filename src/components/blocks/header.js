@@ -34,7 +34,7 @@ class Header extends Component {
           { "route": "/audio", "text": "Audio Production" },
           { "route": "/philosophy", "text": "Philosophy" },
           { "route": "/artworks", "text": "Artworks" },
-          { "route": "/soapbox-souls", "text": "Soapbox Souls" },
+          { "url": "https://www.soapboxsouls.com", "text": "Soapbox Souls" },
           { "route": "/contact", "text": "Contact" },
           { "url": "https://www.instagram.com/area_twentytwo/", "text": "Photos" }
       ];
