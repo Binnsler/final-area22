@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const CommunityCallout = ( { text, buttons, color } ) => {
     const styles = {
@@ -8,9 +9,14 @@ const CommunityCallout = ( { text, buttons, color } ) => {
         <div className="community-callout" style={ styles }>
             <h3 className="community-text">{ text }</h3>
             <div>
-              { buttons.map( ( button, i ) => (
-                  <a key={ i } className="solid-black-button" href={ button.url }>{ button.text }</a>
-              ) ) }
+              { buttons.map( ( button, i ) => {
+                  if( button.link ){
+                      return <Link to={ button.link } className="solid-black-button">{ button.text }</Link>
+                  }
+                  else{
+                      return <a key={ i } className="solid-black-button" href={ button.url }>{ button.text }</a>
+                  }
+              } ) }
             </div>
         </div>
     );

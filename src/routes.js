@@ -4,6 +4,7 @@ import {Route, IndexRoute} from 'react-router';
 import App from './pages/app';
 import Home from './pages/home';
 import Development from './pages/development';
+import Community from './pages/community';
 import Artworks from './pages/artworks';
 import Philosophy from './pages/philosophy';
 import Audio from './pages/audio';
@@ -23,6 +24,7 @@ export default(
     <IndexRoute component={Home}/>
     <Route path="philosophy" component={Philosophy}/>
     <Route path="development" component={Development}/>
+    <Route path="community" component={Community}/>
     <Route path="artworks" component={Artworks}/>
     <Route path="audio" component={Audio}/>
     <Route path="contact" component={Contact}/>

@@ -39,6 +39,8 @@ ul {padding-left: 0;}
 .service-page {padding:20px; display:none; margin:0 auto;}
 .back-yellow {background-color: #f1c14d}
 .back-white {background-color:white;}
+.back-black {background-color:black;}
+.back-green {background-color:#47b7a5 !important;}
 .splash-video {width:100%; height: 300px;}
 .hide {display:none;}
 .show {display:block;}
@@ -71,7 +73,7 @@ ul {padding-left: 0;}
 .splash-container {position:relative;}
 .splash-text {position:relative; text-align:center; background-color: black; color:white; width:100%; padding:20px;}
 .home-splash {}
-.summary-text {margin: 0; display:inline-block; padding: 20px;}
+.summary-text {margin: 0; display:inline-block; padding: 20px; font-weight: bold;}
 
 .community-callout {background-color: #ffce6c; padding:40px; text-align:center; color:black;}
 .community-text {font-size:20px;}
@@ -107,6 +109,30 @@ ul {padding-left: 0;}
 
 .event {text-align:center; padding-bottom:20px;}
 .event-thumbnail {width: 50%; height: auto; padding: 0 30px;}
+
+/* Community */
+.community-splash{
+    background-color: black;
+}
+.community-splash img{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.community-page{
+    background-color: white;
+    padding: 20px;
+}
+.community-page ul{
+    width: 80%;
+    margin: 0 auto;
+}
+.community-page li{
+    font-size: 16px;
+}
+.community-page .establishments{
+    margin: 0 auto;
+}
 
 /* Contact */
 .map-container {height:300px;}
@@ -190,6 +216,16 @@ ul {padding-left: 0;}
   .mobile-breakdiv {display:none;}
   .logo-container {right:0;border:0;}
 
+  /* Community */
+    .community-splash img{
+        width: 50%;
+    }
+    .community-page ul{
+        width: 70%;
+    }
+    .establishments{
+        width: 70%;
+    }
 
   /* Home */
   .home-splash {display:block;}

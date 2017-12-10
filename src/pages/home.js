@@ -123,6 +123,13 @@ class Home extends Component {
         <div>
           <HomeSplash />
           <HomeSummary />
+          <CommunityCallout
+            text={ "Want to hear our latest community album? Find a CD at supporting businesses." }
+            buttons={ [
+                { "link": "/community", "text": "Learn More" }
+            ] }
+            color="#f2bf43"
+          />
           <BrainBlock
             piano={ this.state.piano }
             togglePiano={ this.toggleImage.bind( this, "piano" ) }

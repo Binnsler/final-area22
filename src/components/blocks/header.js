@@ -31,6 +31,7 @@ class Header extends Component {
       const headerLinks = [
           { "route": "/", "text": "Home" },
           { "route": "/development", "text": "Development" },
+          { "route": "/community", "text": "Community" },
           { "route": "/audio", "text": "Audio Production" },
           { "route": "/philosophy", "text": "Philosophy" },
           { "route": "/artworks", "text": "Artworks" },
