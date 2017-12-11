@@ -30,7 +30,7 @@ class Header extends Component {
   generateHeaderLinks(){
       const headerLinks = [
           { "route": "/", "text": "Home" },
-          { "route": "/development", "text": "Music Lessons" },
+          { "route": "/lessons", "text": "Music Lessons" },
           { "route": "/community", "text": "Community" },
           { "route": "/audio", "text": "Audio Production" },
           { "route": "/philosophy", "text": "Philosophy" },

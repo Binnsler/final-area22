@@ -23,7 +23,7 @@ export default(
   <Route path="/" component={App}>
     <IndexRoute component={Home}/>
     <Route path="philosophy" component={Philosophy}/>
-    <Route path="development" component={Development}/>
+    <Route path="lessons" component={Development}/>
     <Route path="community" component={Community}/>
     <Route path="artworks" component={Artworks}/>
     <Route path="audio" component={Audio}/>

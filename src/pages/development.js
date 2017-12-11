@@ -27,7 +27,7 @@ const Development = () => (
   <div>
     <iframe className="splash-video" src="https://www.youtube.com/embed/NI7P-043jvQ" frameborder="0" allowfullscreen></iframe>
     <div className="col-1-4 center-me">
-      <h3 className="center-me member-name">Development</h3>
+      <h3 className="center-me member-name">Lessons</h3>
       <img className="service-page" src='../images/developmentProductionIcon.png'/>
     </div>
     <div className="col-3-4">

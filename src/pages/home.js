@@ -36,7 +36,7 @@ const services = [
       "title": "Artist Development",
       "text": "Do you have a talent that needs to shine? We are dedicated to developing and promoting artists and all types of art forms.",
       "buttons": [
-          { "route": "/development", "text": "See Offerings" }
+          { "route": "/lessons", "text": "See Offerings" }
       ]
     },
     { "img": "../images/communityIcon.png",
