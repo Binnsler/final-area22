@@ -16,7 +16,7 @@ const Community = () => (
                 <li>Steve Mazzetta - "On The Train"</li>
                 <li>David Broadbent - "Tears"</li>
                 <li>Brian Hitchings - "You Get Me High"</li>
-                <li>Conspirazy of Noise - "Blues Before Sunrise"</li>
+                <li>Conspiracy of Noize - "Blues Before Sunrise"</li>
                 <li>Johnny and Elizabeth Alves - "Hold On Me"</li>
                 <li>Bob Nesom - "Watch Her"</li>
                 <li>Brian Sances - "Days Of Gold"</li>
