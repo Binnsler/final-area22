@@ -138,15 +138,7 @@ class Home extends Component {
             dolphin={ this.state.dolphin }
             toggleDolphin={ this.toggleImage.bind( this, "dolphin" ) }
           />
-          <CommunityCallout
-            text={ "Check out the first recording and music video by our student Heather!" }
-            buttons={ [
-                { "url": "https://www.youtube.com/watch?v=WU539EcuxKM", "text": "View Video" }
-            ] }
-            color="#47b7a5"
-          />
 
-          { this.renderServices() }
           { this.renderMembersList() }
         </div>
       );
