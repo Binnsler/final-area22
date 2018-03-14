@@ -44,7 +44,7 @@ class Contact extends Component {
         <div className="contact-container">
           <div><h3 className="contact-title">Address:</h3><p className="contact-text">2277 State Rd, Plymouth, MA 02360</p></div>
           <div><h3 className="contact-title">Email:</h3><p className="contact-text">info@areatwenty-two.com</p></div>
-          <div><h3 className="contact-title">Phone:</h3><p className="contact-text">(508) 333-2953 ( ask for Mal )</p></div>
+          <div><h3 className="contact-title">Phone:</h3><p className="contact-text">(508) 888-4407 ( ask for Mal )</p></div>
         </div>
         <form onSubmit={ handleSubmit( this.handleFormSubmit.bind( this ) ) } className="contact-form">
           <fieldset className="form-group">
