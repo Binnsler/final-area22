@@ -23,8 +23,8 @@
     "json-loader": "^0.5.7",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
     "axios": "^0.13.1",
@@ -51,6 +51,6 @@
     "redux-form": "^5.3.1",
     "redux-thunk": "^2.1.0",
     "sendgrid": "^3.0.8",
-    "webpack": "^1.13.1"
+    "webpack": "^3.10.0"
   }
 }

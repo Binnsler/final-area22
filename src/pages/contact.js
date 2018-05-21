@@ -37,9 +37,7 @@ class Contact extends Component {
 
     return(
       <div>
-        <div className="map-container">
-          <GoogleMapComponent/>
-        </div>
+        <div className="break-div"></div>
         <h3 className="red center-me">Contact Us</h3>
         <div className="contact-container">
           <div><h3 className="contact-title">Address:</h3><p className="contact-text">2277 State Rd, Plymouth, MA 02360</p></div>

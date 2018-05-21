@@ -6,13 +6,17 @@ import {Router, browserHistory, applyRouterMiddleware} from "react-router";
 import reduxThunk from "redux-thunk";
 import useScroll from "react-router-scroll";
 
+// Styles
+import style from "../style/style.scss";
+
 import routes from "./routes";
 import reducers from "./reducers";
 
 const createStoreWithMiddleware = applyMiddleware( reduxThunk )( createStore );
 
 ReactDOM.render(
-  <Provider store={ createStoreWithMiddleware( reducers ) }>
-    <Router history={ browserHistory } routes={ routes } render={ applyRouterMiddleware( useScroll() ) }/>
-  </Provider>
-  , document.getElementById( "container" ) );
+    <Provider store={ createStoreWithMiddleware( reducers ) }>
+        <Router history={ browserHistory } routes={ routes } render={ applyRouterMiddleware( useScroll() ) }/>
+    </Provider>,
+    document.getElementById( "container" )
+);

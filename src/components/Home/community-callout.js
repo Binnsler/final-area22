@@ -11,7 +11,7 @@ const CommunityCallout = ( { text, buttons, color } ) => {
             <div>
               { buttons.map( ( button, i ) => {
                   if( button.link ){
-                      return <Link to={ button.link } className="solid-black-button">{ button.text }</Link>
+                      return <Link key={ i } to={ button.link } className="solid-black-button">{ button.text }</Link>
                   }
                   else{
                       return <a key={ i } className="solid-black-button" href={ button.url }>{ button.text }</a>
