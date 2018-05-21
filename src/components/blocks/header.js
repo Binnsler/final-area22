@@ -13,7 +13,6 @@ class Header extends Component {
   }
 
   componentDidMount(){
-    // TODO: Make this click handler neater
     const mainBody = document.querySelector('.main-body');
 
     mainBody.addEventListener( "click", this.bodyClick.bind( this ) );
@@ -57,7 +56,7 @@ class Header extends Component {
     }
 
     visibleMenu = `header-menu ${visible}`;
-    sandwichClasses = `nav-button hamburger-button ${active}`;
+    sandwichClasses = `hamburger-button ${active}`;
 
 
     return(
@@ -65,7 +64,7 @@ class Header extends Component {
         <div className="header">
           <span className={sandwichClasses} onClick={this.handleClick.bind(this)}>menu</span>
           <div className={visibleMenu} >
-            <ul className="header-list">
+            <ul>
                 { this.generateHeaderLinks() }
             </ul>
           </div>
