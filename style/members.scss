@@ -1,0 +1,35 @@
+.member-list {
+    background-color: white;
+
+    .member {
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 20px;
+        color: black;
+
+        &:hover{
+            background-color: #f2f2f2;
+        }
+
+        @media ( min-width: 796px ){
+            min-height: 380px;
+        }
+
+        img{
+            width: 100%;
+            padding-bottom: 20px;
+            list-style: none;
+            -webkit-filter: grayscale(95%);
+        }
+
+        h3{
+            color: #47b7a5;
+        }
+
+        p{
+            word-wrap: break-word;
+            padding: 0 41px;
+        }
+    }
+}

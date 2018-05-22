@@ -1,0 +1,52 @@
+.brain-block {
+    text-align: center;
+    color: white;
+    display: none;
+    background-color: black;
+
+    @media ( min-width: 796px ){
+        display: block;
+    }
+}
+
+.brain-container {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    background-color: black;
+    vertical-align: top;
+    padding:20px;
+}
+
+.brain-splash {
+    width: 600px;
+    height: auto;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.brain-dolphin {
+    cursor: pointer;
+    position: absolute;
+    right: 219px;
+    top: 16px;
+    width: 210px;
+    border: 0;
+}
+
+.brain-saxophone {
+    cursor: pointer;
+    position: absolute;
+    left: 13px;
+    top: 130px;
+    width: 257px;
+}
+
+.brain-piano {
+    cursor: pointer;
+    position: absolute;
+    left: 36px;
+    bottom: 81px;
+    width:344px;
+}

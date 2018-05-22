@@ -19,7 +19,6 @@ class SoapboxSouls extends Component{
     }
 
     renderMembersList(){
-        console.log( "members", members );
         return(
         <ul className="member-list">
           { members.map( this.renderMembers.bind( this ) ) }

@@ -16,43 +16,18 @@
 .show {display:block;}
 
 
-
-/* Home */
 .mission-statement {font-style: italic; font-size:18px;}
 .black {background-color:black;}
 .splash-container {position:relative;}
-
-/*  STOPPED 5/21 */
-
-.brain-block {text-align:center; color:white; display:none; background-color:black; }
-.brain-container {text-align:center; position: relative; margin: 0 auto; display:inline-block; background-color:black; vertical-align:top; padding:20px;}
-.brain-splash {width:600px; height:auto; padding:40px; margin:0 auto;}
-.brain-dolphin {cursor:pointer; position:absolute; right:219px; top:16px; width:210px; border:0;}
-.brain-saxophone {cursor:pointer; position:absolute; left:13px; top:130px; width:257px;}
-.brain-piano {cursor:pointer; position:absolute; left:36px; bottom: 81px; width:344px;}
-
-.member-list{ background-color:white;}
-
-
-.mobile-white-bottom {border-bottom: 7px solid white;}
 .philosophy {background-color:#47b7a5;}
-
 .services-container {max-width:1000px; margin:0 auto;}
 .service {padding:40px 20px; text-align:center; display:inline-block; vertical-align: top;}
 .service:hover {background-color: #f2f2f2;}
 .service-graphic {width:150px; height:auto;}
 
-.member-splash {height:200px; background-image: url("../images/homeSplash.jpg"); background-size: 100% auto;};
-.member-header {background-color:rgba(255, 255, 255, 0.5); color:white; }
-.white-header {color:white; background-color:rgba(255, 255, 255, 0.5); width:100%; height: 100%;}
-.member-title {word-wrap: break-word; padding: 0 41px;}
 .image-preview {width:100%; max-width: 500px; height: auto}
-.member-thumbnail {width:100%; padding-bottom: 20px; list-style:none; -webkit-filter: grayscale(95%);}
-.member {text-align:center; display: inline-block; vertical-align: middle; padding:20px; color:black;}
-.member:hover {background-color: #f2f2f2}
 
 .event {text-align:center; padding-bottom:20px;}
-.event-thumbnail {width: 50%; height: auto; padding: 0 30px;}
 
 /* Community */
 .community-splash{
@@ -110,21 +85,15 @@
 /* Profile */
 .black-break {width:100%; height:55px; background-color:black; display:none;}
 .profile-container {max-width:800px; margin: 0 auto; padding: 20px;text-align:center;}
-.member-name {color: #47b7a5}
 
 /* 404 */
 .four0four {padding: 40px 0; text-align:center;}
 
+
+
+/* MOBILE BREAK */
 /* Above 795px */
 @media (min-width: 796px) {
-
-  /* Helper Classes Desktop */
-  .member {min-height:380px;}
-
-
-  /* Nav */
-  .mobile-breakdiv {display:none;}
-
   /* Community */
     .community-splash img{
         width: 50%;
@@ -140,12 +109,8 @@
   .home-splash {display:block;}
   .event-thumbnail {width:100%;}
   .event {padding-bottom: 0;}
-  .mobile-white-bottom {border-bottom:0;}
   .red-header {font-size: 40px;}
-  .splash-text { padding:50px; position:absolute; bottom:0; background-color:rgba(255, 255, 255, 0.5); color:black;}
-  .summary-text {margin: 0;}
   .service-page {display:block;}
-  .brain-block {display:block;}
 
 
   /* Contact */
