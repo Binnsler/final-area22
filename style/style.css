@@ -30,28 +30,16 @@
 .event {text-align:center; padding-bottom:20px;}
 
 /* Community */
-.community-splash{
-    background-color: black;
-}
+.community-splash{background-color: black;}
 .community-splash img{
     width: 100%;
     margin: 0 auto;
     display: block;
 }
-.community-page{
-    background-color: white;
-    padding: 20px;
-}
-.community-page ul{
-    width: 80%;
-    margin: 0 auto;
-}
-.community-page li{
-    font-size: 16px;
-}
-.community-page .establishments{
-    margin: 0 auto;
-}
+.community-page{background-color: white;padding: 20px;}
+.community-page ul{width: 80%;margin: 0 auto;}
+.community-page li{font-size: 16px;}
+.community-page .establishments{margin: 0 auto;}
 
 /* Contact */
 .contact-container {text-align:left; padding-left: 15px;}
@@ -67,9 +55,7 @@
     background-color: black;
     text-align: center;
 }
-.artworks-splash{
-    max-width: 600px;
-}
+.artworks-splash{max-width: 600px;}
 .artworks-text{
     color: white;
     padding: 40px 20px;
@@ -77,10 +63,7 @@
 }
 
 /* Soapbox Souls */
-.soapbox-splash{
-    width: 100%;
-}
-
+.soapbox-splash{width: 100%;}
 
 /* Profile */
 .black-break {width:100%; height:55px; background-color:black; display:none;}
@@ -90,20 +73,12 @@
 .four0four {padding: 40px 0; text-align:center;}
 
 
-
 /* MOBILE BREAK */
 /* Above 795px */
 @media (min-width: 796px) {
-  /* Community */
-    .community-splash img{
-        width: 50%;
-    }
-    .community-page ul{
-        width: 70%;
-    }
-    .establishments{
-        width: 70%;
-    }
+  .community-splash img{ width: 50%;}
+  .community-page ul{ width: 70%;}
+  .establishments{width: 70%;}
 
   /* Home */
   .home-splash {display:block;}
@@ -111,7 +86,6 @@
   .event {padding-bottom: 0;}
   .red-header {font-size: 40px;}
   .service-page {display:block;}
-
 
   /* Contact */
   .contact-container {text-align:center; padding:0;}
@@ -121,5 +95,4 @@
 
   /* 404 */
   .four0four {border-top:55px solid black;}
-
 }

@@ -1,13 +1,18 @@
+// Libraries
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router";
 import * as actions from "../actions";
 
+// Components
 import HomeSplash from "../components/Home/home-splash.js";
-import HomeSummary from "../components/Home/home-summary.js";
+import TitleTextBlock from "../components/molecules/titleTextBlock.js";
 import BrainBlock from "../components/Home/brain-block.js";
 import CommunityCallout from "../components/Home/community-callout.js";
 import ServiceBlock from "../components/Home/service-block.js";
+
+// Data
+import siteCopy from "../data/siteCopy.json";
 
 const images = {
     "piano": {
@@ -122,7 +127,11 @@ class Home extends Component {
       return(
         <div>
           <HomeSplash />
-          <HomeSummary />
+          <TitleTextBlock
+            backgroundColor="#47B7A5"
+            textColor="#FFFFFF"
+            text={siteCopy.home.missionStatement}
+          />
           <CommunityCallout
             text={ "Want to hear our latest community album? Find a CD at supporting businesses." }
             buttons={ [

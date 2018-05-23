@@ -69,9 +69,7 @@ class Header extends Component {
             </ul>
           </div>
         </div>
-        <div className="logo-container">
-            <Link to="/"><img className="site-logo" src="/images/area22biglogo.png"/></Link>
-        </div>
+        <Link to="/"><img className="site-logo" src="/images/area22HeadLogo.png"/></Link>
       </div>
     );
   }
