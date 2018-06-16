@@ -14,7 +14,9 @@ const images = [
 
 const Audio = () => (
       <div>
-        <iframe className="splash-video" src="https://www.youtube.com/embed/4jYXyZM7Lfg" frameborder="0" allowfullscreen></iframe>
+        <div className="community-splash">
+          <img src="/images/malWendyCntrlRm.JPG"/>
+        </div>
         <div>
           <div className="col-1-4">
             <h3 className="center-me member-name">Audio Production</h3>

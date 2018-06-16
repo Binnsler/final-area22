@@ -64,7 +64,7 @@
 /* MOBILE BREAK */
 /* Above 795px */
 @media (min-width: 796px) {
-  .community-splash img{ width: 50%;}
+  .community-splash img{ width: 70%;}
   .community-page ul{ width: 70%;}
   .establishments{width: 70%;}
 
