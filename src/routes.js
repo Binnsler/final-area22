@@ -5,8 +5,7 @@ import App from './pages/app';
 import Home from './pages/home';
 import Development from './pages/development';
 import Community from './pages/community';
-import Artworks from './pages/artworks';
-import Philosophy from './pages/philosophy';
+
 import Audio from './pages/audio';
 import Contact from './pages/contact';
 import Profile from './components/Profile/profile';
@@ -22,10 +21,9 @@ import NoMatch from './pages/no_match';
 export default(
   <Route path="/" component={App}>
     <IndexRoute component={Home}/>
-    <Route path="philosophy" component={Philosophy}/>
+
     <Route path="lessons" component={Development}/>
     <Route path="community" component={Community}/>
-    <Route path="artworks" component={Artworks}/>
     <Route path="audio" component={Audio}/>
     <Route path="contact" component={Contact}/>
     <Route path="profile">

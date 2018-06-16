@@ -30,10 +30,7 @@ class Header extends Component {
       const headerLinks = [
           { "route": "/", "text": "Home" },
           { "route": "/lessons", "text": "Music Lessons" },
-          { "route": "/community", "text": "Community" },
           { "route": "/audio", "text": "Audio Production" },
-          { "route": "/philosophy", "text": "Philosophy" },
-          { "route": "/artworks", "text": "Artworks" },
           { "url": "https://www.soapboxsouls.com", "text": "Soapbox Souls" },
           { "route": "/contact", "text": "Contact" },
           { "url": "https://www.instagram.com/area_twentytwo/", "text": "Photos" }
@@ -69,7 +66,6 @@ class Header extends Component {
             </ul>
           </div>
         </div>
-        <Link to="/"><img className="site-logo" src="/images/area22HeadLogo.png"/></Link>
       </div>
     );
   }

@@ -50,18 +50,6 @@
 /* Development */
 .class-list {padding-left:35px; font-size: 18px;}
 
-/* Artworks */
-.artworks{
-    background-color: black;
-    text-align: center;
-}
-.artworks-splash{max-width: 600px;}
-.artworks-text{
-    color: white;
-    padding: 40px 20px;
-    text-align: left;
-}
-
 /* Soapbox Souls */
 .soapbox-splash{width: 100%;}
 

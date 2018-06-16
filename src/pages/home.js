@@ -29,30 +29,6 @@ const images = {
     }
 };
 
-const services = [
-    { "img": "../images/audioProductionIcon.png",
-      "title": "Audio Production",
-      "text": "We are an industry-grade production facility offering our signature analog-digital or “Ana-Digi” recording sound.",
-      "buttons": [
-          { "route": "/audio", "text": "Tour Studio" }
-      ]
-    },
-    { "img": "../images/developmentProductionIcon.png",
-      "title": "Artist Development",
-      "text": "Do you have a talent that needs to shine? We are dedicated to developing and promoting artists and all types of art forms.",
-      "buttons": [
-          { "route": "/lessons", "text": "See Offerings" }
-      ]
-    },
-    { "img": "../images/communityIcon.png",
-      "title": "Philosophy",
-      "text": "We are a community of like minded artists working together in order to achieve our collective dreams.",
-      "buttons": [
-          { "route": "/philosophy", "text": "Learn More" }
-      ]
-    }
-];
-
 class Home extends Component {
   constructor( props ){
     super( props );
@@ -97,17 +73,6 @@ class Home extends Component {
     }
   }
 
-  renderServices(){
-      return (
-          <div className="services-container">
-            { services.map( ( service, i ) => (
-                <ServiceBlock key={ i } service={ service }/>
-            ) ) }
-          </div>
-      )
-
-  }
-
   toggleImage( image ){
     const newState = {};
 
@@ -127,8 +92,13 @@ class Home extends Component {
       return(
         <div>
           <HomeSplash />
+          <div className="socials">
+            <a href="https://www.facebook.com/AreaTwenty2/"><div className="facebook"><img src="/images/facebook.png" alt=""/></div></a>
+            <a href="https://www.instagram.com/area_twentytwo/"><div className="instagram"><img src="/images/instagram.png" alt=""/></div></a>
+            <a href="https://www.youtube.com/channel/UCywIQrSjXe4VYmL9H9BF2RQ"><div className="youtube"><img src="/images/youtube.png" alt=""/></div></a>
+          </div>
           <TitleTextBlock
-            backgroundColor="#47B7A5"
+            backgroundColor="#1BA7C6"
             textColor="#FFFFFF"
             text={siteCopy.home.missionStatement}
           />
@@ -137,7 +107,7 @@ class Home extends Component {
             buttons={ [
                 { "link": "/community", "text": "Learn More" }
             ] }
-            color="#f2bf43"
+            color="#F2BF43"
           />
           <BrainBlock
             piano={ this.state.piano }
