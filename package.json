@@ -51,6 +51,7 @@
     "redux-form": "^5.3.1",
     "redux-thunk": "^2.1.0",
     "sendgrid": "^3.0.8",
+    "style-loader": "^0.21.0",
     "webpack": "^3.10.0"
   }
 }
