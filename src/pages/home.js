@@ -102,6 +102,8 @@ class Home extends Component {
             textColor="#FFFFFF"
             text={siteCopy.home.missionStatement}
           />
+          { this.renderMembersList() }
+
           <CommunityCallout
             text={ "Want to hear our latest community album? Find a CD at supporting businesses." }
             buttons={ [
@@ -117,8 +119,6 @@ class Home extends Component {
             dolphin={ this.state.dolphin }
             toggleDolphin={ this.toggleImage.bind( this, "dolphin" ) }
           />
-
-          { this.renderMembersList() }
         </div>
       );
   }
