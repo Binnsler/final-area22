@@ -34,12 +34,23 @@ const Development = () => (
     </div>
     <div className="col-3-4">
       <div className="pad-20">
-        <p className="paragraph">We are here to help you realize your musical dreams from the bottom up. Attend personal 1-on-1 classes with our staff members to learn a variety of instruments, singing, sound engineering, and business. We encourage those of all ages and skill levels to join! Interested in getting started? Please reach out to us via the contact form on our contact page or call Mallory at 508 333-2953 to set up your first lesson!</p>
+        <p className="paragraph">Attend personal 1-on-1 classes with our staff members in the Area Twenty-Two studio. We encourage those of all ages and skill levels to join! Interested in getting started? Please reach out to us via the contact form on our contact page or call Mallory at <span className="error">508-888-4407</span> to set up your first lesson!</p>
+        <ul className="class-list">
+            <li>Vocals</li>
+            <li>Piano</li>
+            <li>Guitar</li>
+        </ul>
+        <p className="paragraph">Lessons available Monday-Friday, with limited availability Saturday.</p>
+        <ul className="class-list">
+            <li>30 min class: <span className="error">$20</span></li>
+            <li>45 min class: <span className="error">$30</span></li>
+            <li>60 min class: <span className="error">$40</span></li>
+        </ul>
         <Link to="/contact" className="black-button">Contact Us</Link>
       </div>
       <div className="pad-20">
         <h3 className="">Advanced Artist Development Program</h3>
-        <p className="paragraph">This is an advanced program for artists who want to take their music and craft more seriously. The ultimate goal is to write and record an album and take it to the next level. If music is the only thing you envision yourself doing and you are ready for 100% dedication, this is for you. Call Mallory to set up your first lesson! 508 333-2953</p>
+        <p className="paragraph">This is an advanced program for artists who want to take their music and craft more seriously. The ultimate goal is to write and record an album and take it to the next level. If music is the only thing you envision yourself doing and you are ready for 100% dedication, this is for you. Call Mallory at <span className="error">508-888-4407</span> to set up your first lesson!</p>
         <p className="paragraph">Please note: This premium program is designed for those who are qualified. It is not for the novice musician.
         Students will learn/build upon:</p>
         <ul className="class-list">
