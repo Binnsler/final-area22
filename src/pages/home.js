@@ -64,7 +64,7 @@ class Home extends Component {
     if( this.props.members ){
       return(
         <div>
-          <img className="page-splash" src="../images/controlRoom.jpg"/>
+          <img className="page-splash" src="../images/controlRoom.png"/>
           <ul className="member-list">
             { this.props.members.map( this.renderMembers.bind( this ) ) }
           </ul>
