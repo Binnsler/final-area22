@@ -34,7 +34,7 @@ const Development = () => (
     </div>
     <div className="col-3-4">
       <div className="pad-20">
-        <p className="paragraph">Attend personal 1-on-1 classes with our staff members in the Area Twenty-Two studio. We encourage those of all ages and skill levels to join! Interested in getting started? Please reach out to us via the contact form on our contact page or call Mallory at <span className="error">508-888-4407</span> to set up your first lesson!</p>
+        <p className="paragraph">Attend personal 1-on-1 classes with our staff members in the Area Twenty-Two studio. All skill levels are welcome, ages <span className="error">8+ years</span>. Interested in getting started? Please reach out to us via the contact form on our contact page or call Mallory at <span className="error">508-888-4407</span> to set up your first lesson!</p>
         <ul className="class-list">
             <li>Vocals</li>
             <li>Piano</li>
