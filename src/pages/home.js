@@ -102,6 +102,13 @@ class Home extends Component {
             textColor="#FFFFFF"
             text={siteCopy.home.missionStatement}
           />
+          <CommunityCallout
+            text={ "Read about us on WickedLocal Plymouth!" }
+            buttons={ [
+                { "url": "http://plymouth.wickedlocal.com/news/20180110/area-twenty-two-building-music-business-from-basement-up", "text": "View Article" }
+            ] }
+            color="#F2BF43"
+          />
           { this.renderMembersList() }
 
           <CommunityCallout
