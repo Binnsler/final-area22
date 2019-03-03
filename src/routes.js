@@ -16,6 +16,7 @@ import NewEvent from './components/Event/new_event';
 import Events from './components/Event/events';
 import EditEvent from './components/Event/edit_event.js';
 import SoapboxSouls from './pages/soapboxsouls.js';
+import EngineeringCourse from './pages/engineeringcourse.js';
 import NoMatch from './pages/no_match';
 
 export default(
@@ -35,6 +36,7 @@ export default(
     <Route path="new-event" component={NewEvent}/>
     <Route path="events" component={Events}/>
     <Route path="soapbox-souls" component={SoapboxSouls}/>
+    <Route path="engineering-course" component={EngineeringCourse}/>
     <Route path="edit-event/:id" component={EditEvent}/>
     <Route path="*" component={NoMatch}/>
   </Route>

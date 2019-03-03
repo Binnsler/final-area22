@@ -103,11 +103,18 @@ class Home extends Component {
             text={siteCopy.home.missionStatement}
           />
           <CommunityCallout
+            text={ "Join us for a 6 week audio engineering and music production course!" }
+            buttons={ [
+                { "link": "/engineering-course", "text": "Learn More" }
+            ] }
+            color="#F2BF43"
+          />
+          <CommunityCallout
             text={ "Read about us on WickedLocal Plymouth!" }
             buttons={ [
                 { "url": "http://plymouth.wickedlocal.com/news/20180110/area-twenty-two-building-music-business-from-basement-up", "text": "View Article" }
             ] }
-            color="#F2BF43"
+            color="#FFFFFF"
           />
           { this.renderMembersList() }
 
