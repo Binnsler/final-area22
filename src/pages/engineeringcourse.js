@@ -13,7 +13,7 @@ const EngineeringCourse = () => (
             <div className="vert-pad-20">
                 <h1>Introduction to Audio Engineering & Music Production</h1>
                 <h3>Digital Audio Workstations and Analog Gear</h3>
-                <h3><span className="error">$500 / 6 week course - Contact Chuck at cavermette@gmail.com</span></h3>
+                <h3><span className="error">$500 | 6 week course | 1 hour per week - Contact Chuck at cavermette@gmail.com</span></h3>
             </div>
             <h4 className="">Have you developed an interest in audio engineering?</h4>
             <p className="paragraph pad-20">This course will introduce you to the basics of the art and science of the craft. While audio engineering is an extremely competitive field, many have found it to be highly rewarding work. Those that develop the discipline to wrack up many years of recording experience often can (and do) develop part-time, or even full-time careers. This course will show you what audio engineering is, and what it can be.</p>
