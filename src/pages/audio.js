@@ -25,26 +25,17 @@ const Audio = () => (
           <div className="col-3-4 pad-20">
             <h1 className="vert-pad-20">The Recording Process</h1>
             <h3 className="">Pre-Production</h3>
-            <p className="paragraph pad-20">This stage happens before you start to record your music. This is when the lyrics, chords, melody and arrangement are fleshed out and finalized. Basic instrumentation is used to get an organic feel of your song. Song charts can be created as a guide for the musicians to use while recording.</p>
-            <h3 className="">Production</h3>
-            <p className="paragraph pad-20">This is when the tracks are recorded. The rhythm tracks are recorded first. The rhythm track normally consists of your primary instrumentation, e.g: guitar, bass, keyboards and drums. If your songs do not call for a live drummer, a drum beat can be programmed for you using our drum machine or drum loops. The vocalist can record his/her lead vocal at the same time to match the fluidity of the band, or record it afterward. All extra instrumentation/vocals will be added after your rhythm track is finished. This can be auxiliary percussion, guitar parts, keyboard parts, string parts, background vocals, etc. Whatever you envision your song to have, we can make it happen!</p>
+            <p className="paragraph pad-20">Preparation is half the battle. If you need help fleshing out the arrangement of your song, refining your performance, or devising any accompaniment, we are ready to give your production-to-be all the care it deserves before we set up any recording equipment.</p>
+            <h3 className="">Recording</h3>
+            <p className="paragraph pad-20">With our versatile set of microphones at your disposal, diverse set of monitoring options, and collection of outboard analog gear, we can't wait to record you. Recording is fun, especially when it's with us. </p>
             <h3 className="">Mixing</h3>
             <div className="paragraph pad-20">
-              <p>This process includes panning, EQ (equalization), effects and automation of the instruments.</p>
-              <p>Panning: When we listen to music, there are instruments we hear on the left side, right side, and straight in middle of the mix. With panning, the engineer will decide where to place each instrument for clarity of sound. This allows for all instruments to be heard without getting buried beneath layers of tracks. The sound is balanced between the left and right channels, for an optimized listening experience. EQ: Layering multiple tracks upon each other will most likely give you a muddy sound if not EQed properly. The engineer will adjust the high, mid, and low frequencies to ensure a clear sound for each instrument.</p>
-              <p>Effects: We use a combination of vintage analog processing equipment and advanced digital-audio workstation plug-ins to bring your sonic dream to life. Reverb, delay, compression and chorus effects, etc., are customized to fit the sound you wish to achieve for your songs. Automation includes adjusting levels of the different sections of your song. For example, a certain keyboard melody may need to be higher in the chorus, while a rhythm guitar part needs to be more prevalent in the verses. The engineer will adjust levels accordingly. Because each song has a certain character and personality it wishes to convey, that character will get fleshed out during the mixing process.</p>
+              <p>Once we have the raw ingredients, we should probably mix them together. We're ready to make your sonic dream a reality with the surgical precision of our speaker collection. Whether it's gluing the bass with the kick drum, making your vocal sparkle, or giving your recording depth, punch, warmth, or all of the above, we have the tools and we know how to use them.</p>
             </div>
             <div>
               <h3 className="">Mastering</h3>
               <div className="paragraph pad-20">
-                <p>After you have mixed your audio project, there is a final step to bring it to the mainstream level. This step is called mastering. Several details are addressed in this final process before releasing it to the public. The engineers will strive to sonically enhance your audio product while preserving artistic integrity. Mastering will:</p>
-                <ol>
-                  <li>Ensure compatibility/playability of your project for consumer products such as CD players, iPods, MP3 players, as well as radio station broadcasts and digital streaming.</li>
-                  <li>Provide sonic enhancements such as bass and treble response, stereo imaging, loudness and overall dynamic range.</li>
-                  <li>Involve encoding of digital ownership codes and other data within the audio product which allows your song to be identified by the music industry and consumer.</li>
-                  <li>Ensures your product is sonically competitive with what the industry releases.</li>
-                </ol>
-                <p>Our engineers have mastered MTV and Billboard charting songs. We have developed a reputation for technical excellence and creative innovation in the art of audio mastering. Other facilities run a normalizer type of volume boost and call it mastering--that's not how we do it at Area Twenty-Two. We take each artist's audio program and customize the mastering based on what the artist wants, what the industry demands and what the songs command. Mastering is an art form that takes dedicated craftsmanship to bring it to a mind-blowing level. Our engineers have over 30 years of mastering experience—you can be assured we can make your product shine.</p>
+                <p>Once we have mixed all recorded audio signals into a single stereo recording, our only remaining task is to guarantee that your recording will sound great no matter what pair of speakers it is heard on. Whether your listeners hear your production playback on their iPhone or on their home stereo system, on Youtube or Spotify, radio or television, we're ready to make sure that no part of the experience of your production will be left out of the picture.</p>
               </div>
             </div>
             <div>
