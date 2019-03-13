@@ -48,7 +48,7 @@ class Home extends Component {
 
   renderMembers( memberData ){
     const userLink = `/profile/${ memberData.username }`
-    let extra = "&nbsp;";
+    let extra = &nbsp;
     let extraClass = "";
 
     if( memberData.username == "bobyen" ){
