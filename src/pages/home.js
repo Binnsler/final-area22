@@ -48,19 +48,21 @@ class Home extends Component {
 
   renderMembers( memberData ){
     const userLink = `/profile/${ memberData.username }`
-    let extra = "";
+    let extra = "&nbsp;";
+    let extraClass = "";
 
     if( memberData.username == "bobyen" ){
         extra = "7/5/1964 - 1/2/2019";
+        extraClass = "halfVisible";
     }
 
     return(
       <Link to={ userLink }>
         <li key={ memberData.username } className="col-1-3 member">
-          <img src={ memberData.profilePic }/>
+          <img className={extraClass} src={ memberData.profilePic }/>
           <h3 className="member-name">{ memberData.name }</h3>
           <p>{ memberData.title }</p>
-          <p>{ extra }</p>
+          <p className="error">{ extra }</p>
         </li>
       </Link>
     )
