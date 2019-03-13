@@ -15,12 +15,16 @@ class Profile extends Component{
   }
 
   render(){
+      let extra = "";
+      if( this.props.member.username == "bobyen" ){
+          extra = "In Memoriam ";
+      }
     return(
       <div>
         <div className="black-break"></div>
         <div className="profile-container">
           <img className="image-preview" src={ this.props.member.profilePic } />
-          <h3 className="member-name">{ this.props.member.name }</h3>
+          <h3 className="member-name">{extra}{ this.props.member.name }</h3>
           <p>{ this.props.member.title }</p>
           <p>{ this.props.member.email }</p>
           <p>{ this.props.member.description }</p>
