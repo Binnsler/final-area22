@@ -48,7 +48,7 @@ class Home extends Component {
 
   renderMembers( memberData ){
     const userLink = `/profile/${ memberData.username }`
-    let extra = "";
+    let extra = <br/>;
 
     if( memberData.username == "bobyen" ){
         extra = "7/5/1964 - 1/2/2019";
