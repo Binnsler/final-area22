@@ -13,7 +13,8 @@ const Footer = () => (
     <p className="footer-credit">Photo Credit: <Link to="/profile/bobyen">Bob Yen Jr.</Link></p>
     <p className="footer-credit">Website: <a href="https://linkedin.com/in/jamiebinns">Jamie Binns</a></p>
     <p className="footer-credit">All Rights Reserved Area Twenty-Two &#169; 2018</p>
-  </div>
+    <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=njKHb2QAVPxABeMFSWtco9MPTOy597ZSVDstPsFlTjWkQcRffytH5q7Y8MOm"></script></span>
+</div>
 );
 
 export default Footer;
