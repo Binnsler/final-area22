@@ -12,6 +12,22 @@ const images = [
     "/images/audioProduction8.jpg"
 ];
 
+const inara = {
+    "name": "Inara",
+    "age": 0
+};
+
+const family = [
+    {
+        "name": "Inara",
+        "age": 0
+    },
+    {
+        "name": "Jamie",
+        "age": 29
+    }
+];
+
 const Audio = () => (
       <div>
         <div className="community-splash">
