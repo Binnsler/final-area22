@@ -114,14 +114,14 @@ class Home extends Component {
                 buttons={ [
                     { "link": "/engineering-course", "text": "Learn More" }
                 ] }
-                color="#EAEAEA"
+                color="#F2BF43"
               />
               <CommunityCallout
                 text={ "Read about us on WickedLocal Plymouth!" }
                 buttons={ [
                     { "url": "http://plymouth.wickedlocal.com/news/20180110/area-twenty-two-building-music-business-from-basement-up", "text": "View Article" }
                 ] }
-                color="#F2BF43"
+                color="#EAEAEA"
               />
 
               <CommunityCallout
@@ -131,15 +131,6 @@ class Home extends Component {
                 ] }
                 color="#F2BF43"
               />
-
-
-            <CommunityCallout
-              text={ "Want to hear our latest community album? Find a CD at supporting businesses." }
-              buttons={ [
-                  { "link": "/community", "text": "Learn More" }
-              ] }
-              color="#EAEAEA"
-            />
         </div>
 
           { this.renderMembersList() }
