@@ -40,7 +40,7 @@ const Development = () => (
             <li>Piano</li>
             <li>Guitar</li>
         </ul>
-        <p className="paragraph">Lessons available Monday-Friday, with limited availability Saturday. For complete information on our rates, scheduling, and lessons, please see our <a href="/src/data/areaTwentyTwoLessonDepartmentPolicy.pdf"><span className="blue">lesson department policy</span></a>.</p>
+        <p className="paragraph">Lessons available Monday-Friday, with limited availability Saturday. For complete information on our rates, scheduling, and lessons, please see our <a href="/src/data/a22LessonPolicy-08-18.pdf"><span className="blue">lesson department policy</span></a>.</p>
         <Link to="/contact" className="black-button">Contact Us</Link>
         <div className="ratesTable">
             <h3>Weekly Lessons</h3>

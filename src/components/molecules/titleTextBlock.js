@@ -9,8 +9,10 @@ const TitleTextBlock = ( { text, backgroundColor, textColor } ) => {
 
     return (
         <div className="titleTextBlock" style={ styles }>
-            <h1>{text.title}</h1>
-            <p>{text.paragraph}</p>
+            <div className="width70">
+                <h1>{text.title}</h1>
+                <p>{text.paragraph}</p>
+            </div>
         </div>
     );
 }

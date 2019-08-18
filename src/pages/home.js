@@ -96,7 +96,7 @@ class Home extends Component {
 
   render(){
       return(
-        <div>
+        <div className="home">
           <HomeSplash />
           <div className="socials">
             <a href="https://www.facebook.com/AreaTwenty2/"><div className="facebook"><img src="/images/facebook.png" alt=""/></div></a>
@@ -108,29 +108,42 @@ class Home extends Component {
             textColor="#FFFFFF"
             text={siteCopy.home.missionStatement}
           />
-          <CommunityCallout
-            text={ "Join us for a 6 week audio engineering and music production course!" }
-            buttons={ [
-                { "link": "/engineering-course", "text": "Learn More" }
-            ] }
-            color="#F2BF43"
-          />
-          <CommunityCallout
-            text={ "Read about us on WickedLocal Plymouth!" }
-            buttons={ [
-                { "url": "http://plymouth.wickedlocal.com/news/20180110/area-twenty-two-building-music-business-from-basement-up", "text": "View Article" }
-            ] }
-            color="#FFFFFF"
-          />
+          <div className="callouts">
+              <CommunityCallout
+                text={ "Join us for a 6 week audio engineering and music production course!" }
+                buttons={ [
+                    { "link": "/engineering-course", "text": "Learn More" }
+                ] }
+                color="#EAEAEA"
+              />
+              <CommunityCallout
+                text={ "Read about us on WickedLocal Plymouth!" }
+                buttons={ [
+                    { "url": "http://plymouth.wickedlocal.com/news/20180110/area-twenty-two-building-music-business-from-basement-up", "text": "View Article" }
+                ] }
+                color="#F2BF43"
+              />
+
+              <CommunityCallout
+                text={ "Want to hear our latest community album? Find a CD at supporting businesses." }
+                buttons={ [
+                    { "link": "/community", "text": "Learn More" }
+                ] }
+                color="#F2BF43"
+              />
+
+
+            <CommunityCallout
+              text={ "Want to hear our latest community album? Find a CD at supporting businesses." }
+              buttons={ [
+                  { "link": "/community", "text": "Learn More" }
+              ] }
+              color="#EAEAEA"
+            />
+        </div>
+
           { this.renderMembersList() }
 
-          <CommunityCallout
-            text={ "Want to hear our latest community album? Find a CD at supporting businesses." }
-            buttons={ [
-                { "link": "/community", "text": "Learn More" }
-            ] }
-            color="#F2BF43"
-          />
           <BrainBlock
             piano={ this.state.piano }
             togglePiano={ this.toggleImage.bind( this, "piano" ) }
