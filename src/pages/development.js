@@ -40,13 +40,57 @@ const Development = () => (
             <li>Piano</li>
             <li>Guitar</li>
         </ul>
-        <p className="paragraph">Lessons available Monday-Friday, with limited availability Saturday. For complete information on our rates and lessons, please see our <a href="/src/data/areaTwentyTwoLessonDepartmentPolicy.pdf">lesson department policy</a>.</p>
-        <ul className="class-list">
-            <li>30 min class: <span className="blue">$22.50</span></li>
-            <li>45 min class: <span className="blue">$33.75</span></li>
-            <li>60 min class: <span className="blue">$45.00</span></li>
-        </ul>
+        <p className="paragraph">Lessons available Monday-Friday, with limited availability Saturday. For complete information on our rates, scheduling, and lessons, please see our <a href="/src/data/areaTwentyTwoLessonDepartmentPolicy.pdf"><span className="blue">lesson department policy</span></a>.</p>
         <Link to="/contact" className="black-button">Contact Us</Link>
+        <div className="ratesTable">
+            <h3>Weekly Lessons</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Lesson Length</td>
+                        <td>Monthly Tuition</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>30 min</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>45 min</td>
+                        <td>$150.00</td>
+                    </tr>
+                    <tr>
+                        <td>60 min</td>
+                        <td>$200.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Every Other Week Lessons</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Lesson Length</td>
+                        <td>Monthly Tuition</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>30 min</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>45 min</td>
+                        <td>$75.00</td>
+                    </tr>
+                    <tr>
+                        <td>60 min</td>
+                        <td>$100.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
       </div>
       <div className="pad-20">
         <h3 className="">Advanced Artist Development Program</h3>

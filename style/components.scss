@@ -51,6 +51,28 @@
     }
 }
 
+.ratesTable{
+    max-width: 700px;
+
+    h3{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    table{
+        width: 100%;
+
+        thead{
+            background-color: #DDDDDD;
+        }
+
+        td{
+            padding: 10px 15px;
+            border: 2px solid grey;
+        }
+    }
+}
+
 ///////////
 // BUTTONS
 ///////////
