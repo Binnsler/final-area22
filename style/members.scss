@@ -1,7 +1,12 @@
 .member-list {
     background-color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+
+    @media ( min-width: 796px ){
+        flex-direction: row;
+    }
 
     .member {
         text-align: center;
