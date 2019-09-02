@@ -51,7 +51,7 @@ class Home extends Component {
     let extra = <br/>;
 
     if( memberData.username == "bobyen" ){
-        extra = "7/5/1964 - 1/2/2019";
+        return;
     }
 
     return(
